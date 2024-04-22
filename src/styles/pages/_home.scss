@@ -1,0 +1,68 @@
+.homeContainer {
+  width: 100%;
+  .welcome {
+    @include center;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url("../../assets/background/y9Afa6spQx60H6cZl7Rjyw.jpg")
+      center/cover;
+    height: 100vh;
+    padding: 20% 0 5% 0;
+
+    h1 {
+      color: ivory;
+      font-size: 5em;
+    }
+    .link {
+      width: 100%;
+      .button {
+        margin: 1%;
+        min-width: 130px;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        z-index: 0;
+        background: transparent;
+        overflow: hidden;
+        border: 2px solid #adb5bd;
+        color: #adb5bd;
+
+        &:hover {
+          color: #fff;
+        }
+        &:hover:after {
+          width: 100%;
+        }
+        &d:after {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          transition: all 0.3s ease;
+          left: 0;
+          top: 0;
+          width: 0;
+          height: 100%;
+          background: #adb5bd;
+        }
+      }
+    }
+    .socialLink {
+      width: 100%;
+      a {
+        padding: 0 1%;
+        color: ivory;
+      }
+    }
+  }
+
+  h2 {
+    height: 500px;
+  }
+}

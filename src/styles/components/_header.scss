@@ -1,0 +1,142 @@
+header {
+
+
+
+
+
+    transition: 0.3s ease-in-out;
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1% 5% 1% 5%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    color: ivory;
+    z-index: 3;
+
+    h2 {
+        font-size: 3em;
+        font-weight: bold;
+        letter-spacing: 5px;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 1.5em;
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: 1em;
+        }
+    }
+
+    nav {
+        ul {
+            @include center;
+            height: 100%;
+            width: 100%;
+
+            @media screen and (max-width: 700px) {
+                width: 100%;
+            }
+
+            a {
+                color: ivory;
+                margin-left: 20px;
+                font-size: 1.5em;
+                transition: 0.3s;
+
+                @media screen and (max-width: 1000px) {
+                    font-size: 1em;
+                }
+
+                &.nav-active {
+                    color: black;
+
+                    &::after {
+                        background: black;
+                        color: black;
+                    }
+                }
+
+                &:hover {
+                    color: black;
+                }
+            }
+
+            li {
+                p {
+                    @media screen and (max-width: 700px) {
+                        display: none;
+                    }
+                }
+
+                i {
+                    display: none;
+
+                    @media screen and (max-width: 700px) {
+                        display: initial;
+                        font-size: 1.5em;
+                        margin-left: 20px;
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        font-size: 1em;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+}
+
+.nav-active {
+    position: relative;
+}
+
+.nav-active::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: ivory;
+    position: absolute;
+    border-radius: 10px;
+    bottom: -10%;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    animation-name: slideFromRight;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.activeHeader {
+
+
+
+    background: #002783;
+    background-image: linear-gradient(to right, #0a8cca 0%, #000000 100%);
+
+
+}

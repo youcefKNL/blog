@@ -1,0 +1,47 @@
+// variables.scss
+
+
+* {
+  //   background: red;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "ubuntu", sans-serif;
+  user-select: none;
+  ;
+}
+body {
+
+}
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "young-serif";
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+@keyframes basicAnimeOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
