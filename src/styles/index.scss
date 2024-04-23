@@ -10,7 +10,8 @@
 
 
 // ******************************* Styles Component
-
+@import "rsuite/dist/rsuite.css";
 @import "./components/header";
 @import "./components/headerChallenge";
-@import "./components/layoutArticleBlog"
+@import "./components/layoutArticleBlog";
+@import "./components/LexicalLink"

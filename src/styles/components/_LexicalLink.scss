@@ -1,0 +1,54 @@
+.lexicalContent {
+  width: auto;
+  //   width: 345px;
+  padding: 3%;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
+
+  // flex: 1;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  transition: 0.3s ease-in-out;
+  min-height: 25vh;
+  //   @media screen and (max-width: 1400px) {
+  //     width: 25%;
+  //   }
+  h2 {
+    text-transform: capitalize;
+    padding-bottom: 10%;
+  }
+
+  ul {
+    transition: 3s ease-in-out;
+
+    .parentNode {
+      padding: 3% 0;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      ul > li {
+        pointer-events: none;
+        padding: 5% 0 0 10%;
+      }
+    }
+  }
+}
+
+.lexicalContentFixed {
+  position: fixed;
+  top: 20%;
+  right: 8%;
+  transition: 0.3s ease-in-out;
+  margin: 0;
+  z-index: 5;
+  background: white;
+
+  @media screen and (max-width: 1400px) {
+    right: 4%;
+    width: 25%;
+  }
+}

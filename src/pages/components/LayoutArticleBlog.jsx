@@ -1,13 +1,13 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-const LayoutArticleBlog = ({ children }) => {
+const LayoutArticleBlog = ({ classname: classProp, children }) => {
   return (
-    <>
-      <div className="banner"></div>
+    <div className="articleContainer">
+      <div className={`banner ${classProp}`}></div>
       <>{children}</>
       <div className="finalArticles">
-        <div>
+        <div className="socialLink">
           <a href="Lien vers votre profil LinkedIn">
             <FaLinkedin />
           </a>
@@ -16,7 +16,7 @@ const LayoutArticleBlog = ({ children }) => {
           </a>
         </div>
 
-        <p>
+        <div className="disclaimer">
           Disclaimer: <br />
           Merci d'avoir parcouru cet article. N'hésitez pas à me contacter sur
           LinkedIn ou GitHub pour discuter davantage. Je suis conscient que des
@@ -25,10 +25,10 @@ const LayoutArticleBlog = ({ children }) => {
           d'atteindre un objectif, et les informations peuvent être sujettes à
           changement. Merci de votre compréhension et de votre intérêt pour ce
           contenu.
-        </p>
-        <p>© Youcef - Tous droits réservés.</p>
+        </div>
+        <div className="copyright">© Youcef - Tous droits réservés.</div>
       </div>
-    </>
+    </div>
   );
 };
 
