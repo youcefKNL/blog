@@ -68,7 +68,54 @@
     }
   }
 
-  h2 {
-    height: 500px;
+
+  .homeArticles {
+    h2 {
+      // height: 500px;
+      margin: 5% 0;
+    }
+
+    @include center;
+    flex-direction: column;
+
+    .homeArticlesContainer {
+      @include center;
+      justify-content: space-evenly;
+      width: 100%;
+      margin-bottom: 10%;
+      height: 100%;
+
+      .homeCardArticle {
+        border: 1px solid black;
+        border-radius: 10%;
+        overflow: hidden;
+        // padding: 5%;
+        min-width: 500px;
+        min-height: 600px;
+
+
+        background: red;
+        height: 100%;
+
+        .homeBannerArticle {
+          min-height: 150px;
+          width: 100%;
+          height: 30%;
+        }
+
+        .homeDescriptionArticle {
+          height: 70%;
+          width: 100%;
+
+        }
+      }
+    }
+
   }
+
+
+
+
+
+
 }

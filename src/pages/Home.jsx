@@ -1,8 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import Background from "./components/Background";
 
 const Home = () => {
+  const latestArticles = [
+    {
+      title: "rootmeBackground",
+      description: "Description de l'article 1",
+      link: "/article-1",
+    },
+    {
+      title: "rootmeBackground",
+      description: "Description de l'article 2",
+      link: "/article-2",
+    },
+    // Ajoutez d'autres articles au besoin
+  ];
+
   return (
     <main className="homeContainer">
       <div className="welcome">
@@ -47,8 +62,20 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div className="articles">
-        <h2>ici les futurs</h2>
+      <div className="homeArticles">
+        <Background />
+        <h2>Articles récents</h2>
+        <div className="homeArticlesContainer">
+          {latestArticles.map((article, index) => (
+            <div key={index} className="homeCardArticle">
+              <div className={`homeBannerArticle ${article.title}`}></div>
+              <div className="homeDescriptionArticle">
+                <p>{article.description}</p>
+                <Link to={article.link}>Lire la suite</Link>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </main>
   );
