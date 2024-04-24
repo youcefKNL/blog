@@ -1,11 +1,11 @@
 .homeContainer {
   width: 100%;
+
   .welcome {
     @include center;
     flex-direction: column;
     justify-content: space-between;
-    background: url("../../assets/background/y9Afa6spQx60H6cZl7Rjyw.jpg")
-      center/cover;
+    background: url("../../assets/background/y9Afa6spQx60H6cZl7Rjyw.jpg") center/cover;
     height: 100vh;
     padding: 20% 0 5% 0;
 
@@ -13,8 +13,10 @@
       color: ivory;
       font-size: 5em;
     }
+
     .link {
       width: 100%;
+
       .button {
         margin: 1%;
         min-width: 130px;
@@ -37,9 +39,11 @@
         &:hover {
           color: #fff;
         }
+
         &:hover:after {
           width: 100%;
         }
+
         &d:after {
           content: "";
           position: absolute;
@@ -53,8 +57,10 @@
         }
       }
     }
+
     .socialLink {
       width: 100%;
+
       a {
         padding: 0 1%;
         color: ivory;
