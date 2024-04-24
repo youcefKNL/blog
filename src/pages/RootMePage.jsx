@@ -6,12 +6,14 @@ import Lexical from "./components/Lexical";
 import LayoutArticleBlog from "./components/LayoutArticleBlog";
 import { LuAppWindow } from "react-icons/lu";
 import { TbShieldSearch } from "react-icons/tb";
+import Background from "./components/Background";
 // import { Accordion, Placeholder } from "rsuite";
 
 const RootMePage = () => {
   return (
     <div className="rootmePresentation">
       <HeaderChallenge />
+      <Background />
       <div className="blogContainer">
         <LayoutArticleBlog classname="rootmeBackground">
           <h1>Root-Me Challenges</h1>

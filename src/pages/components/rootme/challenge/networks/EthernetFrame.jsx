@@ -9,22 +9,14 @@ import photo1 from "../../../../../assets/rootme/network/ethernet-Frame/Capture 
 import photo2 from "../../../../../assets/rootme/network/ethernet-Frame/Capture d’écran du 2024-04-24 21-29-20.png";
 import photo3 from "../../../../../assets/rootme/network/ethernet-Frame/Capture d’écran du 2024-04-24 21-40-45.png";
 import photo4 from "../../../../../assets/rootme/network/ethernet-Frame/Capture d’écran du 2024-04-24 21-42-59.png";
+import Background from "../../../Background";
+import Avatar from "../../../../../assets/profile-pic.png";
 
 const EthernetFrame = () => {
   return (
     <div className="ethernetFrame">
       <HeaderChallenge />
-      <ul class="background">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <Background />
       <div className="blogContainer">
         <LayoutArticleBlog classname="rootmeBackground">
           <h1>Solution ETHERNET - frame</h1>
@@ -55,7 +47,14 @@ const EthernetFrame = () => {
             Une fois le Flag décodé, nous l'entrons pour voir s'il correspond au
             Flag attendu.
             <img src={photo4} alt="Capture d'écran" />
-            En pratiquant, nous apprenons, alors à toi de jouer !
+            {/* <span className="signed">
+              <img src={Avatar} alt="photo Avatar" />
+
+              <cite>
+                <em>"</em>
+                En pratiquant, nous apprenons, alors à toi de jouer !<em>"</em>
+              </cite>
+            </span> */}
           </div>
         </LayoutArticleBlog>
 

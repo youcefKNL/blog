@@ -1,11 +1,20 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Avatar from "../../assets/profile-pic.png";
 
 const LayoutArticleBlog = ({ classname: classProp, children }) => {
   return (
     <div className="articleContainer">
       <div className={`banner ${classProp}`}></div>
       <>{children}</>
+      <span className="signed">
+        <img src={Avatar} alt="photo Avatar" />
+
+        <cite>
+          <em>"</em>
+          En pratiquant, nous apprenons, alors à toi de jouer !<em>"</em>
+        </cite>
+      </span>
       <div className="finalArticles">
         <div className="socialLink">
           <a href="Lien vers votre profil LinkedIn">

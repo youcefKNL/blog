@@ -10,7 +10,8 @@ import Header from "./pages/components/Header";
 import Challenge from "./pages/Challenge";
 import RootMePage from "./pages/RootMePage";
 import Exif from "./pages/components/rootme/challenge/stéganographie/Exif";
-import EthernetFrame from "./pages/components/rootme/challenge/networks/EthernetFrame";
+
+import IdNetwork from "./pages/components/rootme/challenge/networks/IdNetwork";
 
 //import ParticlesContainer from "./components/ParticlesContainer";
 
@@ -24,11 +25,7 @@ const App = () => {
         <Route path="/challenge" element={<Challenge />} />
         <Route path="/rootme" element={<RootMePage />} />
         <Route path="/rootme/exif" element={<Exif />} />
-
-        <Route
-          path="/rootme/networks/ethernetFrame"
-          element={<EthernetFrame />}
-        />
+        <Route path="/rootme/networks/:id" element={<IdNetwork />} />
       </Routes>
     </AnimatePresence>
   );

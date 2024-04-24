@@ -2,10 +2,12 @@ import React from "react";
 import HeaderChallenge from "../../../HeaderChallenge";
 import LayoutArticleBlog from "../../../LayoutArticleBlog";
 import Lexical from "../../../Lexical";
+import Background from "../../../Background";
 
 const Exif = () => {
   return (
     <div className="exifSolution">
+      <Background />
       <HeaderChallenge />
       <div className="blogContainer">
         <LayoutArticleBlog classname="rootmeBackground">

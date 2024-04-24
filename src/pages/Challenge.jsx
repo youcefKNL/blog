@@ -3,11 +3,13 @@ import HeaderChallenge from "./components/HeaderChallenge";
 import { FaHome, FaUsers, FaLaptop, FaPalette, FaCube } from "react-icons/fa";
 import Lexical from "./components/Lexical";
 import LayoutArticleBlog from "./components/LayoutArticleBlog";
+import Background from "./components/Background";
 
 const Challenge = () => {
   return (
     <section className="challengePresentation">
       <HeaderChallenge />
+      <Background />
       <div className="blogContainer">
         <LayoutArticleBlog classname="challenge">
           <h1>
