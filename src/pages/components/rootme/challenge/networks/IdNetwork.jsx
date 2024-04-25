@@ -1,6 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import EthernetFrame from "./EthernetFrame";
+import FtpAuthentification from "./FtpAuthentification";
+import TelnetAuthentification from "./TelnetAuthentification";
 
 function RootMeNetworkPage() {
   const { id } = useParams();
@@ -9,6 +11,12 @@ function RootMeNetworkPage() {
   // Par exemple, si l'ID est "ethernetFrame", affichez la page EthernetFrame
   if (id === "ethernetFrame") {
     return <EthernetFrame />;
+  }
+  if (id === "ftpAuthentification") {
+    return <FtpAuthentification />;
+  }
+  if (id === "telnetAuthentification") {
+    return <TelnetAuthentification />;
   }
   // Ajoutez d'autres conditions pour d'autres pages si nécessaire
 
