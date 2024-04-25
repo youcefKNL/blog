@@ -1,6 +1,5 @@
 // variables.scss
 
-
 * {
   //   background: red;
   box-sizing: border-box;
@@ -8,11 +7,34 @@
   padding: 0;
   font-family: "ubuntu", sans-serif;
   user-select: none;
-  ;
 }
 
+//Accordéons
+.MuiPaper-root {
+  width: 100%;
+  margin: 1% 0;
+  background-color: white !important;
+  font-weight: bold;
+  padding-left: 5%;
+  border-bottom: 2px solid red;
 
-
+  li {
+    font-weight: normal;
+  }
+  svg {
+    margin-right: 5%;
+    font-size: 2em;
+  }
+  .css-eqpfi5-MuiAccordionSummary-content {
+    align-items: center;
+  }
+  .MuiButtonBase-root {
+    border-bottom: 2px solid green !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+}
+/////////////////////////////////////////////////////////
 li {
   list-style: none;
 }
@@ -22,7 +44,6 @@ h2,
 h3 {
   font-family: "young-serif";
 }
-
 
 a {
   text-decoration: none;
@@ -47,7 +68,6 @@ a {
   }
 }
 
-
 @keyframes cube {
   from {
     transform: scale(0) rotate(0deg) translate(-50%, -50%);
@@ -60,7 +80,7 @@ a {
   }
 }
 
-//effet background cubique 
+//effet background cubique
 
 @keyframes cube {
   from {
@@ -73,10 +93,8 @@ a {
     opacity: 0;
   }
 }
-
 
 .backgroundContainer {
-
   .background {
     z-index: -1;
     position: fixed;

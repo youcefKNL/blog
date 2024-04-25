@@ -1,6 +1,4 @@
 .lexicalContent {
-  width: auto;
-  //   width: 345px;
   padding: 3%;
   border-radius: 10px;
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
@@ -11,6 +9,8 @@
   // margin-right: 5%;
   transition: 0.3s ease-in-out;
   min-height: 25vh;
+  background: ivory;
+  z-index: 1;
 
   //   @media screen and (max-width: 1400px) {
   //     width: 25%;
@@ -31,7 +31,7 @@
         cursor: pointer;
       }
 
-      ul>li {
+      ul > li {
         pointer-events: none;
         padding: 5% 0 0 10%;
       }
@@ -40,16 +40,17 @@
 }
 
 .lexicalContentFixed {
+  width: auto;
   position: fixed;
   top: 20%;
-  right: 3%;
+  right: 8%;
   transition: 0.3s ease-in-out;
   margin: 0;
   z-index: 5;
-  background: white;
-
+  @media screen and (max-width: 1700px) {
+    right: 3%;
+  }
   @media screen and (max-width: 1400px) {
-
     width: 25%;
   }
 }

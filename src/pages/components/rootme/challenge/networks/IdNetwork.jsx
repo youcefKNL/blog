@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import EthernetFrame from "./EthernetFrame";
 import FtpAuthentification from "./FtpAuthentification";
 import TelnetAuthentification from "./TelnetAuthentification";
+import DnsTransfert from "./DnsTransfert";
 
 function RootMeNetworkPage() {
   const { id } = useParams();
@@ -18,6 +19,10 @@ function RootMeNetworkPage() {
   if (id === "telnetAuthentification") {
     return <TelnetAuthentification />;
   }
+  if (id === "dnsTransfert") {
+    return <DnsTransfert />;
+  }
+
   // Ajoutez d'autres conditions pour d'autres pages si nécessaire
 
   return <div>Page non trouvée</div>;

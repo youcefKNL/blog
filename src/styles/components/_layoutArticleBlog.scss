@@ -121,7 +121,8 @@
   width: 100%;
   top: 0;
   left: 0;
-  background: url(../../assets/background/cL5azRftSIGzqpq-McOWxQ.jpg) center/cover no-repeat;
+  background: url(../../assets/background/cL5azRftSIGzqpq-McOWxQ.jpg)
+    center/cover no-repeat;
   border-bottom: dotted 5px black;
 }
 
@@ -171,7 +172,7 @@
     li {
       margin-left: 5%;
       padding: 2% 0;
-      font-size: 1.2em;
+      font-size: 1em;
     }
   }
 
@@ -182,8 +183,6 @@
     object-fit: cover;
     object-position: center;
   }
-
-
 
   span {
     text-align: center;
@@ -199,7 +198,6 @@
 
     img {
       width: 30%;
-
     }
 
     cite {
@@ -210,10 +208,7 @@
         font-size: 2em;
       }
     }
-
   }
-
-
 
   .finalArticles {
     display: flex;
