@@ -5,7 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "ubuntu", sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   user-select: none;
 }
 
@@ -21,29 +21,40 @@
   li {
     font-weight: normal;
   }
+
+  a {
+    color: none;
+    text-decoration: none;
+
+
+  }
+
+  a:visited {
+    color: none;
+  }
+
   svg {
     margin-right: 5%;
     font-size: 2em;
   }
+
   .css-eqpfi5-MuiAccordionSummary-content {
     align-items: center;
   }
+
   .MuiButtonBase-root {
     border-bottom: 2px solid green !important;
     padding: 0 !important;
     width: 100% !important;
   }
 }
+
 /////////////////////////////////////////////////////////
 li {
   list-style: none;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "young-serif";
-}
+
 
 a {
   text-decoration: none;

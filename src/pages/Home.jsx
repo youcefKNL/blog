@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import Background from "./components/Background";
+import ParticlesContainer from "./components/Particles";
 
 const Home = () => {
   const latestArticles = [
@@ -21,13 +22,14 @@ const Home = () => {
   return (
     <main className="homeContainer">
       <div className="welcome">
+        <ParticlesContainer />
         <h1>welcome</h1>
 
         <div className="link">
           <Link to="https://portfolio.cabinetlegalis.fr" target="_blank">
             <div className="button">portfolio</div>
           </Link>
-          <Link to="https://github.com/lyy289065406" target="_blank">
+          <Link to="https://github.com/youcefKNL" target="_blank">
             <div className="button">github</div>
           </Link>
         </div>

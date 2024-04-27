@@ -2,58 +2,88 @@
   width: 100%;
 
   .welcome {
+    position: relative;
+    // overflow: hidden;
     @include center;
     flex-direction: column;
     justify-content: space-between;
-    background: url("../../assets/background/y9Afa6spQx60H6cZl7Rjyw.jpg") center/cover;
+    background: url("../../assets/background/1.png") center/cover;
     height: 100vh;
-    padding: 20% 0 5% 0;
+    padding: 50vh 0 5% 0;
+
 
     h1 {
       color: ivory;
       font-size: 5em;
+      text-transform: uppercase;
+      letter-spacing: 20px;
     }
+
+    //button effect
 
     .link {
       width: 100%;
+      @include center;
+      // justify-content: space-evenly;
+      // margin: 3%;
+      // padding: 1% 3%;
+
+      a {
+        font-size: 1.3em;
+        font-weight: bold;
+        margin: 0 5vw;
+
+      }
+
+      //bouttons effects
 
       .button {
-        margin: 1%;
-        min-width: 130px;
-        height: 40px;
-        color: #fff;
-        padding: 5px 10px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: relative;
-        display: inline-block;
-        outline: none;
-        border-radius: 5px;
-        z-index: 0;
-        background: transparent;
-        overflow: hidden;
-        border: 2px solid #adb5bd;
-        color: #adb5bd;
+        width: 200px;
 
-        &:hover {
-          color: #fff;
-        }
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        padding: 12px 40px;
+        border: 1px solid #b3b3b3;
+        border-radius: 100px;
+        background: transparent;
+        backdrop-filter: blur(5px);
+
+        -webkit-box-shadow: ivory 0px 0px 40px 0px;
+        -moz-box-shadow: ivory 0px 0px 40px 0px;
+        box-shadow: ivory 0px 0px 40px 0px;
+
+        font: normal normal bold 28px arial;
+
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        color: ivory;
+        letter-spacing: 3px;
+        overflow: hidden;
+        z-index: -1;
 
         &:hover:after {
           width: 100%;
+          left: 0;
         }
 
-        &d:after {
-          content: "";
+        &:after {
+          border-radius: 100px;
+
           position: absolute;
-          z-index: -1;
-          transition: all 0.3s ease;
-          left: 0;
-          top: 0;
+          content: "";
           width: 0;
           height: 100%;
-          background: #adb5bd;
+          top: 0;
+          z-index: -1;
+          -moz-box-shadow: ivory 0px 0px 40px 0px;
+          transition: all 0.3s ease;
+          background-color: rgba(255, 255, 240, 0.479);
+          right: 0;
+        }
+
+        &:active {
+          top: 2px;
         }
       }
     }
@@ -64,10 +94,14 @@
       a {
         padding: 0 1%;
         color: ivory;
+
+        &:hover {
+          color: ivory;
+          text-decoration: none;
+        }
       }
     }
   }
-
 
   .homeArticles {
     h2 {
@@ -93,7 +127,6 @@
         min-width: 500px;
         min-height: 600px;
 
-
         background: red;
         height: 100%;
 
@@ -106,16 +139,8 @@
         .homeDescriptionArticle {
           height: 70%;
           width: 100%;
-
         }
       }
     }
-
   }
-
-
-
-
-
-
 }
