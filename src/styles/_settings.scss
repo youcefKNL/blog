@@ -2,7 +2,7 @@
 
 $Textcolor1: #0d47a1;
 $Textcolor2: ivory;
-
+$Color2:#b5cdf1;
 
 
 
@@ -85,17 +85,39 @@ a {
   }
 }
 
-@keyframes cube {
-  from {
-    transform: scale(0) rotate(0deg) translate(-50%, -50%);
-    opacity: 1;
-  }
+// @keyframes cube {
+//   from {
+//     transform: scale(0) rotate(0deg) translate(-50%, -50%);
+//     opacity: 1;
+//   }
 
-  to {
-    transform: scale(20) rotate(960deg) translate(-50%, -50%);
-    opacity: 0;
+//   to {
+//     transform: scale(20) rotate(960deg) translate(-50%, -50%);
+//     opacity: 0;
+//   }
+// }
+
+
+.backgroundContainer {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+
+  .tsparticlestwo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
 }
+
+.challengePresentation {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+
 
 //effet background cubique
 
@@ -297,11 +319,3 @@ a {
 //     border-color: #ffffff;
 //   }
 // }
-
-.backgroundContainer {
-  width: 100%;
-  height: 1000px;
-  z-index: 1;
-  background-color: red;
-  position: relative;
-}

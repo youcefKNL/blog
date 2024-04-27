@@ -55,6 +55,7 @@ const Home = () => {
       </div>
       <div className="homeArticles">
         <Background />
+
         <h2>Articles récents</h2>
         <div className="homeArticlesContainer">
           {latestArticles.map((article, index) => (
@@ -68,6 +69,9 @@ const Home = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="copyright">
+          © Khenichil Youcef 2024. Tous droits réservés.
         </div>
       </div>
     </main>

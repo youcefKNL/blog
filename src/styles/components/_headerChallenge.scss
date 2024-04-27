@@ -2,7 +2,8 @@
     height: 40vh !important;
     @include center;
 
-    background: url(../../assets/background/Ic58ykryRVKT-aXpkujNtg.jpg) center/cover no-repeat;
-    opacity: 0.8;
+    background: url(../../assets/background/_3.png) center/cover no-repeat;
+    opacity: 0.7;
+    border-bottom: 10px solid $Textcolor1;
 
 }

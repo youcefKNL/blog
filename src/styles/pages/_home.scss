@@ -1,5 +1,6 @@
 .homeContainer {
   width: 100%;
+  height: 100%;
 
   .welcome {
     position: relative;
@@ -10,7 +11,7 @@
     background: url("../../assets/background/1.png") center/cover;
     height: 100vh;
     padding: 50vh 0 5% 0;
-    border-bottom: 4px solid $Textcolor1;
+    border-bottom: 10px solid $Textcolor1;
 
 
     h1 {
@@ -95,7 +96,7 @@
 
       a {
         margin: 0 2%;
-        color: $Textcolor1;
+        color: $Textcolor2;
         transition: 0.3s ease-in-out;
 
 
@@ -105,7 +106,7 @@
         }
 
         &:hover {
-          color: black;
+          color: $Textcolor1;
           text-decoration: none;
           cursor: pointer;
           transform: rotate(360deg) !important;
@@ -117,17 +118,29 @@
 }
 
 .homeArticles {
+  position: relative;
+  top: 0;
+  left: 0;
+  border-top: 2px solid $Textcolor2;
+  height: 100%;
+
+
+
   h2 {
     // height: 500px;
+    color: $Textcolor2;
     margin: 5% 0;
+    z-index: 1
   }
 
   @include center;
   flex-direction: column;
-  padding: 10%;
+  padding: 1% 10%;
+  // overflow: hidden;
 
 
   .homeArticlesContainer {
+    z-index: 1;
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -136,6 +149,12 @@
     width: 100%;
     margin-bottom: 10%;
     max-width: 1200px;
+
+    @media screen and (max-width:900px) {
+      @include center;
+      flex-wrap: wrap;
+      margin-bottom: 5%;
+    }
 
     .homeCardArticle {
       @include center;
@@ -154,6 +173,13 @@
         0 5px 15px $Textcolor1(0, 0, 0, 0.07) !important;
 
 
+
+
+      @media screen and (max-width:900px) {
+
+        margin-bottom: 10%;
+      }
+
       .homeBannerArticle {
         min-height: 100px;
         width: 100%;
@@ -167,4 +193,20 @@
       }
     }
   }
+}
+
+
+yo {
+  position: absolute !important;
+
+}
+
+
+.tsparticlestwo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-top: 10px solid $Textcolor2;
+
 }

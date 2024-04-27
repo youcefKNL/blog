@@ -3,9 +3,9 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
 // import Test from "./test.json";
-// import Test2 from "./test2.json";
+import Test2 from "./test2.json";
 
-import EffectTsParticles1 from "./tsparticles1.json";
+import EffectTsParticles from "./tsparticles2.json";
 
 const App = (props) => {
   const [init, setInit] = useState(false);
@@ -27,10 +27,10 @@ const App = (props) => {
 
   return init ? (
     <Particles
-      id="tsparticles"
+      id="tsparticlestwo"
       particlesLoaded={particlesLoaded}
-      options={EffectTsParticles1}
-      className={"tsparticles"}
+      options={EffectTsParticles}
+      className={"tsparticlestwo"}
     />
   ) : null;
 };
