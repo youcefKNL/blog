@@ -1,9 +1,10 @@
 import React from "react";
+import ParticlesContainer from "./Particles";
 
 const Background = () => {
   return (
     <div className="backgroundContainer">
-      <ul class="background">
+      {/* <ul class="background">
         <li></li>
         <li></li>
         <li></li>
@@ -28,7 +29,8 @@ const Background = () => {
         <li></li>
         <li></li>
         <li></li>
-      </ul>
+      </ul> */}
+      <ParticlesContainer />
     </div>
   );
 };

@@ -8,15 +8,24 @@ const Home = () => {
   const latestArticles = [
     {
       title: "rootmeBackground",
-      description: "Description de l'article 1",
-      link: "/article-1",
+      description: "ethernetFrame",
+      link: "/rootme/networks/ethernetFrame",
     },
     {
       title: "rootmeBackground",
-      description: "Description de l'article 2",
-      link: "/article-2",
+      description: "ftpAuthentification",
+      link: "/rootme/networks/ftpAuthentification",
     },
-    // Ajoutez d'autres articles au besoin
+    {
+      title: "rootmeBackground",
+      description: "telnetAuthentification",
+      link: "/rootme/networks/telnetAuthentification",
+    },
+    {
+      title: "rootmeBackground",
+      description: "dnsTransfert",
+      link: "/rootme/networks/dnsTransfert",
+    },
   ];
 
   return (
@@ -24,7 +33,6 @@ const Home = () => {
       <div className="welcome">
         <ParticlesContainer />
         <h1>welcome</h1>
-
         <div className="link">
           <Link to="https://portfolio.cabinetlegalis.fr" target="_blank">
             <div className="button">portfolio</div>
@@ -33,35 +41,16 @@ const Home = () => {
             <div className="button">github</div>
           </Link>
         </div>
+
+        {/* // Icon Social Link */}
+
         <div className="socialLink">
-          <a
-            href="https://github.com/lyy289065406"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub size={32} />
-          </a>
-          <a
-            href="https://twitter.com/YourTwitterHandle"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaTwitter size={32} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/yourprofile"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin size={32} />
-          </a>
-          <a
-            href="https://www.instagram.com/yourprofile"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram size={32} />
-          </a>
+          <Link to="https://github.com/youcefKNL" target="_blank">
+            <FaGithub />
+          </Link>
+          <Link to="https://github.com/youcefKNL" target="_blank">
+            <FaLinkedin />
+          </Link>
         </div>
       </div>
       <div className="homeArticles">
@@ -73,6 +62,8 @@ const Home = () => {
               <div className={`homeBannerArticle ${article.title}`}></div>
               <div className="homeDescriptionArticle">
                 <p>{article.description}</p>
+              </div>
+              <div className="homeLinkArticle">
                 <Link to={article.link}>Lire la suite</Link>
               </div>
             </div>

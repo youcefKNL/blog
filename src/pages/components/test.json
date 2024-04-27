@@ -1,4 +1,8 @@
 {
+  "fullScreen": {
+    "enable": false,
+    "zIndex": 0
+  },
   "particles": {
     "number": {
       "value": 80,

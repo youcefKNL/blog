@@ -1,29 +1,38 @@
-import React, { useCallback } from "react";
-import { Particles } from "react-tsparticles";
-import { loadFull } from "tsparticles";
-import Bubble from "../../assets/tsparticles/";
+import React, { useEffect, useMemo, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 
-const ParticlesContainer = () => {
-  //init
-  const particlesInit = useCallback(async (engine) => {
-    //console.log(engine);
-    //await loadFull(engine);
-    await loadFull(engine);
+// import Test from "./test.json";
+// import Test2 from "./test2.json";
+
+import EffectTsParticles1 from "./tsparticles1.json";
+
+const App = () => {
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    const initializeParticles = async () => {
+      await initParticlesEngine(async (engine) => {
+        await loadSlim(engine);
+      });
+      setInit(true);
+    };
+
+    initializeParticles();
   }, []);
 
-  const particlesLoaded = useCallback(async () => {
-    // await console.log(container);
-  }, []);
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
 
-  return (
+  return init ? (
     <Particles
-      className="particlesContainer"
       id="tsparticles"
-      init={particlesInit}
-      loaded={particlesLoaded}
-      options={Bubble}
+      particlesLoaded={particlesLoaded}
+      options={EffectTsParticles1}
+      className="tsparticles"
     />
-  );
+  ) : null;
 };
 
-export default ParticlesContainer;
+export default App;

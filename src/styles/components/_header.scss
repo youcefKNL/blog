@@ -9,7 +9,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  color: royalblue;
+  color: $Textcolor1;
   z-index: 3;
   backdrop-filter: blur(8px);
 
@@ -39,7 +39,7 @@ header {
       }
 
       a {
-        color: royalblue;
+        color: $Textcolor1;
         margin-left: 20px;
         font-size: 1.5em;
         transition: 0.3s;
@@ -119,17 +119,17 @@ header {
 .activeHeader {
   background: #002783;
   background-image: linear-gradient(to right, royalblue 0%, #000000 100%);
-  color: ivory;
+  color: $Textcolor2;
 
 
   li {
-    color: ivory;
+    color: $Textcolor2;
 
   }
 
   .nav-active::after {
 
-    background: ivory;
+    background: $Textcolor2;
 
   }
 }
