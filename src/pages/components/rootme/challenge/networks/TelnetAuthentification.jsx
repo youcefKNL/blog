@@ -14,13 +14,15 @@ import photo6 from "../../../../../assets/rootme/network/Telnet-Authentification
 import photo7 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture d'écran 2024-04-25 180125-E.png";
 import photo8 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture d'écran 2024-04-25 180224-PSWD.png";
 
-import Background from "../../../Background";
+import ParticlesContainer2 from "../../../background Effect/Particles2";
+
+import Footer from "../../../Footer";
 
 const EthernetFrame = () => {
   return (
-    <div className="telnetAuthentification">
+    <div className="telnetAuthentification blogPage">
       <HeaderChallenge />
-      <Background />
+      <ParticlesContainer2 />
       <div className="blogContainer">
         <LayoutArticleBlog classname="rootmeBackground">
           <h1>Authentification TELNET</h1>
@@ -66,6 +68,7 @@ const EthernetFrame = () => {
 
         <Lexical />
       </div>
+      <Footer />
     </div>
   );
 };

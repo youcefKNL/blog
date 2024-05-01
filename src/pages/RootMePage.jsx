@@ -1,5 +1,4 @@
 import React from "react";
-import { FaHome } from "react-icons/fa";
 
 import HeaderChallenge from "./components/HeaderChallenge";
 import Lexical from "./components/Lexical";
@@ -7,28 +6,25 @@ import LayoutArticleBlog from "./components/LayoutArticleBlog";
 import { LuAppWindow } from "react-icons/lu";
 import { TbShieldSearch } from "react-icons/tb";
 import { FaNetworkWired } from "react-icons/fa6";
+import { GiServerRack } from "react-icons/gi";
 
-import Background from "./components/Background";
-// import { Accordion, Placeholder } from "rsuite";
 import Accordion from "@mui/material/Accordion";
+import Typography from "@mui/material/Typography";
 
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-
-import Fade from "@mui/material/Fade";
+import { PiArrowFatLineDownFill } from "react-icons/pi";
+import { FaFontAwesomeFlag } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import Footer from "./components/Footer";
+import ParticlesContainer2 from "./components/background Effect/Particles2";
 
 const RootMePage = () => {
-  //accordéons options
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleExpansion = () => {
-    setExpanded((prevExpanded) => !prevExpanded);
-  };
   return (
     <div className="rootmePresentation">
       <HeaderChallenge />
-      <Background />
+      <ParticlesContainer2 />
+
       <div className="blogContainer">
         <LayoutArticleBlog classname="rootmeBackground">
           <h1>Root-Me Challenges</h1>
@@ -40,24 +36,17 @@ const RootMePage = () => {
           {/* Liste des challenges */}
           <h2>Liste des Challenges</h2>
 
-          <Accordion
-            expanded={expanded}
-            onChange={handleExpansion}
-            slots={{ transition: Fade }}
-            slotProps={{ transition: { timeout: 400 } }}
-            sx={{
-              "& .MuiAccordion-region": { height: expanded ? "auto" : 0 },
-              "& .MuiAccordionDetails-root": {
-                display: expanded ? "block" : "none",
-              },
-            }}
-          >
+          <Accordion>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<PiArrowFatLineDownFill />}
               aria-controls="panel1-content"
               id="panel1-header"
+              disabled
             >
-              CTF
+              <Typography>
+                <FaFontAwesomeFlag />
+                CTF
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -67,80 +56,98 @@ const RootMePage = () => {
           </Accordion>
           <Accordion>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<PiArrowFatLineDownFill />}
               aria-controls="panel2-content"
               id="panel2-header"
             >
-              <LuAppWindow /> App - Script
+              <Typography>
+                <LuAppWindow /> Crypto Analyse
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
+                <li>Shift Cipher</li>
               </ul>
             </AccordionDetails>
           </Accordion>
           <Accordion>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
+              expandIcon={<PiArrowFatLineDownFill />}
               aria-controls="panel3-content"
               id="panel3-header"
             >
-              <TbShieldSearch /> Stéganographie
+              <Typography>
+                <TbShieldSearch /> Web Client
+              </Typography>
             </AccordionSummary>
 
             <AccordionDetails>
               <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
+                <li>HTML - Code Source</li>
+                <li>HTML - Disable Buttons</li>
+                <li>HTML - Headers</li>
+                <li>HTML - Ip Filtrage</li>
+                <li>HTML - Open Redirect</li>
+                <li>HTML - Post</li>
+                <li>HTML - Redirection Invalide</li>
+                <li>HTML - User Agent</li>
+                <li>HTML - Verb Tampering</li>
+                <li>JS - Authentification</li>
+                <li>JS - Authentification 2</li>
+                <li>JS - Obfuscation</li>
+                <li>JS - Obfuscation 2</li>
+                <li>JS - Source</li>
               </ul>
             </AccordionDetails>
           </Accordion>
           <Accordion>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel3-content"
-              id="panel3-header"
+              expandIcon={<PiArrowFatLineDownFill />}
+              aria-controls="panel4-content"
+              id="panel4-header"
             >
-              <FaNetworkWired /> Networks
+              <Typography>
+                <FaNetworkWired /> Networks
+              </Typography>
             </AccordionSummary>
 
             <AccordionDetails>
               <ul>
                 <li>
-                  <a href="networks/dnsTransfert">Dns Transfert</a>
+                  <Link to="/rootme/networks/dnsTransfert">Dns Transfert</Link>
                 </li>
                 <li>
-                  <a href="networks/ethernetFrame">Ethernet Frame</a>
+                  <Link to="/rootme/networks/ethernetFrame">
+                    Ethernet Frame
+                  </Link>
                 </li>
                 <li>
-                  <a href="networks/ftpAuthentification">Ftp Autenticate</a>
+                  <Link to="/rootme/networks/ftpAuthentification">
+                    Ftp Autenticate
+                  </Link>
                 </li>
                 <li>
-                  <a href="networks/telnetAuthentification">
+                  <Link to="/rootme/networks/telnetAuthentification">
                     Telnet Autenticate
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </AccordionDetails>
           </Accordion>
           <Accordion>
             <AccordionSummary
-              expandIcon={<FaHome />}
+              expandIcon={<PiArrowFatLineDownFill />}
               aria-controls="panel3-content"
               id="panel3-header"
-              disabled
             >
-              test
+              <Typography>
+                <GiServerRack /> Web Serveur
+              </Typography>
             </AccordionSummary>
 
             <AccordionDetails>
               <ul>
-                <li>Inactif</li>
+                <li>File Upload - Type MIME</li>
               </ul>
             </AccordionDetails>
           </Accordion>
@@ -148,6 +155,7 @@ const RootMePage = () => {
 
         <Lexical />
       </div>
+      <Footer />
     </div>
   );
 };

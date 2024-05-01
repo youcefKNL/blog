@@ -2,14 +2,14 @@ import React from "react";
 import HeaderChallenge from "../../../HeaderChallenge";
 import LayoutArticleBlog from "../../../LayoutArticleBlog";
 import Lexical from "../../../Lexical";
-import Background from "../../../Background";
+import ParticlesContainer2 from "../../../background Effect/Particles2";
 
 const Exif = () => {
   return (
     <div className="exifSolution">
-      <Background />
+      <ParticlesContainer2 />
       <HeaderChallenge />
-      <div className="blogContainer">
+      <div className="blogContainer blogPage">
         <LayoutArticleBlog classname="rootmeBackground">
           <h1>solution exif</h1>
           <p>

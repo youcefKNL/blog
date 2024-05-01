@@ -1,11 +1,8 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
-// import Test from "./test.json";
-import Test2 from "./test2.json";
-
-import EffectTsParticles from "./tsparticles2.json";
+import EffectTsParticles1 from "../../../assets/tsparticles/tsparticles1.json";
 
 const App = (props) => {
   const [init, setInit] = useState(false);
@@ -27,10 +24,10 @@ const App = (props) => {
 
   return init ? (
     <Particles
-      id="tsparticlestwo"
+      id="tsparticles"
       particlesLoaded={particlesLoaded}
-      options={EffectTsParticles}
-      className={"tsparticlestwo"}
+      options={EffectTsParticles1}
+      className={"tsparticles"}
     />
   ) : null;
 };

@@ -35,7 +35,7 @@ const LayoutArticleBlog = ({ classname: classProp, children }) => {
           changement. Merci de votre compréhension et de votre intérêt pour ce
           contenu.
         </div>
-        <div className="copyright">© Youcef - Tous droits réservés.</div>
+        <div className="copyrightBlog">© Youcef - Tous droits réservés.</div>
       </div>
     </div>
   );

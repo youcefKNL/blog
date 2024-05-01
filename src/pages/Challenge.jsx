@@ -1,74 +1,91 @@
 import React from "react";
 import HeaderChallenge from "./components/HeaderChallenge";
-import { FaHome, FaUsers, FaLaptop, FaPalette, FaCube } from "react-icons/fa";
 import Lexical from "./components/Lexical";
 import LayoutArticleBlog from "./components/LayoutArticleBlog";
-import Background from "./components/Background";
+import ParticlesContainer2 from "./components/background Effect/Particles2";
+import Footer from "./components/Footer";
+import { Link } from "react-router-dom";
+import RootmeLogo from "../assets/rootme/root-me-logo.png";
+import TryHackMeLogo from "../assets/try-hack-me/tryhackme_logo.png";
+import HackTheBox from "../assets/hack-the-box/hack-the-box.png";
+import Portswigger from "../assets/portSwigger/pngwing.com.png";
+import Vulnhub from "../assets/vulnHub/images-removebg-preview.png";
+import OverTheWire from "../assets/over-the-wire/domokitten.png";
 
 const Challenge = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
-    <section className="challengePresentation">
+    <section className="challengePresentation blogPage">
       <HeaderChallenge />
-      <Background />
+      <ParticlesContainer2 />
       <div className="blogContainer">
         <LayoutArticleBlog classname="challenge">
           <h1>
-            Exploration des Défis: <br /> Découvrez les Excitants Challenges de
-            Hacking
+            Parcours d'Exploration : <br /> Découvrez les Défis de Hacking
           </h1>
           <p>
-            Bienvenue dans l'antre de l'exploration, où les défis du hacking
-            prennent vie et où l'aventure numérique n'attend que vous pour être
-            explorée! Plongez dans notre collection variée de challenges et CTFs
-            (Capture The Flags) accomplis avec brio, et découvrez un monde où
-            l'imagination rencontre la technique, où chaque obstacle franchi est
-            une victoire à célébrer. Dans cette page, nous vous invitons à
-            parcourir notre voyage, à travers les différents terrains des
-            plateformes renommées telles que Root-Me, VulnHub, Try Hack Me, Hack
-            The Box et PortSwigger. Chaque plateforme offre son propre défi
-            unique, son énigme à résoudre, et sa récompense à gagner. Que vous
-            soyez un novice curieux, un amateur avide d'apprentissage ou un
-            expert chevronné à la recherche de nouveaux défis, vous trouverez
-            ici une expérience adaptée à votre niveau et à votre passion pour le
-            hacking éthique. Nos challenges sont conçus pour vous défier, vous
-            inspirer et vous divertir, tout en renforçant vos compétences
-            techniques et votre créativité. Rejoignez-nous dans cette aventure
-            virtuelle, où chaque ligne de code, chaque exploit découvert, et
-            chaque CTF remporté, est une étape de plus dans notre quête commune
-            pour la connaissance et l'exploration. Préparez-vous à repousser vos
-            limites, à surmonter les obstacles, et à célébrer ensemble nos
-            succès dans le monde fascinant du hacking éthique. Que l'exploration
-            commence!
+            Bienvenue dans cet espace d'apprentissage, où je partage ma road map
+            vers la maîtrise du hacking éthique. Explorez avec moi les divers
+            défis et CTFs (Capture The Flags) que j'ai relevés, où chaque succès
+            est une victoire modeste mais significative. Parcourez mes notes
+            personnelles, fruit de mes expériences sur des plateformes telles
+            que Root-Me, VulnHub, Try Hack Me, Hack The Box et PortSwigger.
+            Rejoignez-moi dans cette aventure où chaque pas vers la découverte
+            est une récompense en soi. Ensemble, franchissons les obstacles,
+            partageons nos réussites et cultivons notre passion pour le hacking
+            éthique. Laissez-nous commencer ce voyage ensemble !
           </p>
 
-          <h2>
-            Les différentes plateformes d'apprentissage de l'éthical hacking
-          </h2>
-          <ul>
-            <li
-              onClick={() => {
-                window.location.href = "/rootme";
-              }}
-            >
-              <FaHome /> root-me
+          <h2>Les solutions des différentes plateformes d'apprentissage</h2>
+          <ul className="challengeList">
+            <li>
+              <img src={RootmeLogo} alt="logo de root me" />
+              <Link to="/rootme" onClick={scrollToTop}>
+                <span> ROOT ME</span>
+              </Link>
+            </li>
+
+            <li>
+              <img src={TryHackMeLogo} alt="logo de try hack me" />
+              <Link to="/#" onClick={scrollToTop}>
+                <span> TRY HACK ME</span>
+              </Link>
             </li>
             <li>
-              <FaUsers /> try hack me
+              <img src={HackTheBox} alt="logo de hack the box" />
+              <Link to="/#" onClick={scrollToTop}>
+                <span> HACK THE BOX</span>
+              </Link>
             </li>
             <li>
-              <FaLaptop /> hack the box
+              <img src={Portswigger} alt="logo de portswigger" />
+              <Link to="/#" onClick={scrollToTop}>
+                <span> PORTSWIGGER</span>
+              </Link>
             </li>
             <li>
-              <FaPalette /> port swigger
+              <img src={Vulnhub} alt="logo de vulnhub" />
+              <Link to="/#" onClick={scrollToTop}>
+                <span> VULNHUB</span>
+              </Link>
             </li>
             <li>
-              <FaCube /> VulnHub
+              <img src={OverTheWire} alt="logo de over the wire" />
+              <Link to="/#" onClick={scrollToTop}>
+                <span> OVER THE WIRE</span>
+              </Link>
             </li>
           </ul>
         </LayoutArticleBlog>
 
         <Lexical />
       </div>
+      <Footer />
     </section>
   );
 };

@@ -9,14 +9,15 @@ import photo1 from "../../../../../assets/rootme/network/ethernet-Frame/Capture 
 import photo2 from "../../../../../assets/rootme/network/ethernet-Frame/Capture d’écran du 2024-04-24 21-29-20.png";
 import photo3 from "../../../../../assets/rootme/network/ethernet-Frame/Capture d’écran du 2024-04-24 21-40-45.png";
 import photo4 from "../../../../../assets/rootme/network/ethernet-Frame/Capture d’écran du 2024-04-24 21-42-59.png";
-import Background from "../../../Background";
-import Avatar from "../../../../../assets/profile-pic.png";
+import ParticlesContainer2 from "../../../background Effect/Particles2";
+
+import Footer from "../../../Footer";
 
 const EthernetFrame = () => {
   return (
-    <div className="ethernetFrame">
+    <div className="ethernetFrame blogPage">
       <HeaderChallenge />
-      <Background />
+      <ParticlesContainer2 />
       <div className="blogContainer">
         <LayoutArticleBlog classname="rootmeBackground">
           <h1>Solution ETHERNET - frame</h1>
@@ -60,6 +61,7 @@ const EthernetFrame = () => {
 
         <Lexical />
       </div>
+      <Footer />
     </div>
   );
 };

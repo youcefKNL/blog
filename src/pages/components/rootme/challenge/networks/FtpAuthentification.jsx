@@ -9,13 +9,15 @@ import photo1 from "../../../../../assets/rootme/network/Ftp-Authentification/Ca
 import photo2 from "../../../../../assets/rootme/network/Ftp-Authentification/Capture d'écran 2024-04-25 170235.png";
 import photo3 from "../../../../../assets/rootme/network/Ftp-Authentification/Capture d'écran 2024-04-25 170323.png";
 import photo4 from "../../../../../assets/rootme/network/Ftp-Authentification/Capture d'écran 2024-04-25 171613.png";
-import Background from "../../../Background";
+import ParticlesContainer2 from "../../../background Effect/Particles2";
+
+import Footer from "../../../Footer";
 
 const EthernetFrame = () => {
   return (
-    <div className="ftpAuthentification">
+    <div className="ftpAuthentification blogPage">
       <HeaderChallenge />
-      <Background />
+      <ParticlesContainer2 />
       <div className="blogContainer">
         <LayoutArticleBlog classname="rootmeBackground">
           <h1>Authentification FTP</h1>
@@ -50,6 +52,7 @@ const EthernetFrame = () => {
 
         <Lexical />
       </div>
+      <Footer />
     </div>
   );
 };

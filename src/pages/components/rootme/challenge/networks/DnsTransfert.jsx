@@ -8,14 +8,16 @@ import { Link } from "react-router-dom";
 import photo3 from "../../../../../assets/rootme/network/DNS-zoneTransfert/Capture d'écran 2024-04-25 205443.png";
 import photo1 from "../../../../../assets/rootme/network/DNS-zoneTransfert/Capture d'écran 2024-04-25 205513.png";
 import photo2 from "../../../../../assets/rootme/network/DNS-zoneTransfert/carbon.png";
-// import photo4 from "../../../../../assets/rootme/network/Ftp-Authentification/Capture d'écran 2024-04-25 171613.png";
-import Background from "../../../Background";
+
+import ParticlesContainer2 from "../../../background Effect/Particles2";
+
+import Footer from "../../../Footer";
 
 const EthernetFrame = () => {
   return (
-    <div className="dnsTransfert">
+    <div className="dnsTransfert blogPage">
       <HeaderChallenge />
-      <Background />
+      <ParticlesContainer2 />
       <div className="blogContainer">
         <LayoutArticleBlog classname="rootmeBackground">
           <h1>DNS Transfert</h1>
@@ -101,6 +103,7 @@ const EthernetFrame = () => {
 
         <Lexical />
       </div>
+      <Footer />
     </div>
   );
 };

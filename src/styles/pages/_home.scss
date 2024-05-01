@@ -126,6 +126,7 @@
 
 
 
+
   h2 {
     // height: 500px;
     color: $Textcolor2;
@@ -135,7 +136,7 @@
 
   @include center;
   flex-direction: column;
-  padding: 1% 10%;
+  padding: 0 10%;
   // overflow: hidden;
 
 
@@ -147,7 +148,7 @@
     grid-auto-rows: auto;
     grid-gap: 10%;
     width: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
     max-width: 1200px;
 
     @media screen and (max-width:900px) {

@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaGithub, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
-import Background from "./components/Background";
-import ParticlesContainer from "./components/Particles";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
+import ParticlesContainer from "./components/background Effect/Particles";
+import ParticlesContainer2 from "./components/background Effect/Particles2";
+
+import Footer from "./components/Footer";
 
 const Home = () => {
   const latestArticles = [
@@ -54,9 +57,9 @@ const Home = () => {
         </div>
       </div>
       <div className="homeArticles">
-        <Background />
+        <ParticlesContainer2 />
 
-        <h2>Articles récents</h2>
+        <h2>Posts récents</h2>
         <div className="homeArticlesContainer">
           {latestArticles.map((article, index) => (
             <div key={index} className="homeCardArticle">
@@ -70,10 +73,8 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <div className="copyright">
-          © Khenichil Youcef 2024. Tous droits réservés.
-        </div>
       </div>
+      <Footer />
     </main>
   );
 };
