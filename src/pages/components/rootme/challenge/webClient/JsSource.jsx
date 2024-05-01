@@ -28,7 +28,7 @@ const JsSource = () => {
             Vous trouverez l'énoncé et le challenge à cette adresse <br />
             <span>
               <Link
-                to="https://www.root-me.org/en/Challenges/Web-Client/Javascript-Obfuscation-2"
+                to="https://www.root-me.org/en/Challenges/Web-Client/Javascript-Source"
                 target="_blank"
               >
                 Root-ME <FaUserSecret />
@@ -36,30 +36,29 @@ const JsSource = () => {
             </span>
             <br />
             Au début du challenge, nous constatons que nous devons entrer un mot
-            de passe dans la pop-up. <br />
-            En inspectant la console, nous trouvons un code qui compare un mot
-            de passe écrit en clair mais encodé :
+            de passe dans la pop-up.
             <img
               src={photo1}
-              alt="Capture d'écran du challenge Javascript source Root ME"
-            />
-            Ce code est encodé avec une méthode de JavaScript "escape" que nous
-            allons décoder avec la méthode "unescape" et qui va nous donner une
-            suite de nombres Unicode qui vont être associés à des caractères
-            avec la méthode JavaScript "String.fromCharCode()".
-            <img
-              src={photo4}
               alt="Capture d'écran du challenge Javascript source Root ME"
             />
             <img
               src={photo2}
               alt="Capture d'écran du challenge Javascript source Root ME"
             />
-            Bingo, nous avons notre Flag !
+            En inspectant la console, nous trouvons un code "login()" qui est
+            chargé au lancement de la page "onLoad()" :
             <img
               src={photo3}
               alt="Capture d'écran du challenge Javascript source Root ME"
             />
+            En inspectant le script, nous apercevons que le code compare
+            l'entrée de l'input avec une variable qui est écrite en clair et non
+            codée :
+            <img
+              src={photo4}
+              alt="Capture d'écran du challenge Javascript source Root ME"
+            />
+            Bingo, nous avons notre Flag !
             <img
               src={photo5}
               alt="Capture d'écran du challenge Javascript source Root ME"

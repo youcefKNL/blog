@@ -26,3 +26,58 @@
 //   margin: 0;
 //   z-index: 0
 // }
+
+
+
+.tetrisLoader {
+  display: flex;
+  align-items: center;
+  background: red;
+  height: 100vh;
+  width: 100%;
+
+
+
+
+  .circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 20px;
+  }
+
+  .blue {
+    background-color: #4285F5;
+  }
+
+  .red {
+    background-color: #EA4436;
+  }
+
+  .green {
+    background-color: #34A952;
+  }
+
+  .yellow {
+    background-color: #FBBD06;
+  }
+}
+
+.grid {
+  position: relative;
+  width: calc(10 * 15px);
+  height: calc(12 * 15px);
+}
+
+.base {
+  width: calc(10 * 15px);
+  height: 10px;
+  background-color: #c6d4d7;
+  margin-bottom: calc(8 * 15px);
+}
+
+.piece {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

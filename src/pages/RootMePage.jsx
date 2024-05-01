@@ -26,15 +26,19 @@ import dataLinksWebServer from "./components/rootme/routes/data/dataLinksWebServ
 const scrollUp = () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth",
+    // behavior: "smooth",
   });
 };
 
-const RootMePage = () => {
+//loading
+
+const RootMePage = ({ isVisible }) => {
+  //Fonction scroll Top Windows au Link
   const { id } = useParams();
   useEffect(() => {
     scrollUp();
   }, [id]);
+
   return (
     <div className="rootmePresentation">
       <HeaderChallenge />
