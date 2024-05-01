@@ -11,7 +11,10 @@ import Challenge from "./pages/Challenge";
 import RootMePage from "./pages/RootMePage";
 import Exif from "./pages/components/rootme/challenge/stéganographie/Exif";
 
-import IdNetwork from "./pages/components/rootme/challenge/networks/IdNetwork";
+import IdNetwork from "./pages/components/rootme/routes/IdNetwork";
+import IdCryptoAnalysis from "./pages/components/rootme/routes/IdCryptoAnalysis";
+import IdWebClient from "./pages/components/rootme/routes/IdWebClient";
+import IdWebServer from "./pages/components/rootme/routes/IdWebServer";
 
 const App = () => {
   const location = useLocation();
@@ -24,6 +27,12 @@ const App = () => {
         <Route path="/rootme" element={<RootMePage />} />
         <Route path="/rootme/exif" element={<Exif />} />
         <Route path="/rootme/networks/:id" element={<IdNetwork />} />
+        <Route
+          path="/rootme/crypto-analysis/:id"
+          element={<IdCryptoAnalysis />}
+        />
+        <Route path="/rootme/web-client/:id" element={<IdWebClient />} />
+        <Route path="/rootme/web-server/:id" element={<IdWebServer />} />
       </Routes>
     </AnimatePresence>
   );

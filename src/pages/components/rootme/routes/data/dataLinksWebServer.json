@@ -1,0 +1,34 @@
+[
+  {
+    "id": "htmlCodeSource",
+    "title": "HTML - Code Source"
+  },
+  {
+    "id": "htmlHeaders",
+    "title": "HTML - Headers"
+  },
+  {
+    "id": "htmlIpFiltrage",
+    "title": "HTML - Ip Filtrage"
+  },
+  {
+    "id": "htmlOpenRedirect",
+    "title": "HTML - Open Redirect"
+  },
+  {
+    "id": "htmlPost",
+    "title": "HTML - Post"
+  },
+  {
+    "id": "htmlRedirectionInvalide",
+    "title": "HTML - Redirection Invalide"
+  },
+  {
+    "id": "htmlUserAgent",
+    "title": "HTML - User Agent"
+  },
+  {
+    "id": "htmlVerbTampering",
+    "title": "HTML - Verb Tampering"
+  }
+]

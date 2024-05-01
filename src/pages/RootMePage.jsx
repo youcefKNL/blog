@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import HeaderChallenge from "./components/HeaderChallenge";
 import Lexical from "./components/Lexical";
@@ -15,11 +15,26 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import { PiArrowFatLineDownFill } from "react-icons/pi";
 import { FaFontAwesomeFlag } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Footer from "./components/Footer";
 import ParticlesContainer2 from "./components/background Effect/Particles2";
+import dataLinksNetworks from "./components/rootme/routes/data/dataLinksNetworks.json";
+import dataLinksCryptoAnalysis from "./components/rootme/routes/data/dataLinksCryptoAnalysis.json";
+import dataLinksWebClient from "./components/rootme/routes/data/dataLinksWebClient.json";
+import dataLinksWebServer from "./components/rootme/routes/data/dataLinksWebServer.json";
+
+const scrollUp = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 
 const RootMePage = () => {
+  const { id } = useParams();
+  useEffect(() => {
+    scrollUp();
+  }, [id]);
   return (
     <div className="rootmePresentation">
       <HeaderChallenge />
@@ -35,7 +50,7 @@ const RootMePage = () => {
           </p>
           {/* Liste des challenges */}
           <h2>Liste des Challenges</h2>
-
+          {/* ****************************CTF********************************* */}
           <Accordion>
             <AccordionSummary
               expandIcon={<PiArrowFatLineDownFill />}
@@ -54,6 +69,7 @@ const RootMePage = () => {
               eget.
             </AccordionDetails>
           </Accordion>
+          {/* ****************************CRYPTO********************************* */}
           <Accordion>
             <AccordionSummary
               expandIcon={<PiArrowFatLineDownFill />}
@@ -66,10 +82,20 @@ const RootMePage = () => {
             </AccordionSummary>
             <AccordionDetails>
               <ul>
-                <li>Shift Cipher</li>
+                {dataLinksCryptoAnalysis.map((link) => (
+                  <li key={link.id}>
+                    <Link
+                      to={`/rootme/crypto-analysis/${link.id}`}
+                      onClick={scrollUp}
+                    >
+                      {link.title}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </AccordionDetails>
           </Accordion>
+          {/* ****************************WEB CLIENT********************************* */}
           <Accordion>
             <AccordionSummary
               expandIcon={<PiArrowFatLineDownFill />}
@@ -83,23 +109,20 @@ const RootMePage = () => {
 
             <AccordionDetails>
               <ul>
-                <li>HTML - Code Source</li>
-                <li>HTML - Disable Buttons</li>
-                <li>HTML - Headers</li>
-                <li>HTML - Ip Filtrage</li>
-                <li>HTML - Open Redirect</li>
-                <li>HTML - Post</li>
-                <li>HTML - Redirection Invalide</li>
-                <li>HTML - User Agent</li>
-                <li>HTML - Verb Tampering</li>
-                <li>JS - Authentification</li>
-                <li>JS - Authentification 2</li>
-                <li>JS - Obfuscation</li>
-                <li>JS - Obfuscation 2</li>
-                <li>JS - Source</li>
+                {dataLinksWebClient.map((link) => (
+                  <li key={link.id}>
+                    <Link
+                      to={`/rootme/web-client/${link.id}`}
+                      onClick={scrollUp}
+                    >
+                      {link.title}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </AccordionDetails>
           </Accordion>
+          {/* ****************************NETWORK********************************* */}
           <Accordion>
             <AccordionSummary
               expandIcon={<PiArrowFatLineDownFill />}
@@ -113,27 +136,18 @@ const RootMePage = () => {
 
             <AccordionDetails>
               <ul>
-                <li>
-                  <Link to="/rootme/networks/dnsTransfert">Dns Transfert</Link>
-                </li>
-                <li>
-                  <Link to="/rootme/networks/ethernetFrame">
-                    Ethernet Frame
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/rootme/networks/ftpAuthentification">
-                    Ftp Autenticate
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/rootme/networks/telnetAuthentification">
-                    Telnet Autenticate
-                  </Link>
-                </li>
+                {dataLinksNetworks.map((link) => (
+                  <li key={link.id}>
+                    <Link to={`/rootme/networks/${link.id}`} onClick={scrollUp}>
+                      {link.title}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </AccordionDetails>
           </Accordion>
+          {/* ****************************WEB SERVEUR********************************* */}
+
           <Accordion>
             <AccordionSummary
               expandIcon={<PiArrowFatLineDownFill />}
@@ -147,7 +161,16 @@ const RootMePage = () => {
 
             <AccordionDetails>
               <ul>
-                <li>File Upload - Type MIME</li>
+                {dataLinksWebServer.map((link) => (
+                  <li key={link.id}>
+                    <Link
+                      to={`/rootme/web-server/${link.id}`}
+                      onClick={scrollUp}
+                    >
+                      {link.title}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </AccordionDetails>
           </Accordion>

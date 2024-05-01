@@ -1,0 +1,27 @@
+[
+  {
+    "id": "htmlDisableButtons",
+    "title": "HTML - Disable Buttons"
+  },
+
+  {
+    "id": "jsAuthentification",
+    "title": "JS - Authentification"
+  },
+  {
+    "id": "jsAuthentification2",
+    "title": "JS - Authentification 2"
+  },
+  {
+    "id": "jsObfuscation",
+    "title": "JS - Obfuscation"
+  },
+  {
+    "id": "jsObfuscation2",
+    "title": "JS - Obfuscation 2"
+  },
+  {
+    "id": "jsSource",
+    "title": "JS - Source"
+  }
+]

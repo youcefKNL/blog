@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaCodepen } from "react-icons/fa";
 
 import ParticlesContainer from "./components/background Effect/Particles";
 import ParticlesContainer2 from "./components/background Effect/Particles2";
@@ -53,6 +53,9 @@ const Home = () => {
           </Link>
           <Link to="https://github.com/youcefKNL" target="_blank">
             <FaLinkedin />
+          </Link>
+          <Link to="https://codepen.io/youcefKNL/pens/public" target="_blank">
+            <FaCodepen />
           </Link>
         </div>
       </div>

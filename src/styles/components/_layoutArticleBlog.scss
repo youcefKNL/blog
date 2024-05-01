@@ -50,6 +50,7 @@
   background: ivory;
   z-index: 2;
   font-size: 1.2em;
+  padding-bottom: 200px;
 
   h1 {
     margin-top: 200px;
@@ -153,7 +154,8 @@
     left: 0;
     bottom: 0;
     background: $Color2;
-    height: 200px;
+    max-height: 200px;
+
 
 
 
@@ -206,4 +208,9 @@
 .blogPage {
   position: relative;
   overflow: hidden;
+
+}
+
+.solution {
+  width: 100%;
 }
