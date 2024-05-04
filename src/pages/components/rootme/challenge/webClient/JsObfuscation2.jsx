@@ -5,10 +5,10 @@ import Lexical from "../../../Lexical";
 import LayoutArticleBlog from "../../../LayoutArticleBlog";
 import HeaderChallenge from "../../../HeaderChallenge";
 import { Link } from "react-router-dom";
-import photo1 from "../../../../../assets/rootme/Web-Client/Js-Obfuscation 2/1.png";
-import photo2 from "../../../../../assets/rootme/Web-Client/Js-Obfuscation 2/2.png";
-import photo3 from "../../../../../assets/rootme/Web-Client/Js-Obfuscation 2/3.png";
-import photo4 from "../../../../../assets/rootme/Web-Client/Js-Obfuscation 2/4.png";
+import photo1 from "../../../../../assets/rootme/Web-Client/Js-Obfuscation 2/1.webp";
+import photo2 from "../../../../../assets/rootme/Web-Client/Js-Obfuscation 2/2.webp";
+import photo3 from "../../../../../assets/rootme/Web-Client/Js-Obfuscation 2/3.webp";
+import photo4 from "../../../../../assets/rootme/Web-Client/Js-Obfuscation 2/4.webp";
 
 import ParticlesContainer2 from "../../../background Effect/Particles2";
 

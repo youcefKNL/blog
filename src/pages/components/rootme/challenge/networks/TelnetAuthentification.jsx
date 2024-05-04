@@ -5,14 +5,14 @@ import Lexical from "../../../Lexical";
 import LayoutArticleBlog from "../../../LayoutArticleBlog";
 import HeaderChallenge from "../../../HeaderChallenge";
 import { Link } from "react-router-dom";
-import photo1 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture d'écran 2024-04-25 172629.png";
-import photo2 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture d'écran 2024-04-25 175939-LOGIN.png";
-import photo3 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture d'écran 2024-04-25 180357.png";
-import photo4 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture d'écran 2024-04-25 180042-F.png";
-import photo5 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture d'écran 2024-04-25 180054-A.png";
-import photo6 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture d'écran 2024-04-25 180111-K.png";
-import photo7 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture d'écran 2024-04-25 180125-E.png";
-import photo8 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture d'écran 2024-04-25 180224-PSWD.png";
+import photo1 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture décran 2024-04-25 172629.webp";
+import photo2 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture décran 2024-04-25 175939-LOGIN.webp";
+import photo3 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture décran 2024-04-25 180357.webp";
+import photo4 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture décran 2024-04-25 180042-F.webp";
+import photo5 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture décran 2024-04-25 180054-A.webp";
+import photo6 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture décran 2024-04-25 180111-K.webp";
+import photo7 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture décran 2024-04-25 180125-E.webp";
+import photo8 from "../../../../../assets/rootme/network/Telnet-Authentification/Capture décran 2024-04-25 180224-PSWD.webp";
 
 import ParticlesContainer2 from "../../../background Effect/Particles2";
 

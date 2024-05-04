@@ -5,10 +5,10 @@ import Lexical from "../../../Lexical";
 import LayoutArticleBlog from "../../../LayoutArticleBlog";
 import HeaderChallenge from "../../../HeaderChallenge";
 import { Link } from "react-router-dom";
-import photo1 from "../../../../../assets/rootme/network/ethernet-Frame/Capture d’écran du 2024-04-24 20-53-24.png";
-import photo2 from "../../../../../assets/rootme/network/ethernet-Frame/Capture d’écran du 2024-04-24 21-29-20.png";
-import photo3 from "../../../../../assets/rootme/network/ethernet-Frame/Capture d’écran du 2024-04-24 21-40-45.png";
-import photo4 from "../../../../../assets/rootme/network/ethernet-Frame/Capture d’écran du 2024-04-24 21-42-59.png";
+import photo1 from "../../../../../assets/rootme/network/ethernet-Frame/Capture d’écran du 2024-04-24 20-53-24.webp";
+import photo2 from "../../../../../assets/rootme/network/ethernet-Frame/Capture d’écran du 2024-04-24 21-29-20.webp";
+import photo3 from "../../../../../assets/rootme/network/ethernet-Frame/Capture d’écran du 2024-04-24 21-40-45.webp";
+import photo4 from "../../../../../assets/rootme/network/ethernet-Frame/Capture d’écran du 2024-04-24 21-42-59.webp";
 import ParticlesContainer2 from "../../../background Effect/Particles2";
 
 import Footer from "../../../Footer";

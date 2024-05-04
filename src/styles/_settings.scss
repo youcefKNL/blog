@@ -27,7 +27,9 @@ footer {
   z-index: 5;
   position: relative;
 
-
+  @media screen and (max-width: 600px) {
+    font-size: 0.8em;
+  }
 }
 
 .copyrightRootme {
@@ -47,6 +49,8 @@ footer {
   border-bottom: 2px solid $Color2;
   transition: 0.3s ease-in-out;
 
+
+
   p {
     font-size: 1em !important;
     width: 100%;
@@ -57,6 +61,13 @@ footer {
 
   ul {
     padding-left: 15%;
+
+    @media screen and (max-width: 500px) {
+
+      padding-left: 0;
+
+
+    }
   }
 
   .Mui-expanded {
@@ -73,6 +84,16 @@ footer {
     color: none;
     text-decoration: none;
     user-select: none;
+    font-size: 0.8em !important;
+    padding-left: 5%;
+
+    @media screen and (max-width: 500px) {
+      font-size: 0.7em !important;
+      padding-left: 0;
+
+
+    }
+
 
 
   }
@@ -80,6 +101,8 @@ footer {
   a:visited {
     color: none;
     text-decoration: none;
+
+
 
   }
 
@@ -90,6 +113,15 @@ footer {
 
   .css-eqpfi5-MuiAccordionSummary-content {
     align-items: center;
+
+    p {
+      font-size: 1em !important;
+
+      @media screen and (max-width: 500px) {
+        font-size: 0.7em !important;
+      }
+
+    }
   }
 
   .MuiButtonBase-root {
@@ -97,7 +129,11 @@ footer {
     padding: 0 !important;
     width: 100% !important;
   }
+
+
 }
+
+
 
 //****************************************************//
 li {

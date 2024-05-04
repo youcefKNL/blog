@@ -5,9 +5,9 @@ import Lexical from "../../../Lexical";
 import LayoutArticleBlog from "../../../LayoutArticleBlog";
 import HeaderChallenge from "../../../HeaderChallenge";
 import { Link } from "react-router-dom";
-import photo3 from "../../../../../assets/rootme/network/DNS-zoneTransfert/Capture d'écran 2024-04-25 205443.png";
-import photo1 from "../../../../../assets/rootme/network/DNS-zoneTransfert/Capture d'écran 2024-04-25 205513.png";
-import photo2 from "../../../../../assets/rootme/network/DNS-zoneTransfert/carbon.png";
+import photo3 from "../../../../../assets/rootme/network/DNS-zoneTransfert/Capture d'écran 2024-04-25 205443.webp";
+import photo1 from "../../../../../assets/rootme/network/DNS-zoneTransfert/Capture d'écran 2024-04-25 205513.webp";
+import photo2 from "../../../../../assets/rootme/network/DNS-zoneTransfert/carbon.webp";
 
 import ParticlesContainer2 from "../../../background Effect/Particles2";
 

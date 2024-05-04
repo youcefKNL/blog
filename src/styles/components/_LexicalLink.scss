@@ -9,33 +9,47 @@
   // margin-right: 5%;
   transition: 0.3s ease-in-out;
   min-height: 25vh;
-  background: ivory;
-  z-index: 1;
+  background: $Textcolor2;
+  mix-blend-mode: color-dodge;
+  z-index: 10;
 
-  //   @media screen and (max-width: 1400px) {
-  //     width: 25%;
-  //   }
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+
   h2 {
     text-transform: capitalize;
     padding-bottom: 10%;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: none;
+
+    @media screen and (max-width: 700px) {
+      font-size: 1em;
+    }
   }
 
   ul {
-    transition: 3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    font-size: 1em;
 
-    .parentNode {
-      padding: 3% 0;
-      transition: 0.3s ease-in-out;
 
-      a &:hover {
-        cursor: pointer;
-      }
 
-      ul>li {
-        pointer-events: none;
-        padding: 5% 0 0 10%;
+    @media screen and (max-width: 700px) {
+      font-size: 0.8em;
+    }
+
+    li {
+      padding-left: 5%;
+      padding-bottom: 5%;
+
+      span {
+        text-transform: capitalize;
+
+
       }
     }
+
   }
 }
 

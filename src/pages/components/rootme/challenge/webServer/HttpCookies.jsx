@@ -5,14 +5,14 @@ import Lexical from "../../../Lexical";
 import LayoutArticleBlog from "../../../LayoutArticleBlog";
 import HeaderChallenge from "../../../HeaderChallenge";
 import { Link } from "react-router-dom";
-import photo1 from "../../../../../assets/rootme/Web-Serveur/HTTP-Cookies/1.png";
-import photo2 from "../../../../../assets/rootme/Web-Serveur/HTTP-Cookies/2.png";
-import photo3 from "../../../../../assets/rootme/Web-Serveur/HTTP-Cookies/3.png";
-import photo4 from "../../../../../assets/rootme/Web-Serveur/HTTP-Cookies/4.png";
-import photo5 from "../../../../../assets/rootme/Web-Serveur/HTTP-Cookies/5.png";
-import photo6 from "../../../../../assets/rootme/Web-Serveur/HTTP-Cookies/6.png";
-import photo7 from "../../../../../assets/rootme/Web-Serveur/HTTP-Cookies/7.png";
-import photo8 from "../../../../../assets/rootme/Web-Serveur/HTTP-Cookies/8.png";
+import photo1 from "../../../../../assets/rootme/Web-Serveur/HTTP-Cookies/1.webp";
+import photo2 from "../../../../../assets/rootme/Web-Serveur/HTTP-Cookies/2.webp";
+import photo3 from "../../../../../assets/rootme/Web-Serveur/HTTP-Cookies/3.webp";
+import photo4 from "../../../../../assets/rootme/Web-Serveur/HTTP-Cookies/4.webp";
+import photo5 from "../../../../../assets/rootme/Web-Serveur/HTTP-Cookies/5.webp";
+import photo6 from "../../../../../assets/rootme/Web-Serveur/HTTP-Cookies/6.webp";
+import photo7 from "../../../../../assets/rootme/Web-Serveur/HTTP-Cookies/7.webp";
+import photo8 from "../../../../../assets/rootme/Web-Serveur/HTTP-Cookies/8.webp";
 
 import ParticlesContainer2 from "../../../background Effect/Particles2";
 

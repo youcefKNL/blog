@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { FaHome, FaFlag, FaInfoCircle } from "react-icons/fa";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,7 +29,7 @@ const Header = () => {
             title="Home"
           >
             <li>
-              <p>Accueil</p> <i className="fa-solid fa-house"></i>
+              <p>Accueil</p> <FaHome />
             </li>
           </NavLink>
 
@@ -38,7 +39,7 @@ const Header = () => {
             title="Challenge"
           >
             <li>
-              <p>Challenge</p> <i className="fa-solid fa-image"></i>
+              <p>Challenge</p> <FaFlag />
             </li>
           </NavLink>
 
@@ -48,7 +49,7 @@ const Header = () => {
             title="About"
           >
             <li>
-              <p>À Propos</p> <i className="fa-solid fa-circle-info"></i>
+              <p>À Propos</p> <FaInfoCircle />
             </li>
           </NavLink>
         </ul>

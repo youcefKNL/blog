@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Lexical = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,19 +17,10 @@ const Lexical = () => {
     };
   }, []);
 
-  //Liste dépliante
-  const [isOpen, setIsOpen] = useState({
-    RootMe: false,
-    VulnHub: false,
-    TryHackMe: false,
-    HackTheBox: false,
-    PortSwigger: false,
-  });
-
-  const toggleSubMenu = (menuName) => {
-    setIsOpen({
-      ...isOpen,
-      [menuName]: !isOpen[menuName],
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
     });
   };
 
@@ -39,51 +31,37 @@ const Lexical = () => {
       }
     >
       <h2>table des matières</h2>
-      <ul>
-        <li onClick={() => toggleSubMenu("RootMe")} className="parentNode">
-          Root-Me
-          {isOpen["RootMe"] && (
-            <ul>
-              <li>Challenge</li>
-              <li>CTF</li>
-            </ul>
-          )}
+      <ul className="challengeList">
+        <li>
+          <Link to="/rootme" onClick={scrollToTop}>
+            <span> root me</span>
+          </Link>
         </li>
-        <li onClick={() => toggleSubMenu("VulnHub")} className="parentNode">
-          VulnHub
-          {isOpen["VulnHub"] && (
-            <ul>
-              <li>Challenge</li>
-              <li>CTF</li>
-            </ul>
-          )}
+
+        <li>
+          <Link to="/#" onClick={scrollToTop}>
+            <span> try hack me</span>
+          </Link>
         </li>
-        <li onClick={() => toggleSubMenu("TryHackMe")} className="parentNode">
-          Try Hack Me
-          {isOpen["TryHackMe"] && (
-            <ul>
-              <li>Challenge</li>
-              <li>CTF</li>
-            </ul>
-          )}
+        <li>
+          <Link to="/#" onClick={scrollToTop}>
+            <span> hack the box</span>
+          </Link>
         </li>
-        <li onClick={() => toggleSubMenu("HackTheBox")} className="parentNode">
-          Hack The Box
-          {isOpen["HackTheBox"] && (
-            <ul>
-              <li>Challenge</li>
-              <li>CTF</li>
-            </ul>
-          )}
+        <li>
+          <Link to="/#" onClick={scrollToTop}>
+            <span> portswigger</span>
+          </Link>
         </li>
-        <li onClick={() => toggleSubMenu("PortSwigger")} className="parentNode">
-          PortSwigger
-          {isOpen["PortSwigger"] && (
-            <ul>
-              <li className="childrenNode">Challenge</li>
-              <li className="childrenNode">CTF</li>
-            </ul>
-          )}
+        <li>
+          <Link to="/#" onClick={scrollToTop}>
+            <span> vulnhub</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/#" onClick={scrollToTop}>
+            <span> over the wire</span>
+          </Link>
         </li>
       </ul>
     </aside>

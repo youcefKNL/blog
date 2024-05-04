@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaCodepen } from "react-icons/fa";
-import Avatar from "../../assets/profile-pic.png";
+import Avatar from "../../assets/profile-pic.jpg";
 import { Link } from "react-router-dom";
 
 const LayoutArticleBlog = ({ classname: classProp, children }) => {
