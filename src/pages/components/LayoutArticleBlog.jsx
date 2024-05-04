@@ -1,6 +1,7 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaCodepen } from "react-icons/fa";
 import Avatar from "../../assets/profile-pic.png";
+import { Link } from "react-router-dom";
 
 const LayoutArticleBlog = ({ classname: classProp, children }) => {
   return (
@@ -17,23 +18,24 @@ const LayoutArticleBlog = ({ classname: classProp, children }) => {
       </span>
       <div className="finalArticles">
         <div className="socialLink">
-          <a href="Lien vers votre profil LinkedIn">
-            <FaLinkedin />
-          </a>
-          <a href="Lien vers votre profil GitHub">
+          <Link to="https://github.com/youcefKNL" target="_blank">
             <FaGithub />
-          </a>
+          </Link>
+          <Link to="https://www.linkedin.com/in/youcef-knl/" target="_blank">
+            <FaLinkedin />
+          </Link>
+          <Link to="https://codepen.io/youcefKNL/pens/public" target="_blank">
+            <FaCodepen />
+          </Link>
         </div>
 
         <div className="disclaimer">
-          Disclaimer: <br />
-          Merci d'avoir parcouru cet article. N'hésitez pas à me contacter sur
-          LinkedIn ou GitHub pour discuter davantage. Je suis conscient que des
-          erreurs peuvent s'être glissées dans ce contenu, étant donné que je
-          suis encore en phase d'apprentissage. Il existe différentes manières
-          d'atteindre un objectif, et les informations peuvent être sujettes à
-          changement. Merci de votre compréhension et de votre intérêt pour ce
-          contenu.
+          🚨 Disclaimer 📢: <br />
+          Ces notes sont personnelles et constituent un espace où je consigne
+          mes réflexions et mon apprentissage. Elles ne sont pas destinées à
+          être référencées sur Internet, et aucun robot d'indexation n'est
+          autorisé à les parcourir pour les inclure dans leur moteur de
+          recherche.
         </div>
         <div className="copyrightBlog">© Youcef - Tous droits réservés.</div>
       </div>

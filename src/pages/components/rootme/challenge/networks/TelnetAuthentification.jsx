@@ -62,7 +62,11 @@ const EthernetFrame = () => {
             Faites de même pour récupérer le password. <br /> Une fois le
             password récupéré, on l'entre pour voir s'il correspond au Flag
             attendu.
-            <img src={photo3} alt="Capture d'écran" />
+            <img
+              src={photo3}
+              alt="Capture d'écran"
+              style={{ maxWidth: "450px", important: "true" }}
+            />
           </div>
         </LayoutArticleBlog>
 

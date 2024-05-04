@@ -9,26 +9,34 @@
   },
   {
     "id": "htmlIpFiltrage",
-    "title": "HTML - Ip Filtrage"
+    "title": "HTTP - Ip Filtrage"
   },
   {
     "id": "htmlOpenRedirect",
-    "title": "HTML - Open Redirect"
+    "title": "HTTP - Open Redirect"
   },
   {
-    "id": "htmlPost",
-    "title": "HTML - Post"
+    "id": "httpPost",
+    "title": "HTTP - Post"
   },
   {
-    "id": "htmlRedirectionInvalide",
-    "title": "HTML - Redirection Invalide"
+    "id": "httpRedirectionInvalide",
+    "title": "HTTP - Redirection Invalide"
   },
   {
-    "id": "htmlUserAgent",
-    "title": "HTML - User Agent"
+    "id": "httpUserAgent",
+    "title": "HTTP - User Agent"
   },
   {
-    "id": "htmlVerbTampering",
-    "title": "HTML - Verb Tampering"
+    "id": "httpVerbTampering",
+    "title": "HTTP - Verb Tampering"
+  },
+  {
+    "id": "jwIntroduction",
+    "title": "JWT - Introduction"
+  },
+  {
+    "id": "httpcookies",
+    "title": "HTTP - Cookies"
   }
 ]

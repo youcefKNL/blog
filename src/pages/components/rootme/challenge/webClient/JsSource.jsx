@@ -39,10 +39,12 @@ const JsSource = () => {
             de passe dans la pop-up.
             <img
               src={photo1}
+              style={{ maxWidth: "450px", important: "true" }}
               alt="Capture d'écran du challenge Javascript source Root ME"
             />
             <img
               src={photo2}
+              style={{ maxWidth: "450px", important: "true" }}
               alt="Capture d'écran du challenge Javascript source Root ME"
             />
             En inspectant la console, nous trouvons un code "login()" qui est
@@ -61,10 +63,12 @@ const JsSource = () => {
             Bingo, nous avons notre Flag !
             <img
               src={photo5}
+              style={{ maxWidth: "450px", important: "true" }}
               alt="Capture d'écran du challenge Javascript source Root ME"
             />{" "}
             <img
               src={photo6}
+              style={{ maxWidth: "450px", important: "true" }}
               alt="Capture d'écran du challenge Javascript source Root ME"
             />{" "}
           </div>

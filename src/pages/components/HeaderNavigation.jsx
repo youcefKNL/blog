@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <header className={isScrolled ? "activeHeader" : "header"}>
-      <h2>#Blog </h2>
+      <h2> {"<#SecretScribe>"} </h2>
       <nav>
         <ul>
           <NavLink

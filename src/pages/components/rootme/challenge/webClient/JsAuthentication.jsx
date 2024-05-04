@@ -17,7 +17,7 @@ import Footer from "../../../Footer";
 
 const JsAuthentication = () => {
   return (
-    <div className="shiftCipher blogPage">
+    <div className="JsAuthentication blogPage">
       <HeaderChallenge />
       <ParticlesContainer2 />
       <div className="blogContainer">
@@ -38,6 +38,7 @@ const JsAuthentication = () => {
             de passe :
             <img
               src={photo1}
+              style={{ maxWidth: "450px", important: "true" }}
               alt="Capture d'écran du challenge Javascript authentication Root ME"
             />
             En inspectant l'élément, nous constatons qu'au clic il se joue une
@@ -58,6 +59,7 @@ const JsAuthentication = () => {
             Bingo, nous avons notre Flag !
             <img
               src={photo5}
+              style={{ maxWidth: "450px", important: "true" }}
               alt="Capture d'écran du challenge Javascript authentication Root ME"
             />
           </div>

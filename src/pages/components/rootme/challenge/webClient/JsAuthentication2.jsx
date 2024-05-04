@@ -17,7 +17,7 @@ import Footer from "../../../Footer";
 
 const JsAuthentication2 = () => {
   return (
-    <div className="shiftCipher blogPage">
+    <div className="jsAuthentication2 blogPage">
       <HeaderChallenge />
       <ParticlesContainer2 />
       <div className="blogContainer">
@@ -58,11 +58,13 @@ const JsAuthentication2 = () => {
             usernanme et un password en clair.
             <img
               src={photo4}
+              style={{ maxWidth: "450px", important: "true" }}
               alt="Capture d'écran du challenge Javascript authentication Root ME"
             />
             Bingo, nous avons notre Flag !
             <img
               src={photo5}
+              style={{ maxWidth: "450px", important: "true" }}
               alt="Capture d'écran du challenge Javascript authentication Root ME"
             />
           </div>

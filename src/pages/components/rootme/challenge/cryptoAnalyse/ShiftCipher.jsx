@@ -37,6 +37,7 @@ const shiftCipher = () => {
             titre ainsi que le nombre de points :
             <img
               src={photo1}
+              style={{ maxWidth: "450px", important: "true" }}
               alt="Capture d'écran du challenge Shift cipher Root ME"
             />
             Pour décoder, il suffit de décaler (CIPHER) chaque lettre du message
@@ -53,7 +54,11 @@ const shiftCipher = () => {
             Et voici le résultat :
             <img src={photo3} alt="Capture d'écran Shift cipher Root ME" />
             Bingo, on récupere le résultat.
-            <img src={photo4} alt="Capture d'écran Shift cipher Root ME" />
+            <img
+              src={photo4}
+              alt="Capture d'écran Shift cipher Root ME"
+              style={{ maxWidth: "450px", important: "true" }}
+            />
           </div>
         </LayoutArticleBlog>
 

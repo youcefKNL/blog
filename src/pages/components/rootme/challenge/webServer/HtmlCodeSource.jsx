@@ -15,7 +15,7 @@ import Footer from "../../../Footer";
 
 const HtmlCodeSource = () => {
   return (
-    <div className="shiftCipher blogPage">
+    <div className="htmlCodeSource blogPage">
       <HeaderChallenge />
       <ParticlesContainer2 />
       <div className="blogContainer">
@@ -36,6 +36,7 @@ const HtmlCodeSource = () => {
             de passe :
             <img
               src={photo1}
+              style={{ maxWidth: "450px", important: "true" }}
               alt="Capture d'écran du challenge Html code source Root ME"
             />
             En inspectant l'élément, nous constatons que du texte a été inséré
@@ -47,6 +48,7 @@ const HtmlCodeSource = () => {
             Bingo, nous avons notre Flag !
             <img
               src={photo3}
+              style={{ maxWidth: "450px", important: "true" }}
               alt="Capture d'écran du challenge Html code source Root ME"
             />
           </div>

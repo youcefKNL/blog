@@ -87,8 +87,11 @@
 
 
     li {
-      border: 2px solid $Textcolor1;
+      border: px solid $Textcolor1;
       border-radius: 10%;
+      box-shadow: 0 10px 35px 2px rgba(0, 0, 0, 0.15),
+        0 5px 15px rgba(0, 0, 0, 0.07),
+        0 2px 5px -5px rgba(0, 0, 0, 0.1) !important;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -131,6 +134,10 @@
 
     img {
       width: 30%;
+      box-shadow: 0 10px 35px 2px rgba(0, 0, 0, 0.15),
+        0 5px 15px rgba(0, 0, 0, 0.07),
+        0 2px 5px -5px rgba(0, 0, 0, 0.1) !important;
+      border-radius: 50%;
     }
 
     cite {
@@ -166,25 +173,34 @@
 
       a {
         font-size: 1.5em;
-        padding: 2%;
+        margin: 2%;
         color: ivory;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          color: $Textcolor1;
+
+        }
       }
-    }
 
-    .disclaimer {
-      font-size: 0.8em;
-      width: 100%;
-      padding: 0 5%;
-    }
-
-    .copyright {
-      text-align: center;
-      color: $Textcolor2;
-      //   }
-      // }
     }
   }
+
+  .disclaimer {
+    font-size: 0.8em;
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .copyright {
+    text-align: center;
+    color: $Textcolor2;
+    //   }
+    // }
+  }
 }
+
 
 
 .rootmePresentation {
@@ -213,4 +229,15 @@
 
 .solution {
   width: 100%;
+
+  img {
+    margin: 5% auto;
+    border: 1px solid $Textcolor1;
+    border-radius: 10px;
+    overflow: hidden;
+    // padding: 3%;
+
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
+      0 5px 15px rgba(0, 0, 0, 0.07) !important;
+  }
 }

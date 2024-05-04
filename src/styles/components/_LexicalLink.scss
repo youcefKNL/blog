@@ -27,11 +27,11 @@
       padding: 3% 0;
       transition: 0.3s ease-in-out;
 
-      &:hover {
+      a &:hover {
         cursor: pointer;
       }
 
-      ul > li {
+      ul>li {
         pointer-events: none;
         padding: 5% 0 0 10%;
       }
@@ -47,10 +47,14 @@
   transition: 0.3s ease-in-out;
   margin: 0;
   z-index: 5;
+
   @media screen and (max-width: 1700px) {
     right: 3%;
   }
+
   @media screen and (max-width: 1400px) {
     width: 25%;
   }
+
+
 }

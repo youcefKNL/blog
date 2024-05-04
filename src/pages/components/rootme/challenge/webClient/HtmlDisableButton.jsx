@@ -19,7 +19,7 @@ import Footer from "../../../Footer";
 
 const HtmlDisableButton = () => {
   return (
-    <div className="shiftCipher blogPage">
+    <div className="htmlDisableButton blogPage">
       <HeaderChallenge />
       <ParticlesContainer2 />
       <div className="blogContainer">
@@ -41,6 +41,7 @@ const HtmlDisableButton = () => {
             <img
               src={photo1}
               alt="Capture d'écran du challenge Html code source Root ME"
+              style={{ maxWidth: "450px", important: "true" }}
             />
             Un clic droit pour inspecter, nous constatons qu'ils sont
             désactivés. <br />
@@ -48,6 +49,7 @@ const HtmlDisableButton = () => {
             dans la console web côté client pour pouvoir y accéder
             <img
               src={photo2}
+              style={{ maxWidth: "450px", important: "true" }}
               alt="Capture d'écran du challenge Html code source Root ME"
             />
             <img
@@ -60,15 +62,18 @@ const HtmlDisableButton = () => {
             />
             <img
               src={photo5}
+              style={{ maxWidth: "450px", important: "true" }}
               alt="Capture d'écran du challenge Html code source Root ME"
             />
             Bingo, on récupère le Flag.
             <img
               src={photo6}
+              style={{ maxWidth: "450px", important: "true" }}
               alt="Capture d'écran du challenge Html code source Root ME"
             />
             <img
               src={photo7}
+              style={{ maxWidth: "450px", important: "true" }}
               alt="Capture d'écran du challenge Html code source Root ME"
             />
           </div>

@@ -72,12 +72,15 @@ footer {
   a {
     color: none;
     text-decoration: none;
+    user-select: none;
 
 
   }
 
   a:visited {
     color: none;
+    text-decoration: none;
+
   }
 
   svg {

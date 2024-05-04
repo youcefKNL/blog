@@ -3,7 +3,7 @@ import React from "react";
 const HeaderChallenge = () => {
   return (
     <div className="headerChallenge">
-      <h2>CAPTURE THE FLAG CTF</h2>
+      <h2>road to it expertise</h2>
     </div>
   );
 };

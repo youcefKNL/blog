@@ -46,7 +46,11 @@ const EthernetFrame = () => {
             <img src={photo3} alt="Capture d'écran" />
             Une fois le Flag décodé, nous l'entrons pour voir s'il correspond au
             Flag attendu.
-            <img src={photo4} alt="Capture d'écran" />
+            <img
+              src={photo4}
+              alt="Capture d'écran"
+              style={{ maxWidth: "450px", important: "true" }}
+            />
           </div>
         </LayoutArticleBlog>
 

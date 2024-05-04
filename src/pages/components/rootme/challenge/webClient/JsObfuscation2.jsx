@@ -16,7 +16,7 @@ import Footer from "../../../Footer";
 
 const JsObfuscation2 = () => {
   return (
-    <div className="shiftCipher blogPage">
+    <div className="jsObfuscation2 blogPage">
       <HeaderChallenge />
       <ParticlesContainer2 />
       <div className="blogContainer">
@@ -56,6 +56,7 @@ const JsObfuscation2 = () => {
             Bingo, nous avons notre Flag !
             <img
               src={photo3}
+              style={{ maxWidth: "450px", important: "true" }}
               alt="Capture d'écran du challenge Javascript obfuscation Root ME"
             />
           </div>

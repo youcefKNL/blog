@@ -6,11 +6,11 @@ import ParticlesContainer2 from "./components/background Effect/Particles2";
 import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
 import RootmeLogo from "../assets/rootme/root-me-logo.png";
-import TryHackMeLogo from "../assets/try-hack-me/tryhackme_logo.png";
+import TryHackMeLogo from "../assets/try-hack-me/favicon.png";
 import HackTheBox from "../assets/hack-the-box/hack-the-box.png";
 import Portswigger from "../assets/portSwigger/pngwing.com.png";
 import Vulnhub from "../assets/vulnHub/images-removebg-preview.png";
-import OverTheWire from "../assets/over-the-wire/domokitten.png";
+import OverTheWire from "../assets/over-the-wire/logo-removebg-preview.png";
 
 const Challenge = () => {
   const scrollToTop = () => {
@@ -75,7 +75,16 @@ const Challenge = () => {
               </Link>
             </li>
             <li>
-              <img src={OverTheWire} alt="logo de over the wire" />
+              <img
+                src={OverTheWire}
+                alt="logo de over the wire"
+                style={{
+                  objectFit: "cover",
+                  objectPosition: "center",
+                  borderRadius: "10px",
+                }}
+              />
+
               <Link to="/#" onClick={scrollToTop}>
                 <span> OVER THE WIRE</span>
               </Link>

@@ -51,7 +51,7 @@ const Home = () => {
           <Link to="https://github.com/youcefKNL" target="_blank">
             <FaGithub />
           </Link>
-          <Link to="https://github.com/youcefKNL" target="_blank">
+          <Link to="https://www.linkedin.com/in/youcef-knl/" target="_blank">
             <FaLinkedin />
           </Link>
           <Link to="https://codepen.io/youcefKNL/pens/public" target="_blank">

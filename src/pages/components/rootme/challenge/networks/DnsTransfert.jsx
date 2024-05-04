@@ -97,7 +97,11 @@ const EthernetFrame = () => {
             key en clair. <br />
             Nous entrons la clé secrète pour voir s'il correspond au Flag
             attendu.
-            <img src={photo3} alt="Capture d'écran DNS Transfert Root ME" />
+            <img
+              src={photo3}
+              alt="Capture d'écran DNS Transfert Root ME"
+              style={{ maxWidth: "450px", important: "true" }}
+            />
           </div>
         </LayoutArticleBlog>
 
