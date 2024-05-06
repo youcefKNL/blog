@@ -19,6 +19,14 @@
       font-size: 5em;
       text-transform: uppercase;
       letter-spacing: 20px;
+
+      @media screen and (max-width: 600px) {
+        font-size: 3em;
+      }
+
+      @media screen and (max-width: 400px) {
+        font-size: 2em;
+      }
     }
 
     //button effect
@@ -41,6 +49,13 @@
 
       .button {
         width: 200px;
+
+        @media screen and (max-width: 500px) {
+          width: 100px;
+          font-size: 0.8em;
+          padding: 12px 10px;
+
+        }
 
         display: inline-block;
         text-align: center;
@@ -98,18 +113,25 @@
         margin: 0 2%;
         color: $Textcolor2;
         transition: 0.3s ease-in-out;
+        font-size: 3em;
 
+        @media screen and (max-width: 1000px) {
+          color: $Textcolor1;
+          font-size: 2em;
 
-        svg {
-
-          font-size: 3em;
         }
+
 
         &:hover {
           color: $Textcolor1;
           text-decoration: none;
           cursor: pointer;
           transform: rotate(360deg) !important;
+
+          @media screen and (max-width: 1000px) {
+            color: $Color2;
+
+          }
         }
       }
     }

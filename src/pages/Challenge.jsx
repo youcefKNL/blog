@@ -19,6 +19,7 @@ const Challenge = () => {
       behavior: "smooth",
     });
   };
+
   return (
     <section className="challengePresentation blogPage">
       <HeaderChallenge />

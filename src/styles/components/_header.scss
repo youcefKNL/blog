@@ -118,33 +118,13 @@ header {
 
         svg {
           display: none;
+          font-size: 1.5em;
 
           @media screen and (max-width: 700px) {
             display: block;
           }
         }
 
-        .fa-solid {
-
-          // font-size: 50em !important;
-          // color: red;
-          // background: green;
-          // width: 500px !important;
-          // height: 500px !important;
-          // z-index: 9999 !important;
-
-
-          // @media screen and (max-width: 700px) {
-          //   display: initial;
-          //   font-size: 1.5em;
-          //   margin-left: 20px;
-          // }
-
-          // @media screen and (max-width: 480px) {
-          //   font-size: 1em;
-          //   margin-left: 10px;
-          // }
-        }
       }
     }
   }

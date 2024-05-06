@@ -20,8 +20,8 @@
 
 .banner {
   position: absolute;
-  min-height: 150px;
-  max-height: 200px;
+
+  height: 120px;
 
   width: 100%;
   top: 0;
@@ -29,6 +29,18 @@
   background: url("../../assets/eye.jpg") center/cover no-repeat;
   background-position: center 20%;
   border-bottom: dotted 5px black;
+
+  @media screen and (max-width: 1000px) {
+    height: 100px;
+  }
+
+  @media screen and (max-width: 700px) {
+    height: 75px;
+  }
+
+  @media screen and (max-width: 400px) {
+    height: 50px;
+  }
 }
 
 .rootmeBackground {
@@ -58,22 +70,21 @@
   padding-bottom: 200px;
 
   h1 {
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 10%;
     text-align: center;
     font-size: 2.5em;
     width: 100%;
+    line-height: 100% !important;
 
     @media screen and (max-width: 1000px) {
       font-size: 2em;
-      margin-top: 150px;
+      margin-top: 90px;
 
     }
 
     @media screen and (max-width: 500px) {
       font-size: 1.5em;
-      line-height: 100% !important;
-
     }
   }
 
@@ -139,6 +150,11 @@
       margin: 2%;
       width: 200px;
       height: 300px;
+
+      @media screen and (max-width: 400px) {
+        width: 150px;
+        height: 200px;
+      }
 
       img {
         // max-width: 150px;

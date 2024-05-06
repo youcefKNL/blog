@@ -52,6 +52,7 @@ const RootMePage = ({ isVisible }) => {
             variété de défis captivants pour tester et améliorer vos compétences
             en sécurité informatique.
           </p>
+
           {/* Liste des challenges */}
           <h2>Liste des Challenges</h2>
           {/* ****************************CTF********************************* */}

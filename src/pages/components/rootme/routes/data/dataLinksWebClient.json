@@ -23,5 +23,21 @@
   {
     "id": "jsSource",
     "title": "JS - Source"
+  },
+  {
+    "id": "jsNativeCode",
+    "title": "JS - Native code"
+  },
+  {
+    "id": "jsWebpack",
+    "title": "JS - Webpack"
+  },
+  {
+    "id": "jsObfuscation3",
+    "title": "JS - Obfuscation 3"
+  },
+  {
+    "id": "xssStockée1",
+    "title": "XSS - Stockée 1"
   }
 ]

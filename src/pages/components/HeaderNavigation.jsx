@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header className={isScrolled ? "activeHeader" : "header"}>
-      <h2> {"<#SecretScribe>"} </h2>
+      <h2> {"<#SecretNote>"} </h2>
       <nav>
         <ul>
           <NavLink
