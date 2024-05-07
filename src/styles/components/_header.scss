@@ -125,6 +125,11 @@ header {
           }
         }
 
+        .nav-active {
+          position: relative;
+          color: black;
+          font-weight: bold;
+        }
       }
     }
   }
@@ -136,18 +141,37 @@ header {
   color: $Textcolor2;
   border-bottom: 2px solid $Textcolor2;
 
+  @media screen and (max-width: 800px) {
+    background-image: none;
+  }
+
   h2 {
     text-shadow: none;
   }
 
-  li {
-    color: $Textcolor2;
+  ul {
 
+
+    li {
+      color: $Textcolor2;
+    }
+
+
+
+
+    .nav-active {
+      svg {
+
+        position: relative;
+        color: black;
+        font-weight: bold;
+      }
+    }
   }
 
-  .nav-active::after {
+  // .nav-active::after {
 
-    background: $Textcolor2;
+  //   // background: $Textcolor2;
 
-  }
+  // }
 }

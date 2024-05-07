@@ -36,13 +36,17 @@ const Challenge = () => {
             est une victoire modeste mais significative. Parcourez mes notes
             personnelles, fruit de mes expériences sur des plateformes telles
             que Root-Me, VulnHub, Try Hack Me, Hack The Box et PortSwigger.
-            Rejoignez-moi dans cette aventure où chaque pas vers la découverte
-            est une récompense en soi. Ensemble, franchissons les obstacles,
-            partageons nos réussites et cultivons notre passion pour le hacking
-            éthique. Laissez-nous commencer ce voyage ensemble !
+            <br />
+            <br />
+            🚨 Disclaimer 📢: <br />
+            Ces notes sont personnelles et constituent un espace où je consigne
+            mes réflexions et mon apprentissage. Elles ne sont pas destinées à
+            être référencées sur Internet. En refusant l'accès aux robots qui
+            scrutent le web, j'ai pris des mesures pour empêcher tout robot
+            d'indexation d'inclure ces pages dans leurs moteurs de recherche.
           </p>
 
-          <h2>Les solutions des différentes plateformes d'apprentissage</h2>
+          <h2>Mes challenges sur les différentes plateformes. </h2>
           <ul className="challengeList">
             <li>
               <img src={RootmeLogo} alt="logo de root me" />

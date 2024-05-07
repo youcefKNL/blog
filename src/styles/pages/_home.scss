@@ -9,8 +9,8 @@
     flex-direction: column;
     justify-content: space-between;
     background: url("../../assets/background/1.jpg") center/cover;
-    height: 100vh;
-    padding: 50vh 0 5% 0;
+    height: 100svh;
+    padding: 50svh 0 5% 0;
     border-bottom: 10px solid $Textcolor1;
 
 
@@ -41,7 +41,7 @@
       a {
         font-size: 1.3em;
         font-weight: bold;
-        margin: 0 5vw;
+        margin: 0 5svw;
 
       }
 
@@ -187,8 +187,8 @@
       border-radius: 10%;
       overflow: hidden;
       // padding: 5%;
-      min-width: 300px;
-      min-height: 400px;
+      width: 300px;
+      height: 400px;
 
       background: $Textcolor2;
       border-radius: 20px;
@@ -201,6 +201,11 @@
       @media screen and (max-width:900px) {
 
         margin-bottom: 10%;
+      }
+
+      @media screen and (max-width:500px) {
+        height: 300px;
+        width: 250px;
       }
 
       .homeBannerArticle {

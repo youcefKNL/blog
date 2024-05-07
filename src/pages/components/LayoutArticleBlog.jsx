@@ -9,11 +9,11 @@ const LayoutArticleBlog = ({ classname: classProp, children }) => {
       <div className={`banner ${classProp}`}></div>
       <>{children}</>
       <span className="signed">
-        <img src={Avatar} alt="photo Avatar" />
+        <img src={Avatar} alt=" avatar" />
 
         <cite>
           <em>"</em>
-          En pratiquant, nous apprenons, alors à toi de jouer !<em>"</em>
+          En pratiquant, nous apprenons !<em>"</em>
         </cite>
       </span>
       <div className="finalArticles">

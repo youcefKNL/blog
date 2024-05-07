@@ -133,6 +133,20 @@ footer {
 
 }
 
+//**************************Keyframe*********************************//
+
+
+@keyframes floater {
+
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(8%);
+  }
+}
 
 
 //****************************************************//
