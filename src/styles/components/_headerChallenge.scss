@@ -10,10 +10,13 @@
     border-bottom: 10px solid $Textcolor1;
 
     h2 {
+        text-transform: capitalize;
+        font-size: 4em;
+        color: $Textcolor2;
+        mix-blend-mode: difference;
 
         @media screen and (max-width: 600px) {
             color: $Textcolor2;
-            text-transform: capitalize;
             letter-spacing: 10px !important;
             font-size: 2em !important;
             line-height: 100% !important;
@@ -27,3 +30,13 @@
         }
     }
 }
+
+/////////////****************************************************************/////
+// canvas {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: -1;
+//     width: 100%;
+//     background: transparent;
+// }

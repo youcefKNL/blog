@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { FaThList } from "react-icons/fa";
 const Lexical = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -30,7 +30,10 @@ const Lexical = () => {
         isScrolled ? "lexicalContent lexicalContentFixed" : "lexicalContent"
       }
     >
-      <h2>table des matières</h2>
+      <h2>
+        <FaThList />
+        <span>table des matières</span>
+      </h2>
       <ul className="challengeList">
         <li>
           <Link to="/rootme" onClick={scrollToTop}>
