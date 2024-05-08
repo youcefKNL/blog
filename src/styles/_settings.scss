@@ -4,7 +4,13 @@ $Textcolor1: #0d47a1;
 $Textcolor2: ivory;
 $Color2:#b5cdf1;
 
-
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
 
 * {
   //   background: red;
@@ -112,10 +118,12 @@ footer {
   }
 
   .css-eqpfi5-MuiAccordionSummary-content {
-    align-items: center;
+
 
     p {
       font-size: 1em !important;
+      @include center;
+      justify-content: flex-start;
 
       @media screen and (max-width: 500px) {
         font-size: 0.7em !important;
@@ -126,7 +134,7 @@ footer {
 
   .MuiButtonBase-root {
 
-    padding: 0 !important;
+    padding: 0 5% !important;
     width: 100% !important;
   }
 
@@ -161,13 +169,7 @@ a {
   color: black;
 }
 
-@mixin center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-}
+
 
 
 

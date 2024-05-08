@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
-import EffectTsParticles1 from "../../../assets/tsparticles/tsparticles1.json";
-// import EffectTsParticles1 from "../../../assets/tsparticles/twinkle.json";
-// import EffectTsParticles1 from "../../../assets/tsparticles/growing.json";
+// import EffectTsParticles1 from "../../../assets/tsparticles/tsparticles1.json";
+// // import EffectTsParticles1 from "../../../assets/tsparticles/twinkle.json";
+import EffectTsParticles1 from "../../../assets/tsparticles/growing.json";
 
 const App = (props) => {
   const [init, setInit] = useState(false);

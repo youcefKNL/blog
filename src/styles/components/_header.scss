@@ -20,10 +20,11 @@ header {
     letter-spacing: 10px;
     backdrop-filter: blur(80px);
 
-    text-shadow: 1px 1px 0 black,
-      -1px -1px 0 black,
-      1px -1px 0 black,
-      -1px 1px 0 black;
+    // text-shadow: 1px 1px 0 black,
+    //   -1px -1px 0 black,
+    //   1px -1px 0 black,
+    //   -1px 1px 0 black;
+    font-weight: bold;
 
     @media screen and (max-width: 1000px) {
       font-size: 1.5em;
@@ -31,7 +32,7 @@ header {
 
     @media screen and (max-width: 480px) {
       font-size: 1em;
-      letter-spacing: 5px;
+      letter-spacing: 2px;
     }
   }
 

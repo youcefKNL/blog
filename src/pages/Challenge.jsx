@@ -54,31 +54,6 @@ const Challenge = () => {
                 <span> ROOT ME</span>
               </Link>
             </li>
-
-            <li>
-              <img src={TryHackMeLogo} alt="logo de try hack me" />
-              <Link to="/#" onClick={scrollToTop}>
-                <span> TRY HACK ME</span>
-              </Link>
-            </li>
-            <li>
-              <img src={HackTheBox} alt="logo de hack the box" />
-              <Link to="/#" onClick={scrollToTop}>
-                <span> HACK THE BOX</span>
-              </Link>
-            </li>
-            <li>
-              <img src={Portswigger} alt="logo de portswigger" />
-              <Link to="/#" onClick={scrollToTop}>
-                <span> PORTSWIGGER</span>
-              </Link>
-            </li>
-            <li>
-              <img src={Vulnhub} alt="logo de vulnhub" />
-              <Link to="/#" onClick={scrollToTop}>
-                <span> VULNHUB</span>
-              </Link>
-            </li>
             <li>
               <img
                 src={OverTheWire}
@@ -90,8 +65,32 @@ const Challenge = () => {
                 }}
               />
 
-              <Link to="/#" onClick={scrollToTop}>
+              <Link to="/overthewire" onClick={scrollToTop}>
                 <span> OVER THE WIRE</span>
+              </Link>
+            </li>
+            <li>
+              <img src={Vulnhub} alt="logo de vulnhub" />
+              <Link to="/#" onClick={scrollToTop}>
+                <span> VULNHUB</span>
+              </Link>
+            </li>
+            <li>
+              <img src={Portswigger} alt="logo de portswigger" />
+              <Link to="/#" onClick={scrollToTop}>
+                <span> PORTSWIGGER</span>
+              </Link>
+            </li>
+            <li>
+              <img src={TryHackMeLogo} alt="logo de try hack me" />
+              <Link to="/#" onClick={scrollToTop}>
+                <span> TRY HACK ME</span>
+              </Link>
+            </li>
+            <li>
+              <img src={HackTheBox} alt="logo de hack the box" />
+              <Link to="/#" onClick={scrollToTop}>
+                <span> HACK THE BOX</span>
               </Link>
             </li>
           </ul>

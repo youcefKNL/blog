@@ -1,8 +1,11 @@
 import React from "react";
+import ParticlesContainer from "../components/background Effect/ParticlesHeader";
 
 const HeaderChallenge = () => {
   return (
     <div className="headerChallenge">
+      <ParticlesContainer />
+
       <h2>road to it expertise</h2>
       {/* <canvas id="c"></canvas> */}
     </div>
