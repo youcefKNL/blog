@@ -2,16 +2,16 @@
   padding: 3%;
   border-radius: 10px;
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
-
-  // flex: 1;
+  // filter: drop-shadow((153, 255, 0, 0.5));
   margin-top: 20%;
-  // margin-left: 5%;
-  // margin-right: 5%;
   transition: 0.3s ease-in-out;
-  // min-height: 25svh;
-  background: $Textcolor2;
-  mix-blend-mode: color-dodge;
+  background: url("../../assets/background/ctf.png") center/cover;
+  background-color: $Textcolor2;
+  mix-blend-mode: exclusion;
   z-index: 10;
+  color: rgb(153, 255, 0);
+  border: 0.5px solid rgb(153, 255, 0);
+  backdrop-filter: blur(2px);
 
   @media screen and (max-width: 500px) {
     display: none;
@@ -61,10 +61,28 @@
       padding-left: 5%;
       padding-bottom: 5%;
 
+
       span {
         text-transform: capitalize;
+        color: rgb(153, 255, 0);
+        transition: 0.2s ease-out;
 
+        &:hover {
+          // color: black;
+          text-transform: uppercase;
+          font-weight: bold;
+          text-decoration: none !important;
+          text-align: center;
+        }
+      }
 
+      a {
+
+        &:hover {
+          color: white;
+          font-weight: bold;
+          text-decoration: none !important;
+        }
       }
     }
 
@@ -72,20 +90,28 @@
 }
 
 .lexicalContentFixed {
-  width: auto;
+
   position: fixed;
   top: 20%;
-  right: 8%;
+  right: 15%;
   transition: 0.3s ease-in-out;
   margin: 0;
   z-index: 5;
 
   @media screen and (max-width: 1700px) {
-    right: 3%;
+    right: 8%;
   }
 
   @media screen and (max-width: 1400px) {
-    width: 25%;
+    right: 5%;
+    // width: 25%;
+    padding: 2%;
+  }
+
+  @media screen and (max-width: 900px) {
+    right: 3%;
+    padding: 1%;
+    // width: 25%;
   }
 
 

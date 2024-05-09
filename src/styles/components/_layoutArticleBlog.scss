@@ -230,6 +230,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    filter: drop-shadow(10px 7px 10px $Textcolor1);
   }
 
   span {

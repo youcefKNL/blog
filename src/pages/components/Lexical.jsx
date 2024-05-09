@@ -37,33 +37,33 @@ const Lexical = () => {
       <ul className="challengeList">
         <li>
           <Link to="/rootme" onClick={scrollToTop}>
-            <span> root me</span>
+            <span>🏁 root me</span>
           </Link>
         </li>
 
         <li>
           <Link to="/#" onClick={scrollToTop}>
-            <span> try hack me</span>
+            <span>🚩 try hack me</span>
           </Link>
         </li>
         <li>
           <Link to="/#" onClick={scrollToTop}>
-            <span> hack the box</span>
+            <span>🏳️ hack the box</span>
           </Link>
         </li>
         <li>
           <Link to="/#" onClick={scrollToTop}>
-            <span> portswigger</span>
+            <span>🏁 portswigger</span>
           </Link>
         </li>
         <li>
           <Link to="/#" onClick={scrollToTop}>
-            <span> vulnhub</span>
+            <span>🏴 vulnhub</span>
           </Link>
         </li>
         <li>
           <Link to="/#" onClick={scrollToTop}>
-            <span> over the wire</span>
+            <span>🎌 over the wire</span>
           </Link>
         </li>
       </ul>
