@@ -44,9 +44,10 @@ const Header = () => {
           </NavLink>
 
           <NavLink
-            to="/about"
+            to="https://portfolio.cabinetlegalis.fr"
             className={(nav) => (nav.isActive ? "nav-active" : null)}
             title="About"
+            target="_blank"
           >
             <li>
               <p>À Propos</p> <FaInfoCircle />

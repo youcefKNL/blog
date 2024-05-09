@@ -21,6 +21,10 @@ import Bandit17 from "../bandit/Bandit17";
 import Bandit18 from "../bandit/Bandit18";
 import Bandit19 from "../bandit/Bandit19";
 import Bandit20 from "../bandit/Bandit20";
+import Bandit21 from "../bandit/Bandit21";
+import Bandit22 from "../bandit/Bandit22";
+import Bandit23 from "../bandit/Bandit23";
+import Bandit24 from "../bandit/Bandit24";
 
 // Créez un objet qui mappe les ID aux composants
 const components = {
@@ -45,6 +49,10 @@ const components = {
   bandit18: <Bandit18 title="Bandit Lvl 18" />,
   bandit19: <Bandit19 title="Bandit Lvl 19" />,
   bandit20: <Bandit20 title="Bandit Lvl 20" />,
+  bandit21: <Bandit21 title="Bandit Lvl 21" />,
+  bandit22: <Bandit22 title="Bandit Lvl 22" />,
+  bandit23: <Bandit23 title="Bandit Lvl 23" />,
+  bandit24: <Bandit24 title="Bandit Lvl 24" />,
 };
 
 function IdBandit() {
