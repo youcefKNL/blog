@@ -8,26 +8,38 @@ import ParticlesContainer2 from "./components/background Effect/Particles2";
 import Footer from "./components/Footer";
 
 const Home = () => {
+  //scrol top
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   const latestArticles = [
     {
       title: "rootmeBackground",
-      description: "ethernetFrame",
+      description: "Ethernet Frame <NETWORKS>",
       link: "/rootme/networks/ethernetFrame",
     },
     {
       title: "rootmeBackground",
-      description: "ftpAuthentification",
+      description: "FTP Authentication <Network>",
       link: "/rootme/networks/ftpAuthentification",
     },
     {
       title: "rootmeBackground",
-      description: "telnetAuthentification",
+      description: "Telnet Authentification <NETWORK>",
       link: "/rootme/networks/telnetAuthentification",
     },
     {
       title: "rootmeBackground",
-      description: "dnsTransfert",
+      description: "DNS Transfert <Network>",
       link: "/rootme/networks/dnsTransfert",
+    },
+    {
+      title: "overthewireBackground",
+      description: "Wargame Bandit <SHELL>",
+      link: "/overthewire/bandit/bandit0",
     },
   ];
 
@@ -38,10 +50,10 @@ const Home = () => {
         <h1>welcome</h1>
         <div className="link">
           <Link to="https://portfolio.cabinetlegalis.fr" target="_blank">
-            <div className="button">portfolio</div>
+            <div className="button">Portfolio</div>
           </Link>
-          <Link to="https://github.com/youcefKNL" target="_blank">
-            <div className="button">github</div>
+          <Link to="https://www.linkedin.com/in/youcef-knl/" target="_blank">
+            <div className="button">Linkedin</div>
           </Link>
         </div>
 
@@ -62,7 +74,7 @@ const Home = () => {
       <div className="homeArticles">
         <ParticlesContainer2 />
 
-        <h2>Posts récents</h2>
+        <h2>🏆 Challenges récents 🏅</h2>
         <div className="homeArticlesContainer">
           {latestArticles.map((article, index) => (
             <div key={index} className="homeCardArticle">
@@ -70,8 +82,11 @@ const Home = () => {
               <div className="homeDescriptionArticle">
                 <p>{article.description}</p>
               </div>
+              <div className="missionAcomplished"></div>
               <div className="homeLinkArticle">
-                <Link to={article.link}>Lire la suite</Link>
+                <Link to={article.link} onClick={scrollToTop}>
+                  Lire la suite
+                </Link>
               </div>
             </div>
           ))}

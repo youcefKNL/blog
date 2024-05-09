@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCat } from "react-icons/fa";
+import { FcNext, FcPrevious } from "react-icons/fc";
 
 import Lexical from "../../Lexical";
 import LayoutArticleBlog from "../../LayoutArticleBlog";
@@ -19,6 +20,15 @@ const Bandit16 = () => {
       <div className="blogContainer">
         <LayoutArticleBlog classname="overthewireBackground">
           <h1>WarGame Bandit : Level 16 to 17</h1>
+          <div className="lvlBtn">
+            <Link to="/overthewire/bandit/bandit15">
+              <FcPrevious />
+            </Link>
+            <p>Level</p>
+            <Link to="/overthewire/bandit/bandit17">
+              <FcNext />
+            </Link>
+          </div>
           <div className="solution">
             Vous trouverez l'énoncé et le challenge à cette adresse <br />
             <span>

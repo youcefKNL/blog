@@ -6,26 +6,26 @@ import Lexical from "../../Lexical";
 import LayoutArticleBlog from "../../LayoutArticleBlog";
 import HeaderChallenge from "../../HeaderChallenge";
 import { Link } from "react-router-dom";
-import photo1 from "../../../../assets/over-the-wire/bandit/bandit6.png";
+import photo1 from "../../../../assets/over-the-wire/bandit/bandit20.png";
 
 import ParticlesContainer2 from "../../background Effect/Particles2";
 
 import Footer from "../../Footer";
 
-const Bandit6 = () => {
+const Bandit20 = () => {
   return (
     <div className="bandit blogPage">
       <HeaderChallenge />
       <ParticlesContainer2 />
       <div className="blogContainer">
         <LayoutArticleBlog classname="overthewireBackground">
-          <h1>WarGame Bandit : Level 6 to 7</h1>
+          <h1>WarGame Bandit : Level 20 to 21</h1>
           <div className="lvlBtn">
-            <Link to="/overthewire/bandit/bandit5">
+            <Link to="/overthewire/bandit/bandit19">
               <FcPrevious />
             </Link>
             <p>Level</p>
-            <Link to="/overthewire/bandit/bandit7">
+            <Link to="/overthewire/bandit/bandit21">
               <FcNext />
             </Link>
           </div>
@@ -33,26 +33,28 @@ const Bandit6 = () => {
             Vous trouverez l'énoncé et le challenge à cette adresse <br />
             <span>
               <Link
-                to="https://overthewire.org/wargames/bandit/bandit7.html"
+                to="https://overthewire.org/wargames/bandit/bandit21.html"
                 target="_blank"
               >
                 Over The Wire Wargame - Bandit - <FaCat />
               </Link>
             </span>
             <br />
-            Pour ce challenge, nous devons trouver le "flag" dans le fichier sur
-            tous le serveur qui :
-            <ul>
-              <li>Appartient à l'utilisateur bandit7</li>
-              <li>Appartient au groupe bandit6</li>
-              <li>taille de 33 bytes (=33 octets)</li>
-            </ul>
+            Pour ce défi, nous devions utiliser le{" "}
+            <strong>binaire setuid</strong> qui établi une connexion au port
+            spécifié en argument . Il lit ce qu'il se passe sur ce port et la
+            compare aux mot de passe du flag bandit20 et nous donne le nouveau
+            Flag si ok.
             <img
               src={photo1}
               alt="Capture d'écran du challenge Wargame Bandit"
             />
-            Dans cette commande, on filtre tous le serveur avec nos critères et
-            on ignore les erreurs avec {"2>/dev/null"}
+            Dans un 1er temps on met en écoute sur le port voulût le flag de
+            bandit20 avec <strong>"netcat /nc"</strong>. <br />
+            <strong>"&"</strong>: permet de faire tourner le process en
+            arrière-plan. <br />
+            <strong>"jobs"</strong>: permet de vérifier les process en cours.{" "}
+            <br />
           </div>
         </LayoutArticleBlog>
 
@@ -63,4 +65,4 @@ const Bandit6 = () => {
   );
 };
 
-export default Bandit6;
+export default Bandit20;

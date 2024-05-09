@@ -6,26 +6,26 @@ import Lexical from "../../Lexical";
 import LayoutArticleBlog from "../../LayoutArticleBlog";
 import HeaderChallenge from "../../HeaderChallenge";
 import { Link } from "react-router-dom";
-import photo1 from "../../../../assets/over-the-wire/bandit/bandit6.png";
+import photo1 from "../../../../assets/over-the-wire/bandit/bandit18.png";
 
 import ParticlesContainer2 from "../../background Effect/Particles2";
 
 import Footer from "../../Footer";
 
-const Bandit6 = () => {
+const Bandit18 = () => {
   return (
     <div className="bandit blogPage">
       <HeaderChallenge />
       <ParticlesContainer2 />
       <div className="blogContainer">
         <LayoutArticleBlog classname="overthewireBackground">
-          <h1>WarGame Bandit : Level 6 to 7</h1>
+          <h1>WarGame Bandit : Level 18 to 19</h1>
           <div className="lvlBtn">
-            <Link to="/overthewire/bandit/bandit5">
+            <Link to="/overthewire/bandit/bandit17">
               <FcPrevious />
             </Link>
             <p>Level</p>
-            <Link to="/overthewire/bandit/bandit7">
+            <Link to="/overthewire/bandit/bandit19">
               <FcNext />
             </Link>
           </div>
@@ -33,26 +33,28 @@ const Bandit6 = () => {
             Vous trouverez l'énoncé et le challenge à cette adresse <br />
             <span>
               <Link
-                to="https://overthewire.org/wargames/bandit/bandit7.html"
+                to="https://overthewire.org/wargames/bandit/bandit19.html"
                 target="_blank"
               >
                 Over The Wire Wargame - Bandit - <FaCat />
               </Link>
             </span>
             <br />
-            Pour ce challenge, nous devons trouver le "flag" dans le fichier sur
-            tous le serveur qui :
-            <ul>
-              <li>Appartient à l'utilisateur bandit7</li>
-              <li>Appartient au groupe bandit6</li>
-              <li>taille de 33 bytes (=33 octets)</li>
-            </ul>
+            Pour ce défi, nous devions nous connecter en SSH, mais le fichier
+            .bashrc (le Shell par défaut) avait été modifié pour nous
+            déconnecter automatiquement.
+            <br />
+            Donc, il fallait forcer SSH à exécuter le shell '/bin/sh' plutôt que
+            le shell par défaut.
+            <br />
+            Ainsi, le fichier modifié n'était pas chargé et donc pas de
+            déconnexion automatique.
             <img
               src={photo1}
               alt="Capture d'écran du challenge Wargame Bandit"
             />
-            Dans cette commande, on filtre tous le serveur avec nos critères et
-            on ignore les erreurs avec {"2>/dev/null"}
+            Avec la commande <strong>"-t "/bin/sh""</strong>, nous avons pu
+            contourner le problème du fichier .bashrc.
           </div>
         </LayoutArticleBlog>
 
@@ -63,4 +65,4 @@ const Bandit6 = () => {
   );
 };
 
-export default Bandit6;
+export default Bandit18;
