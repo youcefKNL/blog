@@ -40,20 +40,9 @@ const Lexical = () => {
             <span>🏁 root me</span>
           </Link>
         </li>
-
         <li>
-          <Link to="/#" onClick={scrollToTop}>
-            <span>🚩 try hack me</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/#" onClick={scrollToTop}>
-            <span>🏳️ hack the box</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/#" onClick={scrollToTop}>
-            <span>🏁 portswigger</span>
+          <Link to="/overthewire" onClick={scrollToTop}>
+            <span>🎌 over the wire</span>
           </Link>
         </li>
         <li>
@@ -63,7 +52,17 @@ const Lexical = () => {
         </li>
         <li>
           <Link to="/#" onClick={scrollToTop}>
-            <span>🎌 over the wire</span>
+            <span>🏁 portswigger</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/#" onClick={scrollToTop}>
+            <span>🚩 try hack me</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/#" onClick={scrollToTop}>
+            <span>🏳️ hack the box</span>
           </Link>
         </li>
       </ul>

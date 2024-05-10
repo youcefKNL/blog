@@ -11,30 +11,33 @@ import IdWebClient from "./pages/components/rootme/routes/IdWebClient";
 import IdWebServer from "./pages/components/rootme/routes/IdWebServer";
 import OverTheWirePages from "./pages/OverTheWirePages";
 import IdBandit from "./pages/components/over the wire/routes/IdBandit";
+import { TerminalContextProvider } from "react-terminal";
 
 const App = () => {
   const location = useLocation();
 
   return (
     <div>
-      <Header />
+      <TerminalContextProvider>
+        <Header />
 
-      <Routes key={location.pathname} location={location} initial={false}>
-        <Route path="/" element={<Home />} />
-        <Route path="/challenge" element={<Challenge />} />
-        <Route path="/rootme" element={<RootMePage />} />
-        <Route path="/overthewire" element={<OverTheWirePages />} />
-        <Route path="/overthewire/bandit/:id" element={<IdBandit />} />
+        <Routes key={location.pathname} location={location} initial={false}>
+          <Route path="/" element={<Home />} />
+          <Route path="/challenge" element={<Challenge />} />
+          <Route path="/rootme" element={<RootMePage />} />
+          <Route path="/overthewire" element={<OverTheWirePages />} />
+          <Route path="/overthewire/bandit/:id" element={<IdBandit />} />
 
-        <Route path="/rootme/exif" element={<Exif />} />
-        <Route path="/rootme/networks/:id" element={<IdNetwork />} />
-        <Route
-          path="/rootme/crypto-analysis/:id"
-          element={<IdCryptoAnalysis />}
-        />
-        <Route path="/rootme/web-client/:id" element={<IdWebClient />} />
-        <Route path="/rootme/web-server/:id" element={<IdWebServer />} />
-      </Routes>
+          <Route path="/rootme/exif" element={<Exif />} />
+          <Route path="/rootme/networks/:id" element={<IdNetwork />} />
+          <Route
+            path="/rootme/crypto-analysis/:id"
+            element={<IdCryptoAnalysis />}
+          />
+          <Route path="/rootme/web-client/:id" element={<IdWebClient />} />
+          <Route path="/rootme/web-server/:id" element={<IdWebServer />} />
+        </Routes>
+      </TerminalContextProvider>
     </div>
   );
 };

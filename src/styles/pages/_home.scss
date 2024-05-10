@@ -153,7 +153,15 @@
     // height: 500px;
     color: $Textcolor2;
     margin: 5% 0;
-    z-index: 1
+    z-index: 1;
+
+    @media screen and (max-width:600px) {
+      font-size: 2em;
+    }
+
+    @media screen and (max-width:400px) {
+      font-size: 1.5em;
+    }
   }
 
   @include center;
@@ -170,8 +178,13 @@
     grid-auto-rows: auto;
     grid-gap: 10%;
     width: 100%;
-    margin-bottom: 15%;
+    height: 100%;
+    margin-bottom: 25%;
     max-width: 1200px;
+
+    @media screen and (max-width:1400px) {
+      margin-bottom: 35%;
+    }
 
     @media screen and (max-width:900px) {
       @include center;
@@ -246,5 +259,57 @@ yo {
   height: 100%;
   z-index: 0;
   border-top: 10px solid $Textcolor2;
+
+}
+
+
+.ReactBash {
+  margin-top: 10%;
+  z-index: 1;
+  width: 500px;
+  // height: 400px !important;
+  // display: none !important;
+  background: black !important;
+  overflow: auto !important;
+
+  opacity: 0.9;
+
+  @media screen and (max-width:600px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width:500px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width:350px) {
+    width: auto;
+  }
+
+
+  textarea:focus,
+  input:focus {
+    outline: none;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #000;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000;
+  }
 
 }

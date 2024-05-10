@@ -6,6 +6,7 @@ import ParticlesContainer from "./components/background Effect/Particles";
 import ParticlesContainer2 from "./components/background Effect/Particles2";
 
 import Footer from "./components/Footer";
+import TerminalComponent from "./components/Terminal/MyBashTerminal";
 
 const Home = () => {
   //scrol top
@@ -35,6 +36,11 @@ const Home = () => {
       title: "rootmeBackground",
       description: "DNS Transfert <Network>",
       link: "/rootme/networks/dnsTransfert",
+    },
+    {
+      title: "overthewireBackground",
+      description: "Wargame Bandit <SHELL>",
+      link: "/overthewire/bandit/bandit0",
     },
     {
       title: "overthewireBackground",
@@ -73,7 +79,9 @@ const Home = () => {
       </div>
       <div className="homeArticles">
         <ParticlesContainer2 />
-
+        <div className="terminal">
+          <TerminalComponent />
+        </div>
         <h2>🏆 Challenges récents 🏅</h2>
         <div className="homeArticlesContainer">
           {latestArticles.map((article, index) => (
