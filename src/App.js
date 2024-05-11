@@ -12,6 +12,7 @@ import IdWebServer from "./pages/components/rootme/routes/IdWebServer";
 import OverTheWirePages from "./pages/OverTheWirePages";
 import IdBandit from "./pages/components/over the wire/routes/IdBandit";
 import { TerminalContextProvider } from "react-terminal";
+import About from "./pages/About";
 
 const App = () => {
   const location = useLocation();
@@ -24,6 +25,8 @@ const App = () => {
         <Routes key={location.pathname} location={location} initial={false}>
           <Route path="/" element={<Home />} />
           <Route path="/challenge" element={<Challenge />} />
+          <Route path="/about" element={<About />} />
+
           <Route path="/rootme" element={<RootMePage />} />
           <Route path="/overthewire" element={<OverTheWirePages />} />
           <Route path="/overthewire/bandit/:id" element={<IdBandit />} />

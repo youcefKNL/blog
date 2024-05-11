@@ -1,0 +1,15 @@
+.about {
+    width: 100%;
+    height: 100svh;
+    margin: 0 auto;
+    @include center;
+    background: url("../../assets/background/3.png") center/cover no-repeat;
+    mix-blend-mode: multiply;
+
+    .ReactBash {
+        height: auto !important;
+        // width: 50%;
+        opacity: 1;
+
+    }
+}

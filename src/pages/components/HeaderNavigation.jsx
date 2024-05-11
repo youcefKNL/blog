@@ -18,15 +18,23 @@ const Header = () => {
     };
   }, []);
 
+  //scrol top
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
   return (
     <header className={isScrolled ? "activeHeader" : "header"}>
       <h2> {"<#SecretNote>"} </h2>
       <nav>
         <ul>
           <NavLink
-            to="/"
+            to="/#h1"
             className={(nav) => (nav.isActive ? "nav-active" : null)}
             title="Home"
+            onClick={scrollToTop}
           >
             <li>
               <p>Accueil</p> <FaHome />
@@ -37,6 +45,7 @@ const Header = () => {
             to="/challenge"
             className={(nav) => (nav.isActive ? "nav-active" : null)}
             title="Challenge"
+            onClick={scrollToTop}
           >
             <li>
               <p>Challenge</p> <FaFlag />
@@ -44,10 +53,10 @@ const Header = () => {
           </NavLink>
 
           <NavLink
-            to="https://portfolio.cabinetlegalis.fr"
+            to="/about"
             className={(nav) => (nav.isActive ? "nav-active" : null)}
             title="About"
-            target="_blank"
+            onClick={scrollToTop}
           >
             <li>
               <p>À Propos</p> <FaInfoCircle />

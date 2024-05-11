@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaCodepen } from "react-icons/fa";
 
@@ -6,9 +6,30 @@ import ParticlesContainer from "./components/background Effect/Particles";
 import ParticlesContainer2 from "./components/background Effect/Particles2";
 
 import Footer from "./components/Footer";
+import terminal from "../assets/background/carbon.png";
 import TerminalComponent from "./components/Terminal/MyBashTerminal";
 
 const Home = () => {
+  //////////////////ECOUTEUR EVENEMENT JS//////////////////////////////////////////
+  const terminalRef = useRef(null);
+
+  const handleEnterKeyPress = (event) => {
+    if (event.key === "Enter") {
+      // Empêcher le comportement par défaut de la touche "Enter"
+      event.preventDefault();
+    }
+  };
+  // Historique spécifique à la page d'accueil
+  const homeHistory = [
+    {
+      value: (
+        <div>
+          <p>Bienvenue dans mon terminal. :)</p>
+          {/* Ajoutez d'autres messages spécifiques à la page d'accueil si nécessaire */}
+        </div>
+      ),
+    },
+  ];
   //scrol top
   const scrollToTop = () => {
     window.scrollTo({
@@ -80,7 +101,10 @@ const Home = () => {
       <div className="homeArticles">
         <ParticlesContainer2 />
         <div className="terminal">
-          <TerminalComponent />
+          <img src={terminal} alt="" />
+          {/* <div ref={terminalRef} onKeyDown={handleEnterKeyPress} tabIndex={0}>
+            <TerminalComponent history={homeHistory} />
+          </div> */}
         </div>
         <h2>🏆 Challenges récents 🏅</h2>
         <div className="homeArticlesContainer">

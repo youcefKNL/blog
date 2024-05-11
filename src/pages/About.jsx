@@ -1,17 +1,9 @@
-// import React, { useRef } from "react";
+import React from "react";
 import Terminal from "react-bash";
+import MyBashTerminal from "./components/Terminal/MyBashTerminal";
+import ParticleContainer from "./components/background Effect/ParticlesHeader";
 
-const MyBashTerminal = () => {
-  // //////////////////ECOUTEUR EVENEMENT JS//////////////////////////////////////////
-  // const terminalRef = useRef(null);
-
-  // const handleEnterKeyPress = (event) => {
-  //   if (event.key === "Enter") {
-  //     // Empêcher le comportement par défaut de la touche "Enter"
-  //     event.preventDefault();
-  //   }
-  // };
-
+const About = ({ aboutHistory }) => {
   /////////////////////COMMANDE BASH/////////////////////////////////////////
   const echo = {
     exec: ({ structure, cwd, history }, args) => {
@@ -92,9 +84,11 @@ const MyBashTerminal = () => {
             LinkedIn .
           </p>
           <br />
-          <p>Si un CTF vous tente! rdv à l'onglet "À Propos" ;).</p>
-          <br />
-          <p>Mes derniers challenges cyber réussis ci-dessous. </p>
+          <p>CTF time... (ಠ(ಠ(ಠ_ಠ)ಠ)ಠ)</p>
+          <p>
+            A vous de trouver le ou les flags {"=>"} FLAG
+            {"{**************} "}
+          </p>
           <br />
           {/* <ul>
             <li>
@@ -133,44 +127,17 @@ const MyBashTerminal = () => {
   //   },
   // ];
   return (
-    // <div ref={terminalRef} onKeyDown={handleEnterKeyPress} tabIndex={0}>
-    <Terminal
-      prefix="root@youcef"
-      extensions={extensions}
-      structure={structure}
-      history={history}
-      theme={Terminal.Themes.DARK}
-    />
-    // </div>
+    <div className="about">
+      <ParticleContainer />
+      <Terminal
+        prefix="root@youcef"
+        extensions={extensions}
+        structure={structure}
+        history={history}
+        theme={Terminal.Themes.DARK}
+      />
+    </div>
   );
 };
 
-export default MyBashTerminal;
-
-// import React from "react";
-// import { ReactTerminal } from "react-terminal";
-
-// const MyTerminal = () => {
-//   // Fonction pour empêcher le défilement de la page lorsque la touche "Enter" est pressée
-
-//   // Définir les commandes personnalisées pour le terminal
-//   const commands = {
-//     whoami: "jackharper",
-//     cd: (directory) => `changed path to ${directory}`,
-//   };
-
-//   return (
-//     <ReactTerminal
-//       commands={commands}
-//       welcomeMessage="Welcome to My Terminal!"
-//       prompt=">>>"
-//       errorMessage="Command not found!"
-//       enableInput={true}
-//       showControlBar={true}
-//       showControlButtons={true}
-//       theme="light"
-//     />
-//   );
-// };
-
-// export default MyTerminal;
+export default About;
