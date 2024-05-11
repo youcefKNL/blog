@@ -5,11 +5,22 @@
     @include center;
     background: url("../../assets/background/3.png") center/cover no-repeat;
     mix-blend-mode: multiply;
+    overflow: hidden;
 
     .ReactBash {
         height: auto !important;
-        // width: 50%;
-        opacity: 1;
+        width: 600px;
+        opacity: 0.9;
+        margin-bottom: 10%;
+        max-height: 60svh;
 
+        @media screen and (max-width: 800px) {
+            width: 95%;
+        }
+
+    }
+
+    .ReactBash> :nth-child(1) {
+        background: $Textcolor1 !important;
     }
 }

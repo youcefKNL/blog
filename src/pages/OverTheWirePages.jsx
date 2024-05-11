@@ -16,7 +16,7 @@ import ParticlesContainer2 from "./components/background Effect/Particles2";
 // import dataLinksNetworks from "./components/rootme/routes/data/dataLinksNetworks.json";
 // import dataLinksCryptoAnalysis from "./components/rootme/routes/data/dataLinksCryptoAnalysis.json";
 // import dataLinksWebClient from "./components/rootme/routes/data/dataLinksWebClient.json";
-// import dataLinksWebServer from "./components/rootme/routes/data/dataLinksWebServer.json";
+import dataLinksLeviathan from "./components/over the wire/routes/data/dataLinksLeviathan.json";
 import dataLinksBandit from "./components/over the wire/routes/data/dataLinksBandits.json";
 
 const scrollUp = () => {
@@ -118,7 +118,6 @@ const OverTheWirePages = ({ isVisible }) => {
               expandIcon={<PiArrowFatLineDownFill />}
               aria-controls="panel3-content"
               id="panel3-header"
-              disabled
             >
               <Typography>
                 <SiPowershell />
@@ -127,7 +126,7 @@ const OverTheWirePages = ({ isVisible }) => {
             </AccordionSummary>
 
             <AccordionDetails>
-              {/* <ul>
+              <ul>
                 {dataLinksLeviathan.map((link) => (
                   <li key={link.id}>
                     <Link
@@ -138,7 +137,7 @@ const OverTheWirePages = ({ isVisible }) => {
                     </Link>
                   </li>
                 ))}
-              </ul> */}
+              </ul>
             </AccordionDetails>
           </Accordion>
           {/* ****************************KRYPTON********************************* */}

@@ -11,8 +11,11 @@ import IdWebClient from "./pages/components/rootme/routes/IdWebClient";
 import IdWebServer from "./pages/components/rootme/routes/IdWebServer";
 import OverTheWirePages from "./pages/OverTheWirePages";
 import IdBandit from "./pages/components/over the wire/routes/IdBandit";
+import IdLeviathan from "./pages/components/over the wire/routes/IdLeviathan";
+
 import { TerminalContextProvider } from "react-terminal";
 import About from "./pages/About";
+import Page404 from "./pages/Page404";
 
 const App = () => {
   const location = useLocation();
@@ -30,6 +33,7 @@ const App = () => {
           <Route path="/rootme" element={<RootMePage />} />
           <Route path="/overthewire" element={<OverTheWirePages />} />
           <Route path="/overthewire/bandit/:id" element={<IdBandit />} />
+          <Route path="/overthewire/leviathan/:id" element={<IdLeviathan />} />
 
           <Route path="/rootme/exif" element={<Exif />} />
           <Route path="/rootme/networks/:id" element={<IdNetwork />} />
@@ -39,6 +43,7 @@ const App = () => {
           />
           <Route path="/rootme/web-client/:id" element={<IdWebClient />} />
           <Route path="/rootme/web-server/:id" element={<IdWebServer />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </TerminalContextProvider>
     </div>

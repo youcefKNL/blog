@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaCodepen } from "react-icons/fa";
 
@@ -7,29 +7,8 @@ import ParticlesContainer2 from "./components/background Effect/Particles2";
 
 import Footer from "./components/Footer";
 import terminal from "../assets/background/carbon.png";
-import TerminalComponent from "./components/Terminal/MyBashTerminal";
 
 const Home = () => {
-  //////////////////ECOUTEUR EVENEMENT JS//////////////////////////////////////////
-  const terminalRef = useRef(null);
-
-  const handleEnterKeyPress = (event) => {
-    if (event.key === "Enter") {
-      // Empêcher le comportement par défaut de la touche "Enter"
-      event.preventDefault();
-    }
-  };
-  // Historique spécifique à la page d'accueil
-  const homeHistory = [
-    {
-      value: (
-        <div>
-          <p>Bienvenue dans mon terminal. :)</p>
-          {/* Ajoutez d'autres messages spécifiques à la page d'accueil si nécessaire */}
-        </div>
-      ),
-    },
-  ];
   //scrol top
   const scrollToTop = () => {
     window.scrollTo({
@@ -39,34 +18,41 @@ const Home = () => {
   };
   const latestArticles = [
     {
+      title: "overthewireBackground",
+      description: "Wargame Léviathan <SHELL>",
+      progression: "workInProgress",
+      link: "/overthewire/leviathan/leviathan0",
+    },
+    {
+      title: "overthewireBackground",
+      description: "Wargame Bandit <SHELL>",
+      link: "/overthewire/bandit/bandit0",
+      progression: "missionAcomplished",
+    },
+
+    {
       title: "rootmeBackground",
       description: "Ethernet Frame <NETWORKS>",
       link: "/rootme/networks/ethernetFrame",
+      progression: "missionAcomplished",
     },
     {
       title: "rootmeBackground",
       description: "FTP Authentication <Network>",
       link: "/rootme/networks/ftpAuthentification",
+      progression: "missionAcomplished",
     },
     {
       title: "rootmeBackground",
       description: "Telnet Authentification <NETWORK>",
       link: "/rootme/networks/telnetAuthentification",
+      progression: "missionAcomplished",
     },
     {
       title: "rootmeBackground",
       description: "DNS Transfert <Network>",
       link: "/rootme/networks/dnsTransfert",
-    },
-    {
-      title: "overthewireBackground",
-      description: "Wargame Bandit <SHELL>",
-      link: "/overthewire/bandit/bandit0",
-    },
-    {
-      title: "overthewireBackground",
-      description: "Wargame Bandit <SHELL>",
-      link: "/overthewire/bandit/bandit0",
+      progression: "missionAcomplished",
     },
   ];
 
@@ -114,7 +100,7 @@ const Home = () => {
               <div className="homeDescriptionArticle">
                 <p>{article.description}</p>
               </div>
-              <div className="missionAcomplished"></div>
+              <div className={article.progression}></div>
               <div className="homeLinkArticle">
                 <Link to={article.link} onClick={scrollToTop}>
                   Lire la suite

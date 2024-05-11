@@ -26,20 +26,21 @@ const About = ({ aboutHistory }) => {
     },
   };
 
-  // const open = {
-  //   exec: ({ structure, state, history }, command) => {
-  //     const parsedCommand = command.split(" ");
-  //     const fileName = parsedCommand[1];
+  const contact = {
+    exec: ({ structure, state, history }, command) => {
+      const parsedCommand = history[1].value.split(" ");
+      const fileName = parsedCommand[1];
 
-  //     if (fileName === "resume.pdf") {
-  //       window.open(
-  //         "https://github.com/kylegrantlucas/resume/raw/master/output/kyle_modern.pdf"
-  //       );
-  //     }
-
-  //     return { structure, state, history };
-  //   },
-  // };
+      if (fileName === "youcef") {
+        return (
+          window.open("https://www.linkedin.com/in/youcef-knl/"),
+          structure,
+          state,
+          history
+        );
+      }
+    },
+  };
 
   // const custom = {
   //   exec: ({ structure, cwd, history }, args) => {
@@ -52,17 +53,109 @@ const About = ({ aboutHistory }) => {
   //   },
   // };
 
-  const extensions = { echo, sudo };
+  const extensions = { echo, sudo, contact };
 
   //////////////////////////////////STRUCURE DES DOSSIER/////////////////////////////////////
   const structure = {
     home: {
       youcef: {
-        "linkedin.txt": { content: "https://www.linkedin.com/in/youcef-knl/" },
-        "github.txt": { content: "https://github.com/youcefKNL" },
-        directory: {
-          subfile: { content: "Subfile content" },
+        "flag.txt": {
+          content:
+            "Ceci est un leurre :). Vous trouverez un indice dans le fichier caché dans ce dossier. (bonus commmande -> ls -a) (͠≖ ͜ʖ͠≖)",
         },
+        ".hidden": {
+          content:
+            "Le flag se trouve dans le dossier khenichil_5/khenichil_youcef/flag.txt, et contient des informations importantes pour prendre contact avec l'admin. (͡• ͜ʖ ͡•)",
+        },
+        private: {
+          khenichil_0: {
+            "flag.txt": {
+              content: "Vous êtes sur la mauvaise route.(⊙.⊙(◉̃_᷅◉)⊙.⊙)",
+            },
+            khenichil_youcef: {
+              "flag.txt": {
+                content: "Vous êtes sur la mauvaise route.(⊙.⊙(◉̃_᷅◉)⊙.⊙)",
+              },
+            },
+          },
+          khenichil_1: {
+            "flag.txt": {
+              content: "Vous êtes sur la mauvaise route.(⊙.⊙(◉̃_᷅◉)⊙.⊙)",
+            },
+            khenichil_youcef: {
+              "flag.txt": {
+                content: "Vous êtes sur la mauvaise route.(⊙.⊙(◉̃_᷅◉)⊙.⊙)",
+              },
+            },
+          },
+          khenichil_2: {
+            "flag.txt": {
+              content: "Vous êtes sur la mauvaise route.(⊙.⊙(◉̃_᷅◉)⊙.⊙)",
+            },
+            khenichil_youcef: {
+              "flag.txt": {
+                content: "Vous êtes sur la mauvaise route.(⊙.⊙(◉̃_᷅◉)⊙.⊙)",
+              },
+            },
+          },
+          khenichil_3: {
+            "flag.txt": {
+              content: "Vous êtes sur la mauvaise route.(⊙.⊙(◉̃_᷅◉)⊙.⊙)",
+            },
+            khenichil_youcef: {
+              "flag.txt": {
+                content: "Vous êtes sur la mauvaise route.(⊙.⊙(◉̃_᷅◉)⊙.⊙)",
+              },
+            },
+          },
+          khenichil_4: {
+            "flag.txt": {
+              content: "Vous êtes sur la mauvaise route.(⊙.⊙(◉̃_᷅◉)⊙.⊙)",
+            },
+            khenichil_youcef: {
+              "flag.txt": {
+                content: "Vous êtes sur la mauvaise route.(⊙.⊙(◉̃_᷅◉)⊙.⊙)",
+              },
+            },
+          },
+          khenichil_5: {
+            "flag.txt": {
+              content: "Vous y êtes presque.(͡• ͜ʖ ͡•)",
+            },
+            khenichil_youcef: {
+              "flag.txt": {
+                content: `Bravo! Maintenant que vous savez écrire mon nom et prénom :). Voici le Flag FLAG{contact_moi_sur_Linkedin_*_Le_lien_à_la_page_d_acceuil}  (͡• ͜ʖ ͡•) `,
+              },
+            },
+          },
+          khenichil_6: {
+            "flag.txt": {
+              content: "Vous êtes sur la mauvaise route.(⊙.⊙(◉̃_᷅◉)⊙.⊙)",
+            },
+            khenichil_youcef: {
+              "flag.txt": {
+                content: "Vous êtes sur la mauvaise route.(⊙.⊙(◉̃_᷅◉)⊙.⊙)",
+              },
+            },
+          },
+          khenichil_7: {
+            "flag.txt": {
+              content: "Vous êtes sur la mauvaise route.(⊙.⊙(◉̃_᷅◉)⊙.⊙)",
+            },
+            khenichil_youcef: {
+              "flag.txt": {
+                content: "Vous êtes sur la mauvaise route.(⊙.⊙(◉̃_᷅◉)⊙.⊙)",
+              },
+            },
+          },
+          "indice.txt": {
+            content:
+              "Le mieux est de prendre le temps et de récupérer la destination finale du flag en lisant bien le contenu de flag.txt dans le dossier ../youcef (si ce n'est pas déjà fait (͡• ͜ʖ ͡•)",
+          },
+        },
+      },
+      "readme.md": {
+        content: `Continuez l'exploration, le prochain indice dans le dossier "youcef" ≧◉◡◉≦`,
       },
     },
   };
@@ -81,51 +174,24 @@ const About = ({ aboutHistory }) => {
           <p>
             {" "}
             N'hésitez pas à consulter mon portfolio et à me contacter sur{" "}
-            LinkedIn .
+            LinkedIn :
           </p>
+          <p>Commande pour me contacter: `contact youcef`</p>
           <br />
           <p>CTF time... (ಠ(ಠ(ಠ_ಠ)ಠ)ಠ)</p>
+
+          <p>Commande disponible : toutes les commandes de base unix.</p>
+
           <p>
             A vous de trouver le ou les flags {"=>"} FLAG
             {"{**************} "}
           </p>
           <br />
-          {/* <ul>
-            <li>
-              <code>ls</code> - list all files & directories
-            </li>
-            <li>
-              <code>ls work/previous</code> - list files about my previous work
-            </li>
-            <li>
-              <code>ls projects</code> - list files about my projects
-            </li>
-            <li>
-              <code>open resume.pdf</code> - Open my resume
-            </li>
-            <li>
-              <code>cat work/current/fender.md</code> - View information about
-              my current work
-            </li>
-            <li>
-              <code>cat projects/go/plex-latmetric.md</code> - View information
-              about my plex-lametric project
-            </li>
-          </ul> */}
         </div>
       ),
     },
   ];
-  // const aboutHistory = [
-  //   {
-  //     value: (
-  //       <div>
-  //         <p>Informations spécifiques à la page "About".</p>
-  //         {/* Ajoutez d'autres messages spécifiques à la page "About" si nécessaire */}
-  //       </div>
-  //     ),
-  //   },
-  // ];
+
   return (
     <div className="about">
       <ParticleContainer />

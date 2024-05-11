@@ -1,0 +1,39 @@
+.notFound {
+    height: 100svh;
+    width: 100swh;
+    @include center;
+    align-items: flex-end;
+    overflow: hidden;
+    // background: url("../../assets/background/triage/A4yKn94USwKoUy2RfHdomw.png") center/cover no-repeat;
+    // background: url("../../assets/background/triage/knyxn1mSQaq_3WtbD4ZJlQ.png") center/cover no-repeat;
+    // background: url("../../assets/background/triage/vLmO4yCPSeWJ4-mjX66gsA.png") center/cover no-repeat;
+    // background: url("../../assets/background/triage/XjEQJiCARZKMy3rD4u_HcQ.png") center/cover no-repeat;
+    background: url("../../assets/background/triage/0Q0cqOW9S5OWuiSlfeYGug.png") center/cover no-repeat;
+
+
+
+    h2 {
+        font-size: 4em;
+        color: white;
+        // mix-blend-mode: difference;
+
+    }
+
+    a:hover {
+        text-decoration: none !important;
+    }
+
+    h3 {
+        font-size: 2em;
+        color: white;
+        margin-bottom: 20%;
+        // mix-blend-mode: difference;
+        filter: drop-shadow(13px -23px 260px #ffffff);
+        transition: 0.2s ease-in;
+
+        &:hover {
+            color: $Textcolor1;
+            transform: scale(1.2);
+        }
+    }
+}
