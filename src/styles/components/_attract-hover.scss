@@ -1,0 +1,33 @@
+.attract-hover {
+    display: inline-block;
+}
+
+.attract-hover-easing {
+    transition: all 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+
+
+
+.button {
+    display: inline-block;
+    border-radius: 100%;
+    padding: 20px;
+    color: #FFF;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: blue;
+    line-height: 1;
+}
+
+.attract-hover,
+.attract-hover-proximity {
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px dashed rgba(0, 0, 0, 0.2)
+}
+
+.attract-hover-proximity {
+    padding: 50px;
+    margin-top: 50px;
+}

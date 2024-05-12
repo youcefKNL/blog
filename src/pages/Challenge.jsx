@@ -30,12 +30,12 @@ const Challenge = () => {
             Parcours d'Exploration : <br /> Découvrez les Défis de Hacking
           </h1>
           <p>
-            Bienvenue dans cet espace d'apprentissage, où je partage ma road map
-            vers la maîtrise du hacking éthique. Explorez avec moi les divers
-            défis et CTFs (Capture The Flags) que j'ai relevés, où chaque succès
-            est une victoire modeste mais significative. Parcourez mes notes
-            personnelles, fruit de mes expériences sur des plateformes telles
-            que Root-Me, VulnHub, Try Hack Me, Hack The Box et PortSwigger.
+            Bienvenue dans cet espace, où je partage mes challenges vers la
+            maîtrise du hacking éthique. Explorez avec moi les divers défis et
+            CTFs (Capture The Flags) que j'ai relevés durant mon temps libre, où
+            chaque succès est une victoire modeste mais significative. Parcourez
+            mes notes personnelles, fruit de mes expériences sur diverses
+            plateformes.
             <br />
             <br />
             🚨 Disclaimer 📢: <br />

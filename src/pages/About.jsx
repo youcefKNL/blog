@@ -124,7 +124,7 @@ const About = ({ aboutHistory }) => {
             },
             khenichil_youcef: {
               "flag.txt": {
-                content: `Bravo! Maintenant que vous savez écrire mon nom et prénom :). Voici le Flag FLAG{contact_moi_sur_Linkedin_*_Le_lien_à_la_page_d_acceuil}  (͡• ͜ʖ ͡•) `,
+                content: `Bravo! Maintenant que vous savez écrire mon nom et prénom :). Voici le Flag FLAG{contact_moi_sur_Linkedin_*_Le_lien_à_la_page_d_acceuil}  (͡• ͜ʖ ͡•)   ou bien tape en ligne de commande (en minuscule) : contact youcef`,
               },
             },
           },

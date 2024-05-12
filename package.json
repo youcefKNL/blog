@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.3.0",
+    "attract-hover": "^1.0.0",
     "axios": "^1.6.8",
     "framer-motion": "^11.1.7",
     "framer-motion-3d": "^11.1.7",

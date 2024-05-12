@@ -211,6 +211,10 @@
       box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
         0 5px 15px $Textcolor1(0, 0, 0, 0.07) !important;
 
+      h3 {
+        font-size: 1.5em;
+      }
+
       .missionAcomplished {
         // background: url("../../assets/missionAccomplished.jpg") center/contain no-repeat;
         background: url("../../assets/missionComplite.jpg") center/contain no-repeat;
@@ -288,55 +292,4 @@ yo {
       width: 100%;
     }
   }
-}
-
-.ReactBash {
-  margin-top: 10%;
-  z-index: 1;
-  width: 500px;
-  // height: 400px !important;
-  // display: none !important;
-  background: black !important;
-  overflow: auto !important;
-
-  opacity: 0.9;
-
-  @media screen and (max-width:600px) {
-    width: 400px;
-  }
-
-  @media screen and (max-width:500px) {
-    width: 300px;
-  }
-
-  @media screen and (max-width:350px) {
-    width: auto;
-  }
-
-
-  textarea:focus,
-  input:focus {
-    outline: none;
-  }
-
-  /* width */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #000;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #000;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #000;
-  }
-
 }

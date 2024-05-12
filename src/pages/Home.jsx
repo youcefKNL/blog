@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaCodepen } from "react-icons/fa";
-
 import ParticlesContainer from "./components/background Effect/Particles";
 import ParticlesContainer2 from "./components/background Effect/Particles2";
 
@@ -18,39 +17,42 @@ const Home = () => {
   };
   const latestArticles = [
     {
-      title: "overthewireBackground",
-      description: "Wargame Léviathan <SHELL>",
-      progression: "workInProgress",
+      banner: "overthewireBackground",
+      title: "Wargame Léviathan <SHELL>",
+      description: "Un bon challenge pour manipuler les 'SUID' ❤️.",
       link: "/overthewire/leviathan/leviathan0",
+      progression: "missionAcomplished",
     },
     {
-      title: "overthewireBackground",
-      description: "Wargame Bandit <SHELL>",
+      banner: "overthewireBackground",
+      title: "Wargame Bandit <SHELL>",
+      description: "Un long challenge pour faire le tour du game.",
+
       link: "/overthewire/bandit/bandit0",
       progression: "missionAcomplished",
     },
 
     {
-      title: "rootmeBackground",
-      description: "Ethernet Frame <NETWORKS>",
+      banner: "rootmeBackground",
+      title: "Ethernet Frame <NETWORKS>",
       link: "/rootme/networks/ethernetFrame",
       progression: "missionAcomplished",
     },
     {
-      title: "rootmeBackground",
-      description: "FTP Authentication <Network>",
+      banner: "rootmeBackground",
+      title: "FTP Authentication <Network>",
       link: "/rootme/networks/ftpAuthentification",
       progression: "missionAcomplished",
     },
     {
-      title: "rootmeBackground",
-      description: "Telnet Authentification <NETWORK>",
+      banner: "rootmeBackground",
+      title: "Telnet Authentification <NETWORK>",
       link: "/rootme/networks/telnetAuthentification",
       progression: "missionAcomplished",
     },
     {
-      title: "rootmeBackground",
-      description: "DNS Transfert <Network>",
+      banner: "rootmeBackground",
+      title: "DNS Transfert <Network>",
       link: "/rootme/networks/dnsTransfert",
       progression: "missionAcomplished",
     },
@@ -72,7 +74,7 @@ const Home = () => {
 
         {/* // Icon Social Link */}
 
-        <div className="socialLink">
+        <div className="socialLink attract-hover-proximity">
           <Link to="https://github.com/youcefKNL" target="_blank">
             <FaGithub />
           </Link>
@@ -96,14 +98,15 @@ const Home = () => {
         <div className="homeArticlesContainer">
           {latestArticles.map((article, index) => (
             <div key={index} className="homeCardArticle">
-              <div className={`homeBannerArticle ${article.title}`}></div>
+              <div className={`homeBannerArticle ${article.banner}`}></div>
               <div className="homeDescriptionArticle">
+                <h3>{article.title}</h3>
                 <p>{article.description}</p>
               </div>
               <div className={article.progression}></div>
               <div className="homeLinkArticle">
                 <Link to={article.link} onClick={scrollToTop}>
-                  Lire la suite
+                  Let's go!
                 </Link>
               </div>
             </div>

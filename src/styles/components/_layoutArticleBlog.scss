@@ -101,7 +101,7 @@
     }
 
     @media screen and (max-width: 500px) {
-      font-size: 1.5em;
+      font-size: 1em;
       margin-top: 70px;
 
     }
@@ -368,6 +368,12 @@
 
 .solution {
   width: 100%;
+
+
+
+  @media screen and (max-width: 600px) {
+    font-size: 0.7em;
+  }
 
   img {
     margin: 5% auto;
