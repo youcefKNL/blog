@@ -38,7 +38,7 @@
   {
     "title": "Ignorant",
     "description": "Ignorant est un outil développé en python qui permet de savoir si un numéro de téléphone est inscrit sur une liste de sites. Il regroupe des sites connus comme Amazon, Instagram etc. Le principe est équivalent à Holehe, mais pour les recherches de numéros de téléphone.",
-    "photo": "",
+    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/ignorant.png?raw=true",
     "url": "https://github.com/megadose/ignorant",
     "logo": "",
     "price": "free",
@@ -47,7 +47,7 @@
   {
     "title": "Maltego",
     "description": "Maltego est un outil de visualisation de données qui aide les chercheurs à identifier les relations et les modèles dans un grand nombre d'ensembles de données. Il est particulièrement populaire dans le domaine de la cybersécurité pour la criminalistique numérique et la collecte de renseignements.",
-    "photo": "",
+    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/maltego.png?raw=true",
     "url": "https://www.maltego.com/",
     "logo": "",
     "price": "free / license",
@@ -56,7 +56,7 @@
   {
     "title": "Sherlock",
     "description": "Sherlock est un outil qui recherche des noms d'utilisateur sur diverses plateformes de médias sociaux et sites Web. Ceci est utile pour déterminer l’empreinte numérique d’un nom d’utilisateur spécifique.",
-    "photo": "",
+    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/sherlock.png?raw=true",
     "url": "https://github.com/sherlock-project/sherlock",
     "logo": "",
     "price": "free",
@@ -65,7 +65,7 @@
   {
     "title": "Nslookup",
     "description": "Nslookup (Name Server Lookup) est un outil de ligne de commande utilisé pour interroger les serveurs DNS (Domain Name System) afin de trouver les détails DNS, y compris les adresses IP d'un domaine spécifique.",
-    "photo": "",
+    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/nslookup.png?raw=true",
     "url": "https://github.com/sherlock-project/sherlock",
     "logo": "",
     "price": "free",

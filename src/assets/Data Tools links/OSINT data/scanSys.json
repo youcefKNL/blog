@@ -1,0 +1,382 @@
+[
+  {
+    "os": "Windows",
+    "categories": [
+      {
+        "title": "Enum_privileges",
+        "methods": [
+          {
+            "name": "Manual_Inspection",
+            "description": "Vérifie les privilèges de l'utilisateur actuel."
+          },
+          {
+            "name": "Built-in_Commands",
+            "tools": [
+              {
+                "name": "whoami /priv",
+                "description": "Affiche les privilèges de l'utilisateur actuel."
+              },
+              {
+                "name": "net user <username>",
+                "description": "Fournit un compte rendu détaillé des appartenances aux groupes de l'utilisateur et d'autres attributs."
+              }
+            ]
+          },
+          {
+            "name": "Third-party_Tools",
+            "tools": [
+              {
+                "name": "BeRoot",
+                "description": "Vérifie les erreurs de configuration courantes pour l'élévation de privilèges."
+              },
+              {
+                "name": "Windows-Exploit-Suggester",
+                "description": "Compare le niveau de correctif du système d'exploitation Windows à la base de données de vulnérabilités Microsoft."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Enum_users_groups",
+        "methods": [
+          {
+            "name": "Built-in_Commands",
+            "tools": [
+              {
+                "name": "net user",
+                "description": "Répertorie tous les comptes d'utilisateurs."
+              },
+              {
+                "name": "net localgroup",
+                "description": "Fournit des détails sur les groupes locaux."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Enum_system_info",
+        "methods": [
+          {
+            "name": "Built-in_Commands",
+            "tools": [
+              {
+                "name": "systeminfo",
+                "description": "Divulgue une multitude d'informations sur le système Windows, de la version du système d'exploitation jusqu'au dernier démarrage."
+              },
+              {
+                "name": "wmic",
+                "description": "Utilitaire de ligne de commande capable d'extraire de grandes quantités de données, des logiciels installés aux configurations matérielles."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Enum_network_drivers",
+        "methods": [
+          {
+            "name": "Built-in_Commands",
+            "tools": [
+              {
+                "name": "ipconfig",
+                "description": "Affiche la configuration réseau sous Windows."
+              },
+              {
+                "name": "netstat",
+                "description": "Affiche les connexions réseau, les tables de routage, les statistiques d'interface, etc."
+              }
+            ]
+          },
+          {
+            "name": "Management_Tool",
+            "description": "Gestionnaire de périphériques (Windows)"
+          }
+        ]
+      },
+      {
+        "title": "Enum_antivirus_vulnerable_software",
+        "methods": [
+          {
+            "name": "Security_Center",
+            "description": "Centre de sécurité Windows"
+          },
+          {
+            "name": "Vulnerability_Scanners",
+            "tools": [
+              {
+                "name": "Secunia PSI",
+                "description": "Identifie et corrige les applications logicielles vulnérables sur Windows."
+              },
+              {
+                "name": "Nessus",
+                "description": "Scanner de vulnérabilités avancé qui fournit des informations sur les correctifs manquants sur un système."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Enum_processes_services",
+        "methods": [
+          {
+            "name": "Task_Manager",
+            "description": "Gestionnaire des tâches (Windows)"
+          },
+          {
+            "name": "Command_Line_Tools",
+            "tools": [
+              {
+                "name": "tasklist",
+                "description": "Affiche les processus en cours d'exécution du système."
+              },
+              {
+                "name": "sc",
+                "description": "Permet de gérer les services système sur une machine Windows."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Patch_level",
+        "methods": [
+          {
+            "name": "Update_Logs",
+            "description": "Journaux de mise à jour Windows"
+          },
+          {
+            "name": "Management_Tool",
+            "description": "WSUS (Windows Server Update Services)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "os": "Linux",
+    "categories": [
+      {
+        "title": "Enum_privileges",
+        "methods": [
+          {
+            "name": "Manual_Inspection",
+            "description": "Affiche les informations sur l'utilisateur et le groupe."
+          },
+          {
+            "name": "Built-in_Commands",
+            "tools": [
+              {
+                "name": "id",
+                "description": "Affiche les informations sur l'utilisateur et le groupe."
+              },
+              {
+                "name": "sudo -l",
+                "description": "Répertorie les commandes que l'utilisateur peut exécuter en tant que superutilisateur."
+              }
+            ]
+          },
+          {
+            "name": "Third-party_Tools",
+            "tools": [
+              {
+                "name": "Enum4linux",
+                "description": "Extrait des informations des machines Windows telles que la liste des utilisateurs, les partages, etc."
+              },
+              {
+                "name": "Hydra",
+                "description": "Peut être utilisé pour énumérer les utilisateurs valides sur un système."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Enum_users_groups",
+        "methods": [
+          {
+            "name": "Built-in_Commands",
+            "tools": [
+              {
+                "name": "cat /etc/passwd",
+                "description": "Liste tous les utilisateurs."
+              },
+              {
+                "name": "cat /etc/group",
+                "description": "Affiche les différents groupes et leurs membres."
+              }
+            ]
+          },
+          {
+            "name": "Third-party_Tools",
+            "tools": [
+              {
+                "name": "Enum4linux",
+                "description": "Extrait des informations des machines Windows telles que la liste des utilisateurs, les partages, etc."
+              },
+              {
+                "name": "Hydra",
+                "description": "Peut être utilisé pour énumérer les utilisateurs valides sur un système."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Enum_system_info",
+        "methods": [
+          {
+            "name": "Built-in_Commands",
+            "tools": [
+              {
+                "name": "uname -a",
+                "description": "Distribue les données relatives au système et au noyau."
+              },
+              {
+                "name": "lscpu",
+                "description": "Fournit des informations sur l'architecture du processeur."
+              },
+              {
+                "name": "lsb_release -a",
+                "description": "Affiche les détails de la distribution du système d'exploitation."
+              },
+              {
+                "name": "df",
+                "description": "Offre des informations sur l'utilisation du système de fichiers."
+              }
+            ]
+          },
+          {
+            "name": "Third-party_Tools",
+            "tools": [
+              {
+                "name": "Hardinfo",
+                "description": "Fournit un rapport complet sur le système."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Enum_network_drivers",
+        "methods": [
+          {
+            "name": "Built-in_Commands",
+            "tools": [
+              {
+                "name": "ifconfig",
+                "description": "Affiche la configuration réseau sous Linux."
+              },
+              {
+                "name": "netstat",
+                "description": "Affiche les connexions réseau, les tables de routage, les statistiques d'interface, etc."
+              }
+            ]
+          },
+          {
+            "name": "Management_Tool",
+            "description": "lsmod (Linux)"
+          }
+        ]
+      },
+      {
+        "title": "Enum_antivirus_vulnerable_software",
+        "methods": [
+          {
+            "name": "Security_Tools",
+            "tools": [
+              {
+                "name": "Chkrootkit",
+                "description": "Un outil pour Linux qui peut détecter les rootkits et d'autres intrusions."
+              },
+              {
+                "name": "OpenVAS",
+                "description": "Outil d'analyse des vulnérabilités open source capable d'énumérer les niveaux de correctifs sur les distributions Linux."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Enum_processes_services",
+        "methods": [
+          {
+            "name": "Command_Line_Tools",
+            "tools": [
+              {
+                "name": "ps",
+                "description": "Affiche les processus en cours d'exécution."
+              },
+              {
+                "name": "systemctl",
+                "description": "Commande pour gérer et inspecter les services système sur les distributions Linux à l'aide de systemd."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Find_juicy_files",
+        "methods": [
+          {
+            "name": "Directory_Brute_Force",
+            "tools": [
+              {
+                "name": "Dirbuster",
+                "description": "Outil conçu pour aider à la découverte de répertoires et de fichiers sur les serveurs Web."
+              },
+              {
+                "name": "Dirb",
+                "description": "Outil conçu pour aider à la découverte de répertoires et de fichiers sur les serveurs Web."
+              },
+              {
+                "name": "GoBuster",
+                "description": "Outil conçu pour aider à la découverte de répertoires et de fichiers sur les serveurs Web."
+              }
+            ]
+          },
+          {
+            "name": "Text_Searching",
+            "tools": [
+              {
+                "name": "grep",
+                "description": "Utilitaire de ligne de commande pour rechercher dans les fichiers des modèles spécifiques."
+              },
+              {
+                "name": "find",
+                "description": "Utilitaire de ligne de commande pour rechercher des fichiers en fonction de critères spécifiques."
+              }
+            ]
+          },
+          {
+            "name": "Discovery_Methods",
+            "list": ["Checking .git directories", "Searching for backup files"]
+          }
+        ]
+      },
+      {
+        "title": "Patch_level",
+        "methods": [
+          {
+            "name": "Package_Manager_History",
+            "description": "Utilisation du gestionnaire de packages pour voir quels correctifs ont été appliqués."
+          },
+          {
+            "name": "Vulnerability_Scanners",
+            "tools": [
+              {
+                "name": "Nessus",
+                "description": "Scanner de vulnérabilités avancé qui fournit des informations sur les correctifs manquants sur un système."
+              },
+              {
+                "name": "OpenVAS",
+                "description": "Outil d'analyse des vulnérabilités open source capable d'énumérer les niveaux de correctifs sur les distributions Linux."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

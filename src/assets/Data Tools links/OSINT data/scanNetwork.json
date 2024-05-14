@@ -1,0 +1,124 @@
+[
+  {
+    "title": "Decouverte_active",
+    "commands": [
+      {
+        "tool": "ARP",
+        "description": "Protocole de communication pour déterminer l'adresse IP d'une machine à partir de son adresse MAC.",
+        "command": "sudo netdiscover -r $IP/24"
+      },
+      {
+        "tool": "Ping",
+        "description": "Méthode de découverte de réseau via l'envoi de requêtes ICMP.",
+        "command": "fping -g 10.10.3.0/24"
+      }
+    ]
+  },
+  {
+    "title": "Analyse_ports",
+    "commands": [
+      {
+        "tool": "Nmap",
+        "description": "Scanner de ports pour identifier les services exécutés sur chaque machine.",
+        "command": "nmap $IP"
+      }
+    ]
+  },
+  {
+    "title": "Capture_bannieres",
+    "commands": [
+      {
+        "tool": "Netcat",
+        "description": "Outil polyvalent pour récupérer les bannières de divers services."
+      },
+      {
+        "tool": "Nmap",
+        "description": "Scanner réseau pouvant également extraire des bannières."
+      },
+      {
+        "tool": "Telnet",
+        "description": "Utilisé pour des tâches simples de capture de bannières."
+      }
+    ]
+  },
+  {
+    "title": "DNS_inverse",
+    "commands": [
+      {
+        "tool": "Dig",
+        "description": "Outil pour résoudre les adresses IP en noms de domaine associés.",
+        "command": "dig -x 93.184.216.34"
+      }
+    ]
+  },
+  {
+    "title": "TTL",
+    "commands": [
+      {
+        "tool": "Ping",
+        "description": "Envoi de requêtes ICMP pour identifier la valeur TTL renvoyée.",
+        "command": "$ ping -c 1 example.com"
+      }
+    ]
+  },
+  {
+    "title": "Essentiels",
+    "commands": [
+      {
+        "tool": "NetBIOS",
+        "description": "Utilisé pour le partage de fichiers et d'imprimantes ainsi que la résolution de noms.",
+        "command": "nbtstat -A <Target_IP_Address>"
+      },
+      {
+        "tool": "SNMP",
+        "description": "Protocole utilisé pour surveiller et gérer les appareils sur un réseau.",
+        "command": "snmpwalk -c public -v1 <Target_IP_Address>"
+      },
+      {
+        "tool": "LDAP",
+        "description": "Utilisé pour les services d'annuaire, stockant des objets comme des utilisateurs et des groupes.",
+        "command": "ldapsearch -x -h <Target_LDAP_Server> -b \"dc=example,dc=com\" \"(objectclass=*)\""
+      }
+    ]
+  },
+  {
+    "title": "Horloge_et_courrier",
+    "commands": [
+      {
+        "tool": "NTP",
+        "description": "Protocole pour synchroniser les horloges sur un réseau.",
+        "command": "ntpq -p <Target_IP_Address>"
+      },
+      {
+        "tool": "SMTP",
+        "description": "Protocole pour envoyer et recevoir des e-mails.",
+        "command": "telnet <SMTP_Server_Address> 25"
+      }
+    ]
+  },
+  {
+    "title": "Enumeration_avancee",
+    "commands": [
+      {
+        "tool": "DNS",
+        "description": "Extraction des noms de domaine, sous-domaines et informations associées.",
+        "command": "dnsrecon -d <Target_Domain_Name>"
+      },
+      {
+        "tool": "IPSEC",
+        "description": "Sécurisation des communications sur les réseaux IP.",
+        "command": "ike-scan <Target_IP_Address>"
+      },
+      {
+        "tool": "VOIP",
+        "description": "Système de communication vocale sur IP.",
+        "command": "svwar -m INVITE -e100-200 <Target_IP_Address>"
+      },
+      {
+        "tool": "RPC",
+        "description": "Appel de procédure à distance pour exécuter des procédures sur un autre espace d'adressage.",
+        "command": "rpcinfo -p <Target_IP_Address>"
+      }
+    ]
+  }
+]
