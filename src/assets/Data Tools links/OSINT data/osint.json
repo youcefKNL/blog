@@ -1,0 +1,521 @@
+{
+  "osint_online_tools": [
+    {
+      "title": "Search4faces",
+      "description": "Search4faces est un moteur de recherche de visage inversé",
+      "photo": "",
+      "url": "https://search4faces.com/en/",
+      "logo": "",
+      "price": "free",
+      "source_database": "réseau social Vkontakte / Odnoklassniki / Vkontakte / Tiktok / ClubHouse"
+    },
+    {
+      "title": "Hunter.io",
+      "description": "Cette plateforme en ligne aide les utilisateurs à trouver les adresses e-mail associées à un domaine particulier. Cela peut être une mine d’or pour tenter de comprendre la structure de messagerie d’une entreprise ou pour vérifier si un email appartient à un domaine spécifique.",
+      "photo": "",
+      "url": "https://hunter.io/",
+      "logo": "",
+      "price": "free / license",
+      "source_database": ""
+    },
+    {
+      "title": "Have I Been Pwned",
+      "description": "Créé par l'expert en sécurité Troy Hunt, cet outil permet aux utilisateurs de vérifier si leurs données personnelles ont été compromises par des violations de données. Il peut fournir des informations sur où et comment une adresse e-mail a pu être exposée.",
+      "photo": "",
+      "url": "https://haveibeenpwned.com/",
+      "logo": "",
+      "price": "free",
+      "source_database": ""
+    },
+    {
+      "title": "Pipl",
+      "description": "Un outil de recherche de personnes qui parcourt le Web pour trouver des profils de réseaux sociaux, des pages Web et d'autres connexions potentielles liées à une adresse e-mail.",
+      "photo": "",
+      "url": "https://pipl.com/",
+      "logo": "",
+      "price": "?",
+      "source_database": ""
+    },
+    {
+      "title": "TinEye",
+      "description": "TinEye Reverse Image Search",
+      "photo": "",
+      "url": "https://tineye.com/",
+      "logo": "https://tineye.com/static/img/robot.d21e95ee.png",
+      "price": "free",
+      "source_database": ""
+    },
+    {
+      "title": "Microsoft Bing Image",
+      "description": "Bing Reverse Image Search",
+      "photo": "",
+      "url": "https://www.bing.com/images/feed",
+      "logo": "",
+      "price": "free",
+      "source_database": ""
+    },
+    {
+      "title": "yandex",
+      "description": "services de recherche et d'information",
+      "photo": "",
+      "url": "https://yandex.com/images",
+      "logo": "",
+      "price": "free",
+      "source_database": ""
+    },
+    {
+      "title": "Google Image",
+      "description": "moteur de recherche image",
+      "photo": "",
+      "url": "https://images.google.com/s",
+      "logo": "",
+      "price": "free",
+      "source_database": ""
+    },
+    {
+      "title": "facecheck.id",
+      "description": "moteur de recherche image indexé depuis des pages web",
+      "photo": "",
+      "url": "https://facecheck.id/fr",
+      "logo": "",
+      "price": "free",
+      "source_database": ""
+    },
+    {
+      "title": "pimeyes",
+      "description": "moteur de recherche image indexé depuis des pages web",
+      "photo": "",
+      "url": "https://pimeyes.com/en",
+      "logo": "",
+      "price": "license",
+      "source_database": ""
+    },
+    {
+      "title": "Archive-It",
+      "description": "Archive-It vous permet de capturer, gérer et rechercher des collections de contenu numérique (site web).",
+      "photo": "",
+      "url": "https://web.archive.org/",
+      "logo": "",
+      "price": "license",
+      "source_database": ""
+    },
+    {
+      "title": "Whois",
+      "description": "Whois est un protocole de requête et de réponse utilisé pour interroger les bases de données qui stockent les utilisateurs enregistrés ou les cessionnaires d'une ressource Internet, comme un nom de domaine ou un bloc d'adresse IP.Utilisé pour recueillir des informations sur le propriétaire d'un nom de domaine ou d'une adresse IP particulière, y compris ses coordonnées.",
+      "photo": "",
+      "url": "https://who.is/",
+      "logo": "",
+      "price": "free",
+      "source_database": ""
+    },
+    {
+      "title": "jimpl",
+      "description": "Visionneuse de données EXIF ​​en ligne",
+      "photo": "",
+      "url": "https://jimpl.com/",
+      "logo": "",
+      "price": "free",
+      "source_database": ""
+    },
+    {
+      "title": "Flight radar",
+      "description": "Flightradar24 est un service mondial de suivi des vols qui vous fournit des informations en temps réel sur des milliers d'avions dans le monde. ",
+      "photo": "",
+      "url": "https://www.flightradar24.com/",
+      "logo": "",
+      "price": "free / license",
+      "source_database": " ADS-B , MLAT , satellite et radar"
+    },
+    {
+      "title": "shodan",
+      "description": "Shodan est un moteur de recherche, mais pas au sens traditionnel du terme. Il n'indexe pas les sites Web, mais plutôt tout ce qui est connecté à Internet. Contrairement aux moteurs de recherche traditionnels comme Google, qui indexent les pages Web, Shodan indexe les appareils connectés à Internet. Cela inclut tout, des webcams, imprimantes et routeurs aux systèmes de contrôle industriels, feux de circulation et même centrales nucléaires Filtres shodan = https://www.shodan.io/search/filters",
+      "photo": "",
+      "url": "https://www.shodan.io/",
+      "logo": "",
+      "price": "free / license",
+      "source_database": ""
+    },
+    {
+      "title": "Google Dorks",
+      "description": "Une explication simple de Google Dorks, de ses utilisations et d'une collection des meilleurs Google Dorks pour obtenir les informations les meilleures et souhaitées.",
+      "photo": "",
+      "url": "https://github.com/dheerajydv19/Google-Dorks-Simplified",
+      "logo": "",
+      "price": "free",
+      "source_database": ""
+    },
+
+    {
+      "title": "Nessus",
+      "description": "Plateforme de gestion de l'exposition. Améliorez la sécurité préventive avec moins d’efforts.Tenable One vous permet de gagner en visibilité sur votre surface d'attaque, de concentrer vos efforts pour prévenir les attaques probables et de communiquer avec précision les cyber-risques afin de soutenir des performances commerciales optimales.",
+      "photo": "",
+      "url": "https://fr.tenable.com/products",
+      "logo": "",
+      "price": "7 days free / License",
+      "source_database": ""
+    },
+    {
+      "title": "Greenbone OpenVAS",
+      "description": "OpenVAS est un scanner de vulnérabilités complet. Ses capacités incluent des tests non authentifiés et authentifiés, divers protocoles Internet et industriels de haut et bas niveau, l'optimisation des performances pour les analyses à grande échelle et un langage de programmation interne puissant pour mettre en œuvre tout type de test de vulnérabilité.Le scanner obtient les tests de détection des vulnérabilités à partir d'un flux doté d'un long historique et de mises à jour quotidiennes.",
+      "photo": "",
+      "url": "https://www.openvas.org/",
+      "logo": "",
+      "price": "free",
+      "source_database": ""
+    }
+  ],
+
+  "onsint_terminal_tools": [
+    {
+      "Osint in terminal": [
+        {
+          "title": "Nmap",
+          "description": "Nmap (« Network Mapper ») est un utilitaire gratuit et open source pour la découverte de réseau et l'audit de sécurité.",
+          "photo": "",
+          "url": "https://nmap.org/download.html",
+          "logo": "",
+          "price": "free",
+          "source_database": ""
+        },
+        {
+          "title": "Ghunt",
+          "description": "L'outil Ghunt développé par le chercheur en sécurité Mxrch. Cet outil vise à simplifier les recherches d'investigation sur les comptes Google.",
+          "photo": "",
+          "url": "https://github.com/mxrch/GHunt",
+          "logo": "",
+          "price": "free",
+          "source_database": "compte google"
+        },
+        {
+          "title": "theHarvester",
+          "description": "theHarvester est un outil puissant conçu pour être utilisé pendant la phase de reconnaissance d’une évaluation par une équipe rouge ou d’un test d’intrusion. Il collecte des renseignements open source (OSINT) pour déterminer le paysage des menaces externes d'un domaine. L'outil collecte des noms, des e-mails, des adresses IP, des sous-domaines et des URL à l'aide de plusieurs ressources publiques",
+          "photo": "",
+          "url": "https://github.com/laramies/theHarvester",
+          "logo": "",
+          "price": "free",
+          "source_database": "data open source"
+        },
+        {
+          "title": "Holehe",
+          "description": "Holehe est un outil python capable de savoir si une adresse email est enregistrée sur plus de 120 sites. Il inclut des sites commerciaux célèbres, des réseaux sociaux etc. Ce qui est intéressant c'est que l'outil est également capable de savoir si l'email est enregistré sur des sites beaucoup plus informatifs lors d'une enquête (sites pour adultes, forums de hacking etc..)",
+          "photo": "",
+          "url": "https://github.com/megadose/holehe",
+          "logo": "",
+          "price": "free",
+          "source_database": ""
+        },
+        {
+          "title": "Ignorant",
+          "description": "Ignorant est un outil développé en python qui permet de savoir si un numéro de téléphone est inscrit sur une liste de sites. Il regroupe des sites connus comme Amazon, Instagram etc. Le principe est équivalent à Holehe, mais pour les recherches de numéros de téléphone.",
+          "photo": "",
+          "url": "https://github.com/megadose/ignorant",
+          "logo": "",
+          "price": "free",
+          "source_database": ""
+        },
+        {
+          "title": "Maltego",
+          "description": "Maltego est un outil de visualisation de données qui aide les chercheurs à identifier les relations et les modèles dans un grand nombre d'ensembles de données. Il est particulièrement populaire dans le domaine de la cybersécurité pour la criminalistique numérique et la collecte de renseignements.",
+          "photo": "",
+          "url": "https://www.maltego.com/",
+          "logo": "",
+          "price": "free / license",
+          "source_database": ""
+        },
+        {
+          "title": "Sherlock",
+          "description": "Sherlock est un outil qui recherche des noms d'utilisateur sur diverses plateformes de médias sociaux et sites Web. Ceci est utile pour déterminer l’empreinte numérique d’un nom d’utilisateur spécifique.",
+          "photo": "",
+          "url": "https://github.com/sherlock-project/sherlock",
+          "logo": "",
+          "price": "free",
+          "source_database": ""
+        },
+        {
+          "title": "Nslookup",
+          "description": "Nslookup (Name Server Lookup) est un outil de ligne de commande utilisé pour interroger les serveurs DNS (Domain Name System) afin de trouver les détails DNS, y compris les adresses IP d'un domaine spécifique.",
+          "photo": "",
+          "url": "https://github.com/sherlock-project/sherlock",
+          "logo": "",
+          "price": "free",
+          "source_database": ""
+        }
+      ]
+    }
+  ],
+  "Énumération du réseau": [
+    {
+      "Decouverte_active": {
+        "ARP": {
+          "Description": "Protocole de communication pour déterminer l'adresse IP d'une machine à partir de son adresse MAC.",
+          "Outil": "Netdiscover",
+          "Commande": "sudo netdiscover -r $IP/24"
+        },
+        "Ping": {
+          "Description": "Méthode de découverte de réseau via l'envoi de requêtes ICMP.",
+          "Outil": "fping",
+          "Commande": "fping -g 10.10.3.0/24"
+        }
+      },
+      "Analyse_ports": {
+        "Nmap": {
+          "Description": "Scanner de ports pour identifier les services exécutés sur chaque machine.",
+          "Outil": "nmap",
+          "Commande": "nmap $IP"
+        }
+      },
+      "Capture_bannieres": {
+        "Netcat": {
+          "Description": "Outil polyvalent pour récupérer les bannières de divers services.",
+          "Outil": "nc"
+        },
+        "Nmap": {
+          "Description": "Scanner réseau pouvant également extraire des bannières.",
+          "Outil": "nmap"
+        },
+        "Telnet": {
+          "Description": "Utilisé pour des tâches simples de capture de bannières.",
+          "Outil": "telnet"
+        }
+      },
+      "DNS_inverse": {
+        "Dig": {
+          "Description": "Outil pour résoudre les adresses IP en noms de domaine associés.",
+          "Outil": "dig",
+          "Commande": "dig -x 93.184.216.34"
+        }
+      },
+      "TTL": {
+        "Ping": {
+          "Description": "Envoi de requêtes ICMP pour identifier la valeur TTL renvoyée.",
+          "Outil": "ping",
+          "Commande": "$ ping -c 1 example.com"
+        }
+      },
+      "Essentiels": {
+        "NetBIOS": {
+          "Description": "Utilisé pour le partage de fichiers et d'imprimantes ainsi que la résolution de noms.",
+          "Outil": "nbtstat",
+          "Commande": "nbtstat -A <Target_IP_Address>"
+        },
+        "SNMP": {
+          "Description": "Protocole utilisé pour surveiller et gérer les appareils sur un réseau.",
+          "Outil": "snmpwalk",
+          "Commande": "snmpwalk -c public -v1 <Target_IP_Address>"
+        },
+        "LDAP": {
+          "Description": "Utilisé pour les services d'annuaire, stockant des objets comme des utilisateurs et des groupes.",
+          "Outil": "ldapsearch",
+          "Commande": "ldapsearch -x -h <Target_LDAP_Server> -b \"dc=example,dc=com\" \"(objectclass=*)\""
+        }
+      },
+      "Horloge_et_courrier": {
+        "NTP": {
+          "Description": "Protocole pour synchroniser les horloges sur un réseau.",
+          "Outil": "ntpq",
+          "Commande": "ntpq -p <Target_IP_Address>"
+        },
+        "SMTP": {
+          "Description": "Protocole pour envoyer et recevoir des e-mails.",
+          "Outil": "telnet",
+          "Commande": "telnet <SMTP_Server_Address> 25"
+        }
+      },
+      "Enumeration_avancee": {
+        "DNS": {
+          "Description": "Extraction des noms de domaine, sous-domaines et informations associées.",
+          "Outil": "dnsrecon",
+          "Commande": "dnsrecon -d <Target_Domain_Name>"
+        },
+        "IPSEC": {
+          "Description": "Sécurisation des communications sur les réseaux IP.",
+          "Outil": "ike-scan",
+          "Commande": "ike-scan <Target_IP_Address>"
+        },
+        "VOIP": {
+          "Description": "Système de communication vocale sur IP.",
+          "Outil": "svwar",
+          "Commande": "svwar -m INVITE -e100-200 <Target_IP_Address>"
+        },
+        "RPC": {
+          "Description": "Appel de procédure à distance pour exécuter des procédures sur un autre espace d'adressage.",
+          "Outil": "rpcinfo",
+          "Commande": "rpcinfo -p <Target_IP_Address>"
+        }
+      }
+    }
+  ],
+  "Énumération du système d'exploitation": [
+    {
+      "Windows": {
+        "Enum_privileges": {
+          "Manual_Inspection": "Vérifie les privilèges de l'utilisateur actuel.",
+          "Built-in_Commands": {
+            "whoami /priv": "Affiche les privilèges de l'utilisateur actuel.",
+            "net user <username>": "Fournit un compte rendu détaillé des appartenances aux groupes de l'utilisateur et d'autres attributs."
+          },
+          "Third-party_Tools": {
+            "BeRoot": "Vérifie les erreurs de configuration courantes pour l'élévation de privilèges.",
+            "Windows-Exploit-Suggester": "Compare le niveau de correctif du système d'exploitation Windows à la base de données de vulnérabilités Microsoft."
+          }
+        },
+        "Enum_users_groups": {
+          "Built-in_Commands": {
+            "net user": "Répertorie tous les comptes d'utilisateurs.",
+            "net localgroup": "Fournit des détails sur les groupes locaux."
+          }
+        },
+        "Enum_system_info": {
+          "Built-in_Commands": {
+            "systeminfo": "Divulgue une multitude d'informations sur le système Windows, de la version du système d'exploitation jusqu'au dernier démarrage.",
+            "wmic": "Utilitaire de ligne de commande capable d'extraire de grandes quantités de données, des logiciels installés aux configurations matérielles."
+          }
+        },
+        "Enum_network_drivers": {
+          "Built-in_Commands": {
+            "ipconfig": "Affiche la configuration réseau sous Windows.",
+            "netstat": "Affiche les connexions réseau, les tables de routage, les statistiques d'interface, etc."
+          },
+          "Management_Tool": "Gestionnaire de périphériques (Windows)"
+        },
+        "Enum_antivirus_vulnerable_software": {
+          "Security_Center": "Centre de sécurité Windows",
+          "Vulnerability_Scanners": {
+            "Secunia PSI": "Identifie et corrige les applications logicielles vulnérables sur Windows.",
+            "Nessus": "Scanner de vulnérabilités avancé qui fournit des informations sur les correctifs manquants sur un système."
+          }
+        },
+        "Enum_processes_services": {
+          "Task_Manager": "Gestionnaire des tâches (Windows)",
+          "Command_Line_Tools": {
+            "tasklist": "Affiche les processus en cours d'exécution du système.",
+            "sc": "Permet de gérer les services système sur une machine Windows."
+          }
+        },
+        "Patch_level": {
+          "Update_Logs": "Journaux de mise à jour Windows",
+          "Management_Tool": "WSUS (Windows Server Update Services)"
+        }
+      },
+      "Linux": {
+        "Enum_privileges": {
+          "Manual_Inspection": "Affiche les informations sur l'utilisateur et le groupe.",
+          "Built-in_Commands": {
+            "id": "Affiche les informations sur l'utilisateur et le groupe.",
+            "sudo -l": "Répertorie les commandes que l'utilisateur peut exécuter en tant que superutilisateur."
+          },
+          "Third-party_Tools": {
+            "Enum4linux": "Extrait des informations des machines Windows telles que la liste des utilisateurs, les partages, etc.",
+            "Hydra": "Peut être utilisé pour énumérer les utilisateurs valides sur un système."
+          }
+        },
+        "Enum_users_groups": {
+          "Built-in_Commands": {
+            "cat /etc/passwd": "Liste tous les utilisateurs.",
+            "cat /etc/group": "Affiche les différents groupes et leurs membres."
+          },
+          "Third-party_Tools": {
+            "Enum4linux": "Extrait des informations des machines Windows telles que la liste des utilisateurs, les partages, etc.",
+            "Hydra": "Peut être utilisé pour énumérer les utilisateurs valides sur un système."
+          }
+        },
+        "Enum_system_info": {
+          "Built-in_Commands": {
+            "uname -a": "Distribue les données relatives au système et au noyau.",
+            "lscpu": "Fournit des informations sur l'architecture du processeur.",
+            "lsb_release -a": "Affiche les détails de la distribution du système d'exploitation.",
+            "df": "Offre des informations sur l'utilisation du système de fichiers."
+          },
+          "Third-party_Tools": {
+            "Hardinfo": "Fournit un rapport complet sur le système."
+          }
+        },
+        "Enum_network_drivers": {
+          "Built-in_Commands": {
+            "ifconfig": "Affiche la configuration réseau sous Linux.",
+            "netstat": "Affiche les connexions réseau, les tables de routage, les statistiques d'interface, etc."
+          },
+          "Management_Tool": "lsmod (Linux)"
+        },
+        "Enum_antivirus_vulnerable_software": {
+          "Security_Tools": {
+            "Chkrootkit": "Un outil pour Linux qui peut détecter les rootkits et d'autres intrusions.",
+            "OpenVAS": "Outil d'analyse des vulnérabilités open source capable d'énumérer les niveaux de correctifs sur les distributions Linux."
+          }
+        },
+        "Enum_processes_services": {
+          "Command_Line_Tools": {
+            "ps": "Affiche les processus en cours d'exécution.",
+            "systemctl": "Commande pour gérer et inspecter les services système sur les distributions Linux à l'aide de systemd."
+          }
+        },
+        "Find_juicy_files": {
+          "Directory_Brute_Force": {
+            "Dirbuster": "Outil conçu pour aider à la découverte de répertoires et de fichiers sur les serveurs Web.",
+            "Dirb": "Outil conçu pour aider à la découverte de répertoires et de fichiers sur les serveurs Web.",
+            "GoBuster": "Outil conçu pour aider à la découverte de répertoires et de fichiers sur les serveurs Web."
+          },
+          "Text_Searching": {
+            "grep": "Utilitaire de ligne de commande pour rechercher dans les fichiers des modèles spécifiques.",
+            "find": "Utilitaire de ligne de commande pour rechercher des fichiers en fonction de critères spécifiques."
+          },
+          "Discovery_Methods": [
+            "Checking .git directories",
+            "Searching for backup files"
+          ]
+        },
+        "Patch_level": {
+          "Package_Manager_History": "Utilisation du gestionnaire de packages pour voir quels correctifs ont été appliqués.",
+          "Vulnerability_Scanners": {
+            "Nessus": "Scanner de vulnérabilités avancé qui fournit des informations sur les correctifs manquants sur un système.",
+            "OpenVAS": "Outil d'analyse des vulnérabilités open source capable d'énumérer les niveaux de correctifs sur les distributions Linux."
+          }
+        }
+      }
+    }
+  ],
+  "Énumération Active Directory": [
+    {
+      "Enum4linux": {
+        "Description": "Outil Linux pour l'énumération des données des machines Windows via le protocole SMB.",
+        "Commande_Générale": "enum4linux -i TARGET_IP",
+        "Commande_Info_Partage": "enum4linux -S TARGET_IP"
+      },
+      "Bloodhound": {
+        "Description": "Application web JavaScript pour visualiser les relations, les autorisations et les appartenances aux groupes dans l'Active Directory.",
+        "Commande_Collecte_Données": "Invoke-BloodHound -CollectionMethod All",
+        "Commande_Importation_Données": "Drag & drop des fichiers JSON collectés dans BloodHound."
+      },
+      "CrackMapExec": {
+        "Description": "Outil polyvalent pour l'énumération et l'analyse des réseaux Active Directory et Windows.",
+        "Installation": "sudo apt-get install crackmapexec",
+        "Commande_Enumerer_Reseau": "cme smb 192.168.56.1/24"
+      }
+    }
+  ],
+  "Outils_Sniffing": [
+    {
+      "Wireshark": {
+        "Description": "Wireshark est un outil GUI qui fournit des informations détaillées sur le trafic réseau. Il prend en charge de nombreux protocoles et offre une visualisation détaillée.",
+        "Commande": "Ouvrez Wireshark, sélectionnez l'interface réseau, et commencez la capture des paquets."
+      },
+      "Tcpdump": {
+        "Description": "Tcpdump est un outil en ligne de commande pour capturer des paquets. Il est rapide et léger, souvent pré-installé sur les systèmes UNIX.",
+        "Commande": "sudo tcpdump -i [nom-de-l'interface]"
+      },
+      "Netdiscover": {
+        "Description": "Netdiscover est un outil de découverte ARP qui peut également être utilisé pour détecter les hôtes actifs sur un réseau sans envoyer de paquets.",
+        "Commande_Passive": "sudo netdiscover -p",
+        "Commande_Active": "sudo netdiscover -r [plage-d'adresses-IP]"
+      },
+      "Pcredz": {
+        "Description": "Pcredz est conçu pour détecter et afficher les informations d'identification (comme les noms d'utilisateur et les mots de passe) passant sur le réseau.",
+        "Commande": "pcredz -i [nom-de-l'interface]"
+      },
+      "credslayer": {
+        "Description": "Credslayer est conçu pour détecter et afficher les informations d'identification (comme les noms d'utilisateur et les mots de passe) passant sur le réseau.",
+        "Commande": "credslayer -i [nom-de-l'interface]"
+      }
+    }
+  ]
+}

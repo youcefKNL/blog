@@ -1,0 +1,165 @@
+[
+  {
+    "title": "Search4faces",
+    "description": "Search4faces est un moteur de recherche de visage inversé",
+    "photo": "",
+    "url": "https://search4faces.com/en/",
+    "logo": "",
+    "price": "free",
+    "source_database": "réseau social Vkontakte / Odnoklassniki / Vkontakte / Tiktok / ClubHouse"
+  },
+  {
+    "title": "Hunter.io",
+    "description": "Cette plateforme en ligne aide les utilisateurs à trouver les adresses e-mail associées à un domaine particulier. Cela peut être une mine d’or pour tenter de comprendre la structure de messagerie d’une entreprise ou pour vérifier si un email appartient à un domaine spécifique.",
+    "photo": "",
+    "url": "https://hunter.io/",
+    "logo": "",
+    "price": "free / license",
+    "source_database": ""
+  },
+  {
+    "title": "Have I Been Pwned",
+    "description": "Créé par l'expert en sécurité Troy Hunt, cet outil permet aux utilisateurs de vérifier si leurs données personnelles ont été compromises par des violations de données. Il peut fournir des informations sur où et comment une adresse e-mail a pu être exposée.",
+    "photo": "",
+    "url": "https://haveibeenpwned.com/",
+    "logo": "",
+    "price": "free",
+    "source_database": ""
+  },
+  {
+    "title": "Pipl",
+    "description": "Un outil de recherche de personnes qui parcourt le Web pour trouver des profils de réseaux sociaux, des pages Web et d'autres connexions potentielles liées à une adresse e-mail.",
+    "photo": "",
+    "url": "https://pipl.com/",
+    "logo": "",
+    "price": "?",
+    "source_database": ""
+  },
+  {
+    "title": "TinEye",
+    "description": "TinEye Reverse Image Search",
+    "photo": "",
+    "url": "https://tineye.com/",
+    "logo": "https://tineye.com/static/img/robot.d21e95ee.png",
+    "price": "free",
+    "source_database": ""
+  },
+  {
+    "title": "Microsoft Bing Image",
+    "description": "Bing Reverse Image Search",
+    "photo": "",
+    "url": "https://www.bing.com/images/feed",
+    "logo": "",
+    "price": "free",
+    "source_database": ""
+  },
+  {
+    "title": "yandex",
+    "description": "services de recherche et d'information",
+    "photo": "",
+    "url": "https://yandex.com/images",
+    "logo": "",
+    "price": "free",
+    "source_database": ""
+  },
+  {
+    "title": "Google Image",
+    "description": "moteur de recherche image",
+    "photo": "",
+    "url": "https://images.google.com/s",
+    "logo": "",
+    "price": "free",
+    "source_database": ""
+  },
+  {
+    "title": "facecheck.id",
+    "description": "moteur de recherche image indexé depuis des pages web",
+    "photo": "",
+    "url": "https://facecheck.id/fr",
+    "logo": "",
+    "price": "free",
+    "source_database": ""
+  },
+  {
+    "title": "pimeyes",
+    "description": "moteur de recherche image indexé depuis des pages web",
+    "photo": "",
+    "url": "https://pimeyes.com/en",
+    "logo": "",
+    "price": "license",
+    "source_database": ""
+  },
+  {
+    "title": "Archive-It",
+    "description": "Archive-It vous permet de capturer, gérer et rechercher des collections de contenu numérique (site web).",
+    "photo": "",
+    "url": "https://web.archive.org/",
+    "logo": "",
+    "price": "license",
+    "source_database": ""
+  },
+  {
+    "title": "Whois",
+    "description": "Whois est un protocole de requête et de réponse utilisé pour interroger les bases de données qui stockent les utilisateurs enregistrés ou les cessionnaires d'une ressource Internet, comme un nom de domaine ou un bloc d'adresse IP.Utilisé pour recueillir des informations sur le propriétaire d'un nom de domaine ou d'une adresse IP particulière, y compris ses coordonnées.",
+    "photo": "",
+    "url": "https://who.is/",
+    "logo": "",
+    "price": "free",
+    "source_database": ""
+  },
+  {
+    "title": "jimpl",
+    "description": "Visionneuse de données EXIF ​​en ligne",
+    "photo": "",
+    "url": "https://jimpl.com/",
+    "logo": "",
+    "price": "free",
+    "source_database": ""
+  },
+  {
+    "title": "Flight radar",
+    "description": "Flightradar24 est un service mondial de suivi des vols qui vous fournit des informations en temps réel sur des milliers d'avions dans le monde. ",
+    "photo": "",
+    "url": "https://www.flightradar24.com/",
+    "logo": "",
+    "price": "free / license",
+    "source_database": " ADS-B , MLAT , satellite et radar"
+  },
+  {
+    "title": "shodan",
+    "description": "Shodan est un moteur de recherche, mais pas au sens traditionnel du terme. Il n'indexe pas les sites Web, mais plutôt tout ce qui est connecté à Internet. Contrairement aux moteurs de recherche traditionnels comme Google, qui indexent les pages Web, Shodan indexe les appareils connectés à Internet. Cela inclut tout, des webcams, imprimantes et routeurs aux systèmes de contrôle industriels, feux de circulation et même centrales nucléaires Filtres shodan = https://www.shodan.io/search/filters",
+    "photo": "",
+    "url": "https://www.shodan.io/",
+    "logo": "",
+    "price": "free / license",
+    "source_database": ""
+  },
+  {
+    "title": "Google Dorks",
+    "description": "Une explication simple de Google Dorks, de ses utilisations et d'une collection des meilleurs Google Dorks pour obtenir les informations les meilleures et souhaitées.",
+    "photo": "",
+    "url": "https://github.com/dheerajydv19/Google-Dorks-Simplified",
+    "logo": "",
+    "price": "free",
+    "source_database": ""
+  },
+
+  {
+    "title": "Nessus",
+    "description": "Plateforme de gestion de l'exposition. Améliorez la sécurité préventive avec moins d’efforts.Tenable One vous permet de gagner en visibilité sur votre surface d'attaque, de concentrer vos efforts pour prévenir les attaques probables et de communiquer avec précision les cyber-risques afin de soutenir des performances commerciales optimales.",
+    "photo": "",
+    "url": "https://fr.tenable.com/products",
+    "logo": "",
+    "price": "7 days free / License",
+    "source_database": ""
+  },
+  {
+    "title": "Greenbone OpenVAS",
+    "description": "OpenVAS est un scanner de vulnérabilités complet. Ses capacités incluent des tests non authentifiés et authentifiés, divers protocoles Internet et industriels de haut et bas niveau, l'optimisation des performances pour les analyses à grande échelle et un langage de programmation interne puissant pour mettre en œuvre tout type de test de vulnérabilité.Le scanner obtient les tests de détection des vulnérabilités à partir d'un flux doté d'un long historique et de mises à jour quotidiennes.",
+    "photo": "",
+    "url": "https://www.openvas.org/",
+    "logo": "",
+    "price": "free",
+    "source_database": ""
+  }
+]

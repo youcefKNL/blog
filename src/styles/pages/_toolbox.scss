@@ -1,0 +1,154 @@
+.toolboxPage {
+    // margin: 0 auto;
+    // z-index: 4;
+    // width: 100%;
+    // height: 100%;
+    // max-width: 1250px;
+    // width: 80%;
+    // background: red !important;
+    position: relative;
+    overflow: hidden;
+
+    .toolboxPage-contain {
+        border-radius: 10px;
+        position: relative;
+        z-index: 2;
+        background: $Textcolor2;
+        width: 100%;
+        height: 100%;
+        max-width: 1250px;
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: 0 10px 35px 2px rgba(0, 0, 0, 0.15),
+            0 5px 15px rgba(0, 0, 0, 0.07),
+            0 2px 5px -5px rgba(0, 0, 0, 0.1) !important;
+        margin-top: -5%;
+        margin-bottom: 10%;
+
+        .banner {
+            border-radius: 10px 10px 0 0;
+            background-position: center 30% !important;
+
+        }
+
+        .toolboxPageHeader {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 15% 0 0 0;
+
+            img {
+                width: 100px;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 3rem;
+                letter-spacing: 10px;
+                // background: $Color2;
+
+            }
+        }
+
+
+
+        .toolboxNavbar {
+            background: $Color2;
+            @include center;
+            justify-content: space-around;
+            margin: 5% 0;
+
+            height: 50px;
+
+            li {
+                @include center;
+
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+                transition: 0.2s ease-in;
+            }
+
+            li.active {
+                height: 100%;
+                font-size: 1.3em;
+                color: $Textcolor2;
+                background: $Textcolor1;
+                /* Change the color to indicate active state */
+            }
+        }
+
+
+
+        .hidden {
+            display: none;
+        }
+
+        .onlineTools {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 5%;
+        }
+
+        .onlineTool-item {
+            flex: 1;
+            min-width: 300px;
+            height: 400px;
+            margin: 3% 3%;
+            border: 1px solid $Color2;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            box-shadow: 0 10px 35px 2px rgba(0, 0, 0, 0.15),
+                0 5px 15px rgba(0, 0, 0, 0.07),
+                0 2px 5px -5px rgba(0, 0, 0, 0.1) !important;
+            border-radius: 10px;
+            padding: 1% 0;
+            transition: 0.1s ease;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+            }
+
+            h3 {
+                text-transform: capitalize;
+                font-size: 1.5em;
+                text-align: center;
+
+                img {
+                    width: 30px;
+                }
+            }
+
+            caption {
+                margin-top: 2%;
+                height: 150px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .description {
+                text-align: justify;
+                padding: 2% 4%;
+                overflow: auto;
+                height: 100px;
+                font-size: 0.9em;
+            }
+
+            .price {
+                text-align: center;
+            }
+
+            a {
+                text-align: center;
+            }
+        }
+
+    }
+}

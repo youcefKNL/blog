@@ -16,6 +16,7 @@ import IdLeviathan from "./pages/components/over the wire/routes/IdLeviathan";
 import { TerminalContextProvider } from "react-terminal";
 import About from "./pages/About";
 import Page404 from "./pages/Page404";
+import Toolbox from "./pages/Toolbox";
 
 const App = () => {
   const location = useLocation();
@@ -27,6 +28,8 @@ const App = () => {
 
         <Routes key={location.pathname} location={location} initial={false}>
           <Route path="/" element={<Home />} />
+          <Route path="/toolbox" element={<Toolbox />} />
+
           <Route path="/challenge" element={<Challenge />} />
           <Route path="/about" element={<About />} />
 

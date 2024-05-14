@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Nmap",
+    "description": "Nmap (« Network Mapper ») est un utilitaire gratuit et open source pour la découverte de réseau et l'audit de sécurité.",
+    "photo": "",
+    "url": "https://nmap.org/download.html",
+    "logo": "",
+    "price": "free",
+    "source_database": ""
+  },
+  {
+    "title": "Ghunt",
+    "description": "L'outil Ghunt développé par le chercheur en sécurité Mxrch. Cet outil vise à simplifier les recherches d'investigation sur les comptes Google.",
+    "photo": "",
+    "url": "https://github.com/mxrch/GHunt",
+    "logo": "",
+    "price": "free",
+    "source_database": "compte google"
+  },
+  {
+    "title": "theHarvester",
+    "description": "theHarvester est un outil puissant conçu pour être utilisé pendant la phase de reconnaissance d’une évaluation par une équipe rouge ou d’un test d’intrusion. Il collecte des renseignements open source (OSINT) pour déterminer le paysage des menaces externes d'un domaine. L'outil collecte des noms, des e-mails, des adresses IP, des sous-domaines et des URL à l'aide de plusieurs ressources publiques",
+    "photo": "",
+    "url": "https://github.com/laramies/theHarvester",
+    "logo": "",
+    "price": "free",
+    "source_database": "data open source"
+  },
+  {
+    "title": "Holehe",
+    "description": "Holehe est un outil python capable de savoir si une adresse email est enregistrée sur plus de 120 sites. Il inclut des sites commerciaux célèbres, des réseaux sociaux etc. Ce qui est intéressant c'est que l'outil est également capable de savoir si l'email est enregistré sur des sites beaucoup plus informatifs lors d'une enquête (sites pour adultes, forums de hacking etc..)",
+    "photo": "",
+    "url": "https://github.com/megadose/holehe",
+    "logo": "",
+    "price": "free",
+    "source_database": ""
+  },
+  {
+    "title": "Ignorant",
+    "description": "Ignorant est un outil développé en python qui permet de savoir si un numéro de téléphone est inscrit sur une liste de sites. Il regroupe des sites connus comme Amazon, Instagram etc. Le principe est équivalent à Holehe, mais pour les recherches de numéros de téléphone.",
+    "photo": "",
+    "url": "https://github.com/megadose/ignorant",
+    "logo": "",
+    "price": "free",
+    "source_database": ""
+  },
+  {
+    "title": "Maltego",
+    "description": "Maltego est un outil de visualisation de données qui aide les chercheurs à identifier les relations et les modèles dans un grand nombre d'ensembles de données. Il est particulièrement populaire dans le domaine de la cybersécurité pour la criminalistique numérique et la collecte de renseignements.",
+    "photo": "",
+    "url": "https://www.maltego.com/",
+    "logo": "",
+    "price": "free / license",
+    "source_database": ""
+  },
+  {
+    "title": "Sherlock",
+    "description": "Sherlock est un outil qui recherche des noms d'utilisateur sur diverses plateformes de médias sociaux et sites Web. Ceci est utile pour déterminer l’empreinte numérique d’un nom d’utilisateur spécifique.",
+    "photo": "",
+    "url": "https://github.com/sherlock-project/sherlock",
+    "logo": "",
+    "price": "free",
+    "source_database": ""
+  },
+  {
+    "title": "Nslookup",
+    "description": "Nslookup (Name Server Lookup) est un outil de ligne de commande utilisé pour interroger les serveurs DNS (Domain Name System) afin de trouver les détails DNS, y compris les adresses IP d'un domaine spécifique.",
+    "photo": "",
+    "url": "https://github.com/sherlock-project/sherlock",
+    "logo": "",
+    "price": "free",
+    "source_database": ""
+  }
+]
