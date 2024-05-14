@@ -78,6 +78,9 @@ const Toolbox = () => {
               onClick={() => handleClick(tool.url)}
             >
               <h3>{tool.title}</h3>
+              <caption>
+                <img src={tool.photo} alt="" />
+              </caption>
               <p className="description">{tool.description}</p>
             </div>
           ))}

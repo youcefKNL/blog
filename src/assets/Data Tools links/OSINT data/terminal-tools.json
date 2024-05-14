@@ -2,7 +2,7 @@
   {
     "title": "Nmap",
     "description": "Nmap (« Network Mapper ») est un utilitaire gratuit et open source pour la découverte de réseau et l'audit de sécurité.",
-    "photo": "",
+    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/nmap.jpg?raw=true",
     "url": "https://nmap.org/download.html",
     "logo": "",
     "price": "free",
@@ -11,7 +11,7 @@
   {
     "title": "Ghunt",
     "description": "L'outil Ghunt développé par le chercheur en sécurité Mxrch. Cet outil vise à simplifier les recherches d'investigation sur les comptes Google.",
-    "photo": "",
+    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/gHunt.png?raw=true",
     "url": "https://github.com/mxrch/GHunt",
     "logo": "",
     "price": "free",
@@ -20,7 +20,7 @@
   {
     "title": "theHarvester",
     "description": "theHarvester est un outil puissant conçu pour être utilisé pendant la phase de reconnaissance d’une évaluation par une équipe rouge ou d’un test d’intrusion. Il collecte des renseignements open source (OSINT) pour déterminer le paysage des menaces externes d'un domaine. L'outil collecte des noms, des e-mails, des adresses IP, des sous-domaines et des URL à l'aide de plusieurs ressources publiques",
-    "photo": "",
+    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/theharvester.png?raw=true",
     "url": "https://github.com/laramies/theHarvester",
     "logo": "",
     "price": "free",
@@ -29,7 +29,7 @@
   {
     "title": "Holehe",
     "description": "Holehe est un outil python capable de savoir si une adresse email est enregistrée sur plus de 120 sites. Il inclut des sites commerciaux célèbres, des réseaux sociaux etc. Ce qui est intéressant c'est que l'outil est également capable de savoir si l'email est enregistré sur des sites beaucoup plus informatifs lors d'une enquête (sites pour adultes, forums de hacking etc..)",
-    "photo": "",
+    "photo": "https://raw.githubusercontent.com/youcefKNL/blog/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/holehe.webp",
     "url": "https://github.com/megadose/holehe",
     "logo": "",
     "price": "free",
