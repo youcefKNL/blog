@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { FaHome, FaFlag, FaInfoCircle } from "react-icons/fa";
-
+import { FaHome, FaFlag, FaInfoCircle, FaTools } from "react-icons/fa";
+import { SiPowershell } from "react-icons/si";
+import { GiCyberEye } from "react-icons/gi";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -27,7 +28,10 @@ const Header = () => {
 
   return (
     <header className={isScrolled ? "activeHeader" : "header"}>
-      <h2> {"<#SecretNote>"} </h2>
+      <h2>
+        {" "}
+        #<SiPowershell /> <GiCyberEye />
+      </h2>
       <nav>
         <ul>
           <NavLink
@@ -39,8 +43,17 @@ const Header = () => {
             <li>
               <p>Accueil</p> <FaHome />
             </li>
+          </NavLink>{" "}
+          <NavLink
+            to="/toolbox"
+            className={(nav) => (nav.isActive ? "nav-active" : null)}
+            title="Outils"
+            onClick={scrollToTop}
+          >
+            <li>
+              <p>Outils</p> <FaTools />
+            </li>
           </NavLink>
-
           <NavLink
             to="/challenge"
             className={(nav) => (nav.isActive ? "nav-active" : null)}
@@ -51,7 +64,6 @@ const Header = () => {
               <p>Challenge</p> <FaFlag />
             </li>
           </NavLink>
-
           <NavLink
             to="/about"
             className={(nav) => (nav.isActive ? "nav-active" : null)}
