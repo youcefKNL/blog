@@ -72,10 +72,13 @@ const Toolbox = () => {
           }
         >
           {terminalTools.map((tool, index) => (
-            <div key={index} className="tool-item">
+            <div
+              key={index}
+              className="terminalTool-item"
+              onClick={() => handleClick(tool.url)}
+            >
               <h3>{tool.title}</h3>
-              <p>{tool.description}</p>
-              <a href={tool.url}>More info</a>
+              <p className="description">{tool.description}</p>
             </div>
           ))}
         </div>
