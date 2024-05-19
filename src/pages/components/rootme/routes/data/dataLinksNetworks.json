@@ -14,5 +14,23 @@
   {
     "id": "dnsTransfert",
     "title": "DNS Transfert"
+  },
+  {
+    "id": "ldapNullBind",
+    "title": "LDAP Null Bind",
+    "url": "https://www.root-me.org/en/Challenges/Network/LDAP-null-bind",
+    "point": "15",
+    "level": "facile",
+    "flag:": "sabu@anonops.org",
+    "date": "18/05/2024"
+  },
+  {
+    "id": "snmpAuthentification",
+    "title": "SNMP Authentification",
+    "url": "https://www.root-me.org/fr/Challenges/Reseau/SNMP-Authentification",
+    "point": "35",
+    "level": "moyen",
+    "flag:": "4dm1n",
+    "date": "17/05/2024"
   }
 ]

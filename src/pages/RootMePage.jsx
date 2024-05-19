@@ -22,6 +22,7 @@ import dataLinksNetworks from "./components/rootme/routes/data/dataLinksNetworks
 import dataLinksCryptoAnalysis from "./components/rootme/routes/data/dataLinksCryptoAnalysis.json";
 import dataLinksWebClient from "./components/rootme/routes/data/dataLinksWebClient.json";
 import dataLinksWebServer from "./components/rootme/routes/data/dataLinksWebServer.json";
+import dataLinksForensic from "./components/rootme/routes/data/dataLinksForensic.json";
 
 const scrollUp = () => {
   window.scrollTo({
@@ -156,8 +157,8 @@ const RootMePage = ({ isVisible }) => {
           <Accordion>
             <AccordionSummary
               expandIcon={<PiArrowFatLineDownFill />}
-              aria-controls="panel3-content"
-              id="panel3-header"
+              aria-controls="panel5-content"
+              id="panel5-header"
             >
               <Typography>
                 <GiServerRack /> Web Serveur
@@ -172,6 +173,31 @@ const RootMePage = ({ isVisible }) => {
                       to={`/rootme/web-server/${link.id}`}
                       onClick={scrollUp}
                     >
+                      {link.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </AccordionDetails>
+          </Accordion>
+          {/* ****************************FORENSIC********************************* */}
+
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<PiArrowFatLineDownFill />}
+              aria-controls="panel6-content"
+              id="panel6-header"
+            >
+              <Typography>
+                <GiServerRack /> Forensic
+              </Typography>
+            </AccordionSummary>
+
+            <AccordionDetails>
+              <ul>
+                {dataLinksForensic.map((link) => (
+                  <li key={link.id}>
+                    <Link to={`/rootme/forensic/${link.id}`} onClick={scrollUp}>
                       {link.title}
                     </Link>
                   </li>

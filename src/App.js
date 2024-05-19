@@ -17,6 +17,7 @@ import { TerminalContextProvider } from "react-terminal";
 import About from "./pages/About";
 import Page404 from "./pages/Page404";
 import Toolbox from "./pages/Toolbox";
+import IdForensic from "./pages/components/rootme/routes/IdForensic";
 
 const App = () => {
   const location = useLocation();
@@ -40,6 +41,8 @@ const App = () => {
 
           <Route path="/rootme/exif" element={<Exif />} />
           <Route path="/rootme/networks/:id" element={<IdNetwork />} />
+          <Route path="/rootme/forensic/:id" element={<IdForensic />} />
+
           <Route
             path="/rootme/crypto-analysis/:id"
             element={<IdCryptoAnalysis />}

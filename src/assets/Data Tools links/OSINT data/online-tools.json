@@ -1,5 +1,14 @@
 [
   {
+    "title": "OSINT Framework",
+    "description": "🏆🏆 THE BEST 🏆🏆: Annuaire de lien OSINT.",
+    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/osintFramwork.com.png?raw=true",
+    "url": "https://osintframework.com/",
+    "logo": "https://raw.githubusercontent.com/youcefKNL/blog/main/src/assets/Data%20Tools%20links/OSINT%20data/logo/osint.png",
+    "price": "free",
+    "source_database": "réseau social Vkontakte / Odnoklassniki / Vkontakte / Tiktok / ClubHouse"
+  },
+  {
     "title": "Search4faces",
     "description": "Search4faces est un moteur de recherche de visage inversé",
     "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/search4faces.com.png?raw=true",

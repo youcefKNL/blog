@@ -1,0 +1,20 @@
+[
+  {
+    "id": "exfiltrationDns",
+    "title": "DNS Exfiltration",
+    "url": "https://www.root-me.org/fr/Challenges/Forensic/Exfiltration-DNS",
+    "point": "30",
+    "level": "moyen",
+    "flag:": "FLAG{ExF1ltr4tion_15-s0_Bl4ck}",
+    "date": "18/05/2024"
+  },
+  {
+    "id": "deletedFile",
+    "title": "Deleted File",
+    "url": "https://www.root-me.org/en/Challenges/Forensic/Deleted-file",
+    "point": "5",
+    "level": "très facile",
+    "flag:": "Javier_Turcot",
+    "date": "11/05/2024"
+  }
+]

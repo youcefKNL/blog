@@ -5,7 +5,7 @@ import onlineTools from "../assets/Data Tools links/OSINT data/online-tools.json
 import terminalTools from "../assets/Data Tools links/OSINT data/terminal-tools.json";
 import osint from "../assets/Data Tools links/OSINT data/OSINT.png";
 import ParticlesContainer2 from "./components/background Effect/Particles2";
-import TerminalCommands from "./components/TerminalCommands";
+// import TerminalCommands from "./components/TerminalCommands";
 
 const Toolbox = () => {
   //onclick
