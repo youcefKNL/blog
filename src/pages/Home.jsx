@@ -34,14 +34,14 @@ const Home = () => {
 
     {
       banner: "rootmeBackground",
-      title: "Ethernet Frame <NETWORKS>",
-      link: "/rootme/networks/ethernetFrame",
+      title: "SNMP Authentification <NETWORKS>",
+      link: "/rootme/networks/snmpAuthentification",
       progression: "missionAcomplished",
     },
     {
       banner: "rootmeBackground",
-      title: "FTP Authentication <Network>",
-      link: "/rootme/networks/ftpAuthentification",
+      title: "DNS Exfiltration <Forensic>",
+      link: "/rootme/forensic/exfiltrationDns",
       progression: "missionAcomplished",
     },
     {
@@ -52,8 +52,8 @@ const Home = () => {
     },
     {
       banner: "rootmeBackground",
-      title: "DNS Transfert <Network>",
-      link: "/rootme/networks/dnsTransfert",
+      title: "LDAP Null Bind <Network>",
+      link: "/rootme/networks/ldapNullBind",
       progression: "missionAcomplished",
     },
   ];
