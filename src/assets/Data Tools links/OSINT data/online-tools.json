@@ -19,7 +19,7 @@
   },
   {
     "title": "Hunter.io",
-    "description": "Cette plateforme en ligne aide les utilisateurs à trouver les adresses e-mail associées à un domaine particulier. Cela peut être une mine d’or pour tenter de comprendre la structure de messagerie d’une entreprise ou pour vérifier si un email appartient à un domaine spécifique.",
+    "description": "Cette plateforme en ligne aide les utilisateurs à trouver les adresses e-mail associées à un domaine particulier.",
     "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/hunter.io.png?raw=true",
     "url": "https://hunter.io/",
     "logo": "https://raw.githubusercontent.com/youcefKNL/blog/main/src/assets/Data%20Tools%20links/OSINT%20data/logo/hunter.io.png",
@@ -75,7 +75,7 @@
     "title": "Google Image",
     "description": "moteur de recherche image",
     "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/Google%20image.png?raw=true",
-    "url": "https://images.google.com/s",
+    "url": "https://images.google.com/",
     "logo": "https://raw.githubusercontent.com/youcefKNL/blog/main/src/assets/Data%20Tools%20links/OSINT%20data/logo/Google%20lens.png",
     "price": "free",
     "source_database": ""
@@ -155,28 +155,9 @@
   {
     "title": "Google Advanced Search",
     "description": "Moteur de recherche avancé Google avec filtres",
-    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/google.dorks.png?raw=true",
+    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/GoogleSearchAdvanced.png?raw=true",
     "url": "https://www.google.com/advanced_search",
-    "logo": "https://raw.githubusercontent.com/youcefKNL/blog/main/src/assets/Data%20Tools%20links/OSINT%20data/logo/googleDorks.png",
-    "price": "free",
-    "source_database": ""
-  },
-
-  {
-    "title": "Nessus",
-    "description": "Plateforme de gestion de l'exposition. Améliorez la sécurité préventive avec moins d’efforts.T",
-    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/nessus.png?raw=true",
-    "url": "https://fr.tenable.com/products",
-    "logo": "https://raw.githubusercontent.com/youcefKNL/blog/main/src/assets/Data%20Tools%20links/OSINT%20data/logo/nessus.png",
-    "price": "7 days free / License",
-    "source_database": ""
-  },
-  {
-    "title": "Greenbone OpenVAS",
-    "description": "OpenVAS est un scanner de vulnérabilités complet OpenSource.",
-    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/openvas.jpg?raw=true",
-    "url": "https://www.openvas.org/",
-    "logo": "https://raw.githubusercontent.com/youcefKNL/blog/main/src/assets/Data%20Tools%20links/OSINT%20data/logo/openvas.png",
+    "logo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/logo/Google.png?raw=true",
     "price": "free",
     "source_database": ""
   }

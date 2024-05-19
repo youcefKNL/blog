@@ -19,7 +19,7 @@
   },
   {
     "title": "theHarvester",
-    "description": "theHarvester est un outil puissant conçu pour être utilisé pendant la phase de reconnaissance d’une évaluation par une équipe rouge ou d’un test d’intrusion. Il collecte des renseignements open source (OSINT) pour déterminer le paysage des menaces externes d'un domaine. L'outil collecte des noms, des e-mails, des adresses IP, des sous-domaines et des URL à l'aide de plusieurs ressources publiques",
+    "description": "theHarvester collecte des renseignements open source (OSINT): des noms, des e-mails, des adresses IP, des sous-domaines et des URL à l'aide de plusieurs ressources publiques",
     "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/theharvester.png?raw=true",
     "url": "https://github.com/laramies/theHarvester",
     "logo": "",
@@ -28,7 +28,7 @@
   },
   {
     "title": "Holehe",
-    "description": "Holehe est un outil python capable de savoir si une adresse email est enregistrée sur plus de 120 sites. Il inclut des sites commerciaux célèbres, des réseaux sociaux etc. Ce qui est intéressant c'est que l'outil est également capable de savoir si l'email est enregistré sur des sites beaucoup plus informatifs lors d'une enquête (sites pour adultes, forums de hacking etc..)",
+    "description": "Holehe est un outil python capable de savoir si une adresse email est enregistrée sur plus de 120 sites.",
     "photo": "https://raw.githubusercontent.com/youcefKNL/blog/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/holehe.webp",
     "url": "https://github.com/megadose/holehe",
     "logo": "",
@@ -37,7 +37,7 @@
   },
   {
     "title": "Ignorant",
-    "description": "Ignorant est un outil développé en python qui permet de savoir si un numéro de téléphone est inscrit sur une liste de sites. Il regroupe des sites connus comme Amazon, Instagram etc. Le principe est équivalent à Holehe, mais pour les recherches de numéros de téléphone.",
+    "description": "Ignorant permet de savoir si un numéro de téléphone est inscrit sur une liste de sites. Il regroupe des sites connus comme Amazon, Instagram etc.",
     "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/ignorant.png?raw=true",
     "url": "https://github.com/megadose/ignorant",
     "logo": "",
@@ -46,7 +46,7 @@
   },
   {
     "title": "Maltego",
-    "description": "Maltego est un outil de visualisation de données qui aide les chercheurs à identifier les relations et les modèles dans un grand nombre d'ensembles de données. Il est particulièrement populaire dans le domaine de la cybersécurité pour la criminalistique numérique et la collecte de renseignements.",
+    "description": "Maltego est un outil de visualisation de données qui aide les chercheurs à identifier les relations et les modèles dans un grand nombre d'ensembles de données.",
     "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/maltego.png?raw=true",
     "url": "https://www.maltego.com/",
     "logo": "",
@@ -55,7 +55,7 @@
   },
   {
     "title": "Sherlock",
-    "description": "Sherlock est un outil qui recherche des noms d'utilisateur sur diverses plateformes de médias sociaux et sites Web. Ceci est utile pour déterminer l’empreinte numérique d’un nom d’utilisateur spécifique.",
+    "description": "Sherlock est un outil qui recherche des noms d'utilisateur sur diverses plateformes de médias sociaux et sites Web.",
     "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/sherlock.png?raw=true",
     "url": "https://github.com/sherlock-project/sherlock",
     "logo": "",
@@ -68,6 +68,25 @@
     "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/nslookup.png?raw=true",
     "url": "https://github.com/sherlock-project/sherlock",
     "logo": "",
+    "price": "free",
+    "source_database": ""
+  },
+
+  {
+    "title": "Nessus",
+    "description": "Plateforme de gestion de l'exposition. Améliorez la sécurité préventive avec moins d’efforts.T",
+    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/nessus.png?raw=true",
+    "url": "https://fr.tenable.com/products",
+    "logo": "https://raw.githubusercontent.com/youcefKNL/blog/main/src/assets/Data%20Tools%20links/OSINT%20data/logo/nessus.png",
+    "price": "7 days free / License",
+    "source_database": ""
+  },
+  {
+    "title": "Greenbone OpenVAS",
+    "description": "OpenVAS est un scanner de vulnérabilités complet OpenSource.",
+    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/openvas.jpg?raw=true",
+    "url": "https://www.openvas.org/",
+    "logo": "https://raw.githubusercontent.com/youcefKNL/blog/main/src/assets/Data%20Tools%20links/OSINT%20data/logo/openvas.png",
     "price": "free",
     "source_database": ""
   }

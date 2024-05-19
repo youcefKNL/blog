@@ -43,7 +43,7 @@ const Toolbox = () => {
               className={selectedCategory === "terminal" ? "active" : ""}
               onClick={() => handleCategoryClick("terminal")}
             >
-              Terminal Tools
+              Software Tools
             </li>
             {/* <li
               className={selectedCategory === "commands" ? "active" : ""}
