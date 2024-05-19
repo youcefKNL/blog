@@ -2,7 +2,7 @@
   {
     "title": "OSINT Framework",
     "description": "🏆🏆 THE BEST 🏆🏆: Annuaire de lien OSINT.",
-    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/osintFramwork.com.png?raw=true",
+    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/osintFramwork.png?raw=true",
     "url": "https://osintframework.com/",
     "logo": "https://raw.githubusercontent.com/youcefKNL/blog/main/src/assets/Data%20Tools%20links/OSINT%20data/logo/osint.png",
     "price": "free",
@@ -28,7 +28,7 @@
   },
   {
     "title": "Have I Been Pwned",
-    "description": "Créé par l'expert en sécurité Troy Hunt, cet outil permet aux utilisateurs de vérifier si leurs données personnelles ont été compromises par des violations de données. Il peut fournir des informations sur où et comment une adresse e-mail a pu être exposée.",
+    "description": "Il peut fournir des informations sur où et comment une adresse e-mail a pu être exposée.",
     "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/haveIbeenPwnd.com.png?raw=true",
     "url": "https://haveibeenpwned.com/",
     "logo": "https://raw.githubusercontent.com/youcefKNL/blog/main/src/assets/Data%20Tools%20links/OSINT%20data/logo/haveIbeenPwned.png",
@@ -109,7 +109,7 @@
   },
   {
     "title": "Whois",
-    "description": "Whois est un protocole de requête et de réponse utilisé pour interroger les bases de données qui stockent les utilisateurs enregistrés ou les cessionnaires d'une ressource Internet, comme un nom de domaine ou un bloc d'adresse IP.Utilisé pour recueillir des informations sur le propriétaire d'un nom de domaine ou d'une adresse IP particulière, y compris ses coordonnées.",
+    "description": "Whois fournit des informations sur le propriétaire d'un domaine ou d'une adresse IP, y compris ses coordonnées.",
     "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/who.is.png?raw=true",
     "url": "https://who.is/",
     "logo": "https://raw.githubusercontent.com/youcefKNL/blog/23d0b83aab1f03e4c539712bd612409abf388d1b/src/assets/Data%20Tools%20links/OSINT%20data/logo/whois-logo.svg",
@@ -136,7 +136,7 @@
   },
   {
     "title": "shodan",
-    "description": "Shodan est un moteur de recherche, mais pas au sens traditionnel du terme. Il n'indexe pas les sites Web, mais plutôt tout ce qui est connecté à Internet. Contrairement aux moteurs de recherche traditionnels comme Google, qui indexent les pages Web, Shodan indexe les appareils connectés à Internet. Cela inclut tout, des webcams, imprimantes et routeurs aux systèmes de contrôle industriels, feux de circulation et même centrales nucléaires Filtres shodan = https://www.shodan.io/search/filters",
+    "description": "Shodan indexe les appareils connectés à Internet.Filtres shodan = https://www.shodan.io/search/filters",
     "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/Shodan.png?raw=true",
     "url": "https://www.shodan.io/",
     "logo": "https://raw.githubusercontent.com/youcefKNL/blog/main/src/assets/Data%20Tools%20links/OSINT%20data/logo/shodan.png",
@@ -152,10 +152,19 @@
     "price": "free",
     "source_database": ""
   },
+  {
+    "title": "Google Advanced Search",
+    "description": "Moteur de recherche avancé Google avec filtres",
+    "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/google.dorks.png?raw=true",
+    "url": "https://www.google.com/advanced_search",
+    "logo": "https://raw.githubusercontent.com/youcefKNL/blog/main/src/assets/Data%20Tools%20links/OSINT%20data/logo/googleDorks.png",
+    "price": "free",
+    "source_database": ""
+  },
 
   {
     "title": "Nessus",
-    "description": "Plateforme de gestion de l'exposition. Améliorez la sécurité préventive avec moins d’efforts.Tenable One vous permet de gagner en visibilité sur votre surface d'attaque, de concentrer vos efforts pour prévenir les attaques probables et de communiquer avec précision les cyber-risques afin de soutenir des performances commerciales optimales.",
+    "description": "Plateforme de gestion de l'exposition. Améliorez la sécurité préventive avec moins d’efforts.T",
     "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/nessus.png?raw=true",
     "url": "https://fr.tenable.com/products",
     "logo": "https://raw.githubusercontent.com/youcefKNL/blog/main/src/assets/Data%20Tools%20links/OSINT%20data/logo/nessus.png",
@@ -164,7 +173,7 @@
   },
   {
     "title": "Greenbone OpenVAS",
-    "description": "OpenVAS est un scanner de vulnérabilités complet. Ses capacités incluent des tests non authentifiés et authentifiés, divers protocoles Internet et industriels de haut et bas niveau, l'optimisation des performances pour les analyses à grande échelle et un langage de programmation interne puissant pour mettre en œuvre tout type de test de vulnérabilité.Le scanner obtient les tests de détection des vulnérabilités à partir d'un flux doté d'un long historique et de mises à jour quotidiennes.",
+    "description": "OpenVAS est un scanner de vulnérabilités complet OpenSource.",
     "photo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/screenshot/openvas.jpg?raw=true",
     "url": "https://www.openvas.org/",
     "logo": "https://raw.githubusercontent.com/youcefKNL/blog/main/src/assets/Data%20Tools%20links/OSINT%20data/logo/openvas.png",
