@@ -46,8 +46,8 @@ const Home = () => {
     },
     {
       banner: "rootmeBackground",
-      title: "Telnet Authentification <NETWORK>",
-      link: "/rootme/networks/telnetAuthentification",
+      title: "SQL Injection <Web Server>",
+      link: "/rootme/web-server/sqlInjectionReadFile",
       progression: "missionAcomplished",
     },
     {
