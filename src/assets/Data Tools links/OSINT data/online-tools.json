@@ -160,5 +160,14 @@
     "logo": "https://github.com/youcefKNL/blog/blob/main/src/assets/Data%20Tools%20links/OSINT%20data/logo/Google.png?raw=true",
     "price": "free",
     "source_database": ""
+  },
+  {
+    "title": "Penetration testing software",
+    "description": "Template de Pentest Rapport.",
+    "photo": "",
+    "url": "https://pentestreports.com/software/",
+    "logo": "",
+    "price": "free",
+    "source_database": ""
   }
 ]

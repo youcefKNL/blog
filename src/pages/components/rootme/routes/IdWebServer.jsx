@@ -10,6 +10,7 @@ import HtmlPost from "../challenge/webServer/HttpPost";
 import HttpRedirectionInvalide from "../challenge/webServer/HttpRedirectionInvalide";
 import HttpUserAgent from "../challenge/webServer/HttpUserAgent";
 import HttpVerbTampering from "../challenge/webServer/HttpVerbTampering";
+import SqlInjectionReadFile from "../challenge/webServer/SqlInjectionReadFile";
 
 // Créez un objet qui mappe les ID aux composants
 const components = {
@@ -26,6 +27,9 @@ const components = {
   ),
   httpUserAgent: <HttpUserAgent title="HTTP User Agent" />,
   httpVerbTampering: <HttpVerbTampering title="HTML Verb Tampering" />,
+  sqlInjectionReadFile: (
+    <SqlInjectionReadFile title="SQL injection - Lecture de fichiers" />
+  ),
 };
 
 function IdWebServer() {

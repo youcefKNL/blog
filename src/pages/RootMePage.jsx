@@ -7,6 +7,7 @@ import { LuAppWindow } from "react-icons/lu";
 import { TbShieldSearch } from "react-icons/tb";
 import { FaNetworkWired } from "react-icons/fa6";
 import { GiServerRack } from "react-icons/gi";
+import { FaSearch } from "react-icons/fa";
 
 import Accordion from "@mui/material/Accordion";
 import Typography from "@mui/material/Typography";
@@ -189,7 +190,8 @@ const RootMePage = ({ isVisible }) => {
               id="panel6-header"
             >
               <Typography>
-                <GiServerRack /> Forensic
+                <FaSearch />
+                Forensic
               </Typography>
             </AccordionSummary>
 

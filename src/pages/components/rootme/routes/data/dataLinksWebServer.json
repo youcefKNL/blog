@@ -38,5 +38,14 @@
   {
     "id": "httpcookies",
     "title": "HTTP - Cookies"
+  },
+  {
+    "id": "sqlInjectionReadFile",
+    "title": "SQL injection - Lecture de fichiers",
+    "url": "https://www.root-me.org/fr/Challenges/Web-Serveur/SQL-injection-Lecture-de-fichiers",
+    "point": "40",
+    "level": "moyen",
+    "flag:": "superpassord",
+    "date": "21/05/2024"
   }
 ]
