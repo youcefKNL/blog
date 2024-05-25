@@ -39,5 +39,14 @@
   {
     "id": "xssStockée1",
     "title": "XSS - Stockée 1"
+  },
+  {
+    "id": "astDeobfuscation",
+    "title": "AST - Deobfuscation",
+    "url": "https://www.root-me.org/fr/Challenges/Web-Client/AST-Deobfuscation",
+    "point": "35",
+    "level": "moyen",
+    "flag:": "g00d_j0b_easy_deobfuscation",
+    "date": "22/05/2024"
   }
 ]

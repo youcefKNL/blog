@@ -10,6 +10,8 @@ import JsNativeCode from "../challenge/webClient/JsNativeCode";
 import JsWebpack from "../challenge/webClient/JsWebpack";
 import JsObfuscation3 from "../challenge/webClient/JsObfuscation3";
 import XssStocké1 from "../challenge/webClient/XssStocké1";
+import AstDeobfuscation from "../challenge/webClient/AstDeobfuscation";
+import Page404 from "../../../Page404";
 
 // Créez un objet qui mappe les ID aux composants
 const components = {
@@ -23,6 +25,7 @@ const components = {
   jsWebpack: <JsWebpack title="JS WebPack" />,
   jsObfuscation3: <JsObfuscation3 title="JS Obfuscation 3" />,
   xssStockée1: <XssStocké1 title="XSS - Stockée 1" />,
+  astDeobfuscation: <AstDeobfuscation title="AST - Deobfuscation" />,
 };
 
 function IdWebClient() {
@@ -35,7 +38,7 @@ function IdWebClient() {
   if (selectedComponent) {
     return selectedComponent;
   } else {
-    return <div>Page non trouvée</div>;
+    return <Page404 />;
   }
 }
 
